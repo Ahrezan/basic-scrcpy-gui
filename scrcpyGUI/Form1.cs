@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Drawing;
+using System.IO;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
 
@@ -7,7 +10,6 @@ namespace scrcpyGUI
 {
     public partial class Form1 : Form
     {
-        // scrcpy işlemini burada saklıyoruz
         private Process scrcpyProcess;
 
         public Form1()
@@ -15,102 +17,63 @@ namespace scrcpyGUI
             InitializeComponent();
         }
 
-        private void startBtn_Click(object sender, EventArgs e)
+        #region Form Events
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (scrcpyProcess != null && !scrcpyProcess.HasExited)
+            {
+                scrcpyProcess.Kill();
+                scrcpyProcess.Dispose();
+                scrcpyProcess = null;
+            }
+        }
+        #endregion
+
+        private string BuildArguments()
         {
             var arguments = new StringBuilder();
 
             if (fullscreenCheckBox.Checked)
-            {
                 arguments.Append("--fullscreen ");
-            }
 
             if (noaudioCheckBox.Checked)
-            {
                 arguments.Append("--no-audio ");
-            }
-            
+
             if (nocontrolCheckBox.Checked)
-            {
                 arguments.Append("--no-control ");
-            }
-            
+
             if (printfpsCheckBox.Checked)
-            {
                 arguments.Append("--print-fps ");
-            }
-                        
+
             if (novideoCheckBox.Checked)
-            {
                 arguments.Append("--no-video ");
-            }
 
             if (int.TryParse(angleTextBox.Text, out int angle) && angle >= 0 && angle <= 360)
-            {
                 arguments.Append($"--angle={angle} ");
-            }
             else
-            {
-                arguments.Append($"--angle=0 ");
-            }
+                arguments.Append("--angle=0 ");
 
             if (int.TryParse(fpsTextBox.Text, out int fps) && fps > 0)
-            {
                 arguments.Append($"--max-fps={fps} ");
-            }
-            else
-            {
-                arguments.Append($"--max-fps=60 "); // Default 60 FPS
-            }
 
             if (orientationComboBox.SelectedItem != null)
-            {
-                string orientation = orientationComboBox.SelectedItem.ToString();
+                arguments.Append($"--capture-orientation={orientationComboBox.SelectedItem} ");
 
-                // Eğer orientation "locked" seçeneği ise
-                if (orientation == "Locked to the initial orientation")
-                {
-                    arguments.Append("--capture-orientation=@ ");
-                }
-                else if (orientation.StartsWith("@"))
-                {
-                    // Eğer @ ile başlıyorsa, @ parametresini kullanıyoruz
-                    arguments.Append($"--capture-orientation={orientation} ");
-                }
-                else
-                {
-                    // Normal orientation parametreleri
-                    switch (orientation)
-                    {
-                        case "0°":
-                            arguments.Append(" --capture-orientation=0 ");
-                            break;
-                        case "90°":
-                            arguments.Append(" --capture-orientation=90 ");
-                            break;
-                        case "180°":
-                            arguments.Append(" --capture-orientation=180 ");
-                            break;
-                        case "270°":
-                            arguments.Append(" --capture-orientation=270 ");
-                            break;
-                        case "Flip 0°":
-                            arguments.Append(" --capture-orientation=flip0 ");
-                            break;
-                        case "Flip 90°":
-                            arguments.Append(" --capture-orientation=flip90 ");
-                            break;
-                        case "Flip 180°":
-                            arguments.Append(" --capture-orientation=flip180 ");
-                            break;
-                        case "Flip 270°":
-                            arguments.Append(" --capture-orientation=flip270 ");
-                            break;
-                    }
-                }
-            }
+            if (videocodecComboBox.SelectedItem != null)
+                arguments.Append($"--video-codec={videocodecComboBox.SelectedItem} ");
 
+            if (audiocodecComboBox.SelectedItem != null)
+                arguments.Append($"--audio-codec={audiocodecComboBox.SelectedItem} ");
 
-            string args = arguments.ToString().Trim();
+            if (listencodersCheckBox.Checked)
+                arguments.Append("--list-encoders ");
+
+            return arguments.ToString().Trim();
+        }
+
+        private void StartScrcpy()
+        {
+            string args = BuildArguments();
             string exePath = Application.StartupPath + @"\cli_tools\scrcpy.exe";
 
             var psi = new ProcessStartInfo
@@ -119,21 +82,52 @@ namespace scrcpyGUI
                 Arguments = args,
                 UseShellExecute = false,
                 CreateNoWindow = true,
-                RedirectStandardOutput = false,
-                RedirectStandardError = false
+                RedirectStandardOutput = true,
+                RedirectStandardError = true
+            };
+
+            scrcpyProcess = new Process
+            {
+                StartInfo = psi,
+                EnableRaisingEvents = true
+            };
+
+            scrcpyProcess.OutputDataReceived += (s, ev) =>
+            {
+                if (ev.Data != null)
+                {
+                    consoleOutputRichTextbox.Invoke(new Action(() =>
+                    {
+                        consoleOutputRichTextbox.AppendText(ev.Data + Environment.NewLine);
+                        consoleOutputRichTextbox.ScrollToCaret();
+                    }));
+                }
+            };
+
+            scrcpyProcess.ErrorDataReceived += (s, ev) =>
+            {
+                if (ev.Data != null)
+                {
+                    consoleOutputRichTextbox.Invoke(new Action(() =>
+                        consoleOutputRichTextbox.AppendText("Error: " + ev.Data + Environment.NewLine)));
+                }
             };
 
             try
             {
-                scrcpyProcess = Process.Start(psi);
+                scrcpyProcess.Start();
+                scrcpyProcess.BeginOutputReadLine();
+                scrcpyProcess.BeginErrorReadLine();
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"scrcpy başlatılamadı:\n{ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Scrcpy could not be started:\n{ex.Message}", "Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void stopBtn_Click(object sender, EventArgs e)
+        #region Kill Scrcpy Function
+        private void KillScrcpy()
         {
             try
             {
@@ -146,8 +140,26 @@ namespace scrcpyGUI
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"scrcpy kapatılamadı:\n{ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show($"Scrcpy could not be closed:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+        #endregion
+
+        #region MenuStrip Command
+        private void startStrip_Click(object sender, EventArgs e)
+        {
+            StartScrcpy();
+        } 
+
+        private void clearoutputStripMenuItem_Click(object sender, EventArgs e)
+        {
+            consoleOutputRichTextbox.Clear();
+        }
+        #endregion
+
+        private void stopStrip_Click(object sender, EventArgs e)
+        {
+            KillScrcpy();
         }
     }
 }
