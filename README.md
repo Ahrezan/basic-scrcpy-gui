@@ -1,1 +1,3 @@
-# scrcpyGUI
+![Basic Scrcpy GUI](logo.png)
+
+---
