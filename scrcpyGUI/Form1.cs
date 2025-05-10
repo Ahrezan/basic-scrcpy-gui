@@ -5,6 +5,8 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
+using static System.Net.WebRequestMethods;
 
 namespace scrcpyGUI
 {
@@ -154,19 +156,40 @@ namespace scrcpyGUI
 
         #region MenuStrip Command
 
-        private void startStrip_Click(object sender, EventArgs e)
+        private void startStrip_Click(object sender, EventArgs e) { StartScrcpy(); }
+        private void stopStrip_Click(object sender, EventArgs e) { KillScrcpy(); }
+        private void clearoutputStrip_Click(object sender, EventArgs e) { consoleOutputRichTextbox.Clear(); }
+        private void websiteStrip_Click(object sender, EventArgs e)
         {
-            StartScrcpy();
-        }
-        private void stopStrip_Click(object sender, EventArgs e)
-        {
-            KillScrcpy();
-        }
-        private void clearoutputStrip_Click(object sender, EventArgs e)
-        {
-            consoleOutputRichTextbox.Clear();
-        }
+            string url = "https://github.com/Ahrezan/scrcpy-gui";
 
+            try
+            {
+                ProcessStartInfo psi = new ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true
+                };
+                Process.Start(psi);
+            }
+            catch
+            {
+                MessageBox.Show("Could not open the website", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void aboutStrip_Click(object sender, EventArgs e)
+        {
+            string appName = "Scrcpy for Basic GUI";
+            string version = "v0.1.1";
+            string developer = "Ahrezan";
+            string githubLink = "GitHub: github.com/Ahrezan";
+            string license = "Licence: MIT";
+            string releaseDate = "Latest Update: 2025-05-11";
+
+            string aboutMessage = $"{appName}\n{version}\n\n{developer}\n{githubLink}\n{license}\n{releaseDate}";
+
+            MessageBox.Show(aboutMessage, "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
         #endregion
     }
 }

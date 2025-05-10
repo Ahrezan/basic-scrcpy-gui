@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("scrcpyGUI")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Basic Scrcpy GUI")]
+[assembly: AssemblyDescription("Simple and up-to-date user interface for Scrcpy.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("scrcpyGUI")]
-[assembly: AssemblyCopyright("Copyright ©  2025")]
+[assembly: AssemblyCompany("ahrezan")]
+[assembly: AssemblyProduct("makeGUI")]
+[assembly: AssemblyCopyright("No Copyright")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
