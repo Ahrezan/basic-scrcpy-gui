@@ -29,6 +29,8 @@ namespace scrcpyGUI
         }
         #endregion
 
+        #region Arguments
+
         private string BuildArguments()
         {
             var arguments = new StringBuilder();
@@ -71,6 +73,9 @@ namespace scrcpyGUI
             return arguments.ToString().Trim();
         }
 
+        #endregion
+
+        #region Start Scrcpy
         private void StartScrcpy()
         {
             string args = BuildArguments();
@@ -126,6 +131,8 @@ namespace scrcpyGUI
             }
         }
 
+        #endregion
+
         #region Kill Scrcpy Function
         private void KillScrcpy()
         {
@@ -146,20 +153,20 @@ namespace scrcpyGUI
         #endregion
 
         #region MenuStrip Command
+
         private void startStrip_Click(object sender, EventArgs e)
         {
             StartScrcpy();
-        } 
-
-        private void clearoutputStripMenuItem_Click(object sender, EventArgs e)
-        {
-            consoleOutputRichTextbox.Clear();
         }
-        #endregion
-
         private void stopStrip_Click(object sender, EventArgs e)
         {
             KillScrcpy();
         }
+        private void clearoutputStrip_Click(object sender, EventArgs e)
+        {
+            consoleOutputRichTextbox.Clear();
+        }
+
+        #endregion
     }
 }
