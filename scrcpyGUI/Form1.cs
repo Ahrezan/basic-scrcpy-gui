@@ -155,10 +155,39 @@ namespace scrcpyGUI
         #endregion
 
         #region MenuStrip Command
+        // Save Console Output
+        private void saveoutputStrip_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog consoleoutputSaveFileDialog = new SaveFileDialog())
+            {
+                consoleoutputSaveFileDialog.FileName = "console_output.txt";
 
-        private void startStrip_Click(object sender, EventArgs e) { StartScrcpy(); }
-        private void stopStrip_Click(object sender, EventArgs e) { KillScrcpy(); }
-        private void clearoutputStrip_Click(object sender, EventArgs e) { consoleOutputRichTextbox.Clear(); }
+                consoleoutputSaveFileDialog.Filter = "All Files (*.*)|*.*|Text Files (*.txt)|*.txt";
+                consoleoutputSaveFileDialog.FilterIndex = 2;
+
+                if (consoleoutputSaveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    consoleOutputRichTextbox.SaveFile(consoleoutputSaveFileDialog.FileName, RichTextBoxStreamType.PlainText);
+                }
+            }
+
+        }
+        // Start Scrcpy
+        private void startStrip_Click(object sender, EventArgs e)
+        { 
+            StartScrcpy();
+        }
+        // Stop Scrcpy
+        private void stopStrip_Click(object sender, EventArgs e)
+        {
+            KillScrcpy();
+        }
+        // Clear Console Output
+        private void clearoutputStrip_Click(object sender, EventArgs e)
+        {
+            consoleOutputRichTextbox.Clear();
+        }
+        // App Website
         private void websiteStrip_Click(object sender, EventArgs e)
         {
             string url = "https://github.com/Ahrezan/scrcpy-gui";
@@ -177,16 +206,18 @@ namespace scrcpyGUI
                 MessageBox.Show("Could not open the website", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        // App Info
         private void aboutStrip_Click(object sender, EventArgs e)
         {
             string appName = "Scrcpy for Basic GUI";
-            string version = "v0.1.1";
+            string version = "Version: 2025.05.12";
             string developer = "Ahrezan";
             string githubLink = "GitHub: github.com/Ahrezan";
             string license = "Licence: MIT";
-            string releaseDate = "Latest Update: 2025-05-11";
+            string releaseDate = "Latest Update: 2025-05-12";
+            string scrcpyVersion = "Scrcpy Version: v3.2";
 
-            string aboutMessage = $"{appName}\n{version}\n\n{developer}\n{githubLink}\n{license}\n{releaseDate}";
+            string aboutMessage = $"{appName}\n{version}\n\n{developer}\n{githubLink}\n{license}\n{scrcpyVersion}\n{releaseDate}";
 
             MessageBox.Show(aboutMessage, "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }

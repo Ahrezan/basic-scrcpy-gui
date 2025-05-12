@@ -2243,8 +2243,9 @@
             this.saveoutputStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveoutputStrip.Name = "saveoutputStrip";
             this.saveoutputStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.saveoutputStrip.Size = new System.Drawing.Size(188, 22);
+            this.saveoutputStrip.Size = new System.Drawing.Size(192, 26);
             this.saveoutputStrip.Text = "&Print";
+            this.saveoutputStrip.Click += new System.EventHandler(this.saveoutputStrip_Click);
             // 
             // toolsStrip
             // 
