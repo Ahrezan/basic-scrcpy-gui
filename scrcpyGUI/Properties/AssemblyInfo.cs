@@ -9,8 +9,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Simple and up-to-date user interface for Scrcpy.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ahrezan")]
-[assembly: AssemblyProduct("makeGUI")]
-[assembly: AssemblyCopyright("No Copyright")]
+[assembly: AssemblyProduct("makegui")]
+[assembly: AssemblyCopyright("Apache License 2.0")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

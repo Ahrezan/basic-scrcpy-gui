@@ -227,6 +227,9 @@
             this.saveoutputStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.customizeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.lowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mediumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.highToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Separator3 = new System.Windows.Forms.ToolStripSeparator();
             this.newconfigStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.saveconfigStrip = new System.Windows.Forms.ToolStripMenuItem();
@@ -243,9 +246,6 @@
             this.aboutStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.checkBox39 = new System.Windows.Forms.CheckBox();
-            this.lowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mediumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.highToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -312,7 +312,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(86, 152);
+            this.label1.Location = new System.Drawing.Point(86, 108);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 13;
@@ -333,7 +333,7 @@
             // 
             // fpsTextBox
             // 
-            this.fpsTextBox.Location = new System.Drawing.Point(87, 168);
+            this.fpsTextBox.Location = new System.Drawing.Point(87, 124);
             this.fpsTextBox.Name = "fpsTextBox";
             this.fpsTextBox.Size = new System.Drawing.Size(78, 20);
             this.fpsTextBox.TabIndex = 15;
@@ -828,7 +828,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(86, 108);
+            this.label11.Location = new System.Drawing.Point(86, 64);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(69, 13);
             this.label11.TabIndex = 47;
@@ -844,7 +844,7 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(88, 124);
+            this.textBox8.Location = new System.Drawing.Point(88, 80);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(77, 20);
             this.textBox8.TabIndex = 48;
@@ -1018,19 +1018,22 @@
             this.consoleOutputRichTextbox.Location = new System.Drawing.Point(7, 18);
             this.consoleOutputRichTextbox.Name = "consoleOutputRichTextbox";
             this.consoleOutputRichTextbox.ReadOnly = true;
-            this.consoleOutputRichTextbox.Size = new System.Drawing.Size(1106, 138);
+            this.consoleOutputRichTextbox.Size = new System.Drawing.Size(1106, 126);
             this.consoleOutputRichTextbox.TabIndex = 37;
             this.consoleOutputRichTextbox.Text = "";
             // 
             // groupBox3
             // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.consoleOutputRichTextbox);
             this.groupBox3.Location = new System.Drawing.Point(12, 499);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1119, 162);
+            this.groupBox3.Size = new System.Drawing.Size(1119, 150);
             this.groupBox3.TabIndex = 38;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Console Output";
+            this.groupBox3.Text = "💻 Console Output";
             // 
             // checkBox13
             // 
@@ -1285,7 +1288,7 @@
             this.groupBox4.Size = new System.Drawing.Size(248, 170);
             this.groupBox4.TabIndex = 40;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "📸 Camera Settings";
+            this.groupBox4.Text = "📸 Camera";
             // 
             // checkBox7
             // 
@@ -1870,7 +1873,7 @@
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(84, 64);
+            this.label46.Location = new System.Drawing.Point(84, 20);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(81, 13);
             this.label46.TabIndex = 83;
@@ -1878,7 +1881,7 @@
             // 
             // textBox27
             // 
-            this.textBox27.Location = new System.Drawing.Point(88, 80);
+            this.textBox27.Location = new System.Drawing.Point(88, 37);
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(77, 20);
             this.textBox27.TabIndex = 84;
@@ -2013,7 +2016,7 @@
             this.VideoAndCodecGB.Size = new System.Drawing.Size(338, 282);
             this.VideoAndCodecGB.TabIndex = 64;
             this.VideoAndCodecGB.TabStop = false;
-            this.VideoAndCodecGB.Text = "🎥 Video Settings";
+            this.VideoAndCodecGB.Text = "🎬 Video";
             // 
             // groupBox1
             // 
@@ -2025,10 +2028,10 @@
             this.groupBox1.Controls.Add(this.label37);
             this.groupBox1.Location = new System.Drawing.Point(183, 14);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(149, 100);
+            this.groupBox1.Size = new System.Drawing.Size(149, 104);
             this.groupBox1.TabIndex = 89;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Record";
+            this.groupBox1.Text = "🎥 Record";
             // 
             // label52
             // 
@@ -2064,7 +2067,7 @@
             this.AudioGB.Size = new System.Drawing.Size(231, 282);
             this.AudioGB.TabIndex = 65;
             this.AudioGB.TabStop = false;
-            this.AudioGB.Text = "🔊 Audio Settings";
+            this.AudioGB.Text = "🔊 Audio";
             // 
             // DisplayAndWindowGB
             // 
@@ -2104,7 +2107,7 @@
             this.DisplayAndWindowGB.Size = new System.Drawing.Size(314, 288);
             this.DisplayAndWindowGB.TabIndex = 66;
             this.DisplayAndWindowGB.TabStop = false;
-            this.DisplayAndWindowGB.Text = "🖼️ Window && Display Settings";
+            this.DisplayAndWindowGB.Text = "🖼️ Window && Display";
             // 
             // InputAndControlsGB
             // 
@@ -2236,6 +2239,7 @@
             this.helpconsoleStrip.Name = "helpconsoleStrip";
             this.helpconsoleStrip.Size = new System.Drawing.Size(188, 22);
             this.helpconsoleStrip.Text = "Help";
+            this.helpconsoleStrip.Click += new System.EventHandler(this.helpconsoleStrip_Click);
             // 
             // saveoutputStrip
             // 
@@ -2243,7 +2247,7 @@
             this.saveoutputStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveoutputStrip.Name = "saveoutputStrip";
             this.saveoutputStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.saveoutputStrip.Size = new System.Drawing.Size(192, 26);
+            this.saveoutputStrip.Size = new System.Drawing.Size(188, 22);
             this.saveoutputStrip.Text = "&Print";
             this.saveoutputStrip.Click += new System.EventHandler(this.saveoutputStrip_Click);
             // 
@@ -2272,8 +2276,26 @@
             this.highToolStripMenuItem});
             this.customizeToolStripMenuItem1.Name = "customizeToolStripMenuItem1";
             this.customizeToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.K)));
-            this.customizeToolStripMenuItem1.Size = new System.Drawing.Size(213, 26);
+            this.customizeToolStripMenuItem1.Size = new System.Drawing.Size(209, 22);
             this.customizeToolStripMenuItem1.Text = "&Templates";
+            // 
+            // lowToolStripMenuItem
+            // 
+            this.lowToolStripMenuItem.Name = "lowToolStripMenuItem";
+            this.lowToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.lowToolStripMenuItem.Text = "Low";
+            // 
+            // mediumToolStripMenuItem
+            // 
+            this.mediumToolStripMenuItem.Name = "mediumToolStripMenuItem";
+            this.mediumToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.mediumToolStripMenuItem.Text = "Medium";
+            // 
+            // highToolStripMenuItem
+            // 
+            this.highToolStripMenuItem.Name = "highToolStripMenuItem";
+            this.highToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.highToolStripMenuItem.Text = "High";
             // 
             // Separator3
             // 
@@ -2424,30 +2446,12 @@
             this.checkBox39.Text = "--legacy-paste";
             this.checkBox39.UseVisualStyleBackColor = true;
             // 
-            // lowToolStripMenuItem
-            // 
-            this.lowToolStripMenuItem.Name = "lowToolStripMenuItem";
-            this.lowToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.lowToolStripMenuItem.Text = "Low";
-            // 
-            // mediumToolStripMenuItem
-            // 
-            this.mediumToolStripMenuItem.Name = "mediumToolStripMenuItem";
-            this.mediumToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.mediumToolStripMenuItem.Text = "Medium";
-            // 
-            // highToolStripMenuItem
-            // 
-            this.highToolStripMenuItem.Name = "highToolStripMenuItem";
-            this.highToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.highToolStripMenuItem.Text = "High";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1143, 673);
+            this.ClientSize = new System.Drawing.Size(1143, 661);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.ConnectionAndDeviceOptionsGB);
             this.Controls.Add(this.InputAndControlsGB);

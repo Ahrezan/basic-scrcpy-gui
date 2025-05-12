@@ -78,60 +78,60 @@ namespace scrcpyGUI
         #endregion
 
         #region Start Scrcpy
-        private void StartScrcpy()
-        {
-            string args = BuildArguments();
-            string exePath = Application.StartupPath + @"\cli_tools\scrcpy.exe";
-
-            var psi = new ProcessStartInfo
+            private void StartScrcpy()
             {
-                FileName = exePath,
-                Arguments = args,
-                UseShellExecute = false,
-                CreateNoWindow = true,
-                RedirectStandardOutput = true,
-                RedirectStandardError = true
-            };
+                string args = BuildArguments();
+                string exePath = Path.Combine(Application.StartupPath, "cli_tools", "scrcpy.exe");
 
-            scrcpyProcess = new Process
-            {
-                StartInfo = psi,
-                EnableRaisingEvents = true
-            };
-
-            scrcpyProcess.OutputDataReceived += (s, ev) =>
-            {
-                if (ev.Data != null)
+                var psi = new ProcessStartInfo
                 {
-                    consoleOutputRichTextbox.Invoke(new Action(() =>
+                    FileName = exePath,
+                    Arguments = args,
+                    UseShellExecute = false,
+                    CreateNoWindow = true,
+                    RedirectStandardOutput = true,
+                    RedirectStandardError = true
+                };
+
+                scrcpyProcess = new Process
+                {
+                    StartInfo = psi,
+                    EnableRaisingEvents = true
+                };
+
+                scrcpyProcess.OutputDataReceived += (s, ev) =>
+                {
+                    if (ev.Data != null)
                     {
-                        consoleOutputRichTextbox.AppendText(ev.Data + Environment.NewLine);
-                        consoleOutputRichTextbox.ScrollToCaret();
-                    }));
-                }
-            };
+                        consoleOutputRichTextbox.Invoke(new Action(() =>
+                        {
+                            consoleOutputRichTextbox.AppendText(ev.Data + Environment.NewLine);
+                            consoleOutputRichTextbox.ScrollToCaret();
+                        }));
+                    }
+                };
 
-            scrcpyProcess.ErrorDataReceived += (s, ev) =>
-            {
-                if (ev.Data != null)
+                scrcpyProcess.ErrorDataReceived += (s, ev) =>
                 {
-                    consoleOutputRichTextbox.Invoke(new Action(() =>
-                        consoleOutputRichTextbox.AppendText("Error: " + ev.Data + Environment.NewLine)));
-                }
-            };
+                    if (ev.Data != null)
+                    {
+                        consoleOutputRichTextbox.Invoke(new Action(() =>
+                            consoleOutputRichTextbox.AppendText("Error: " + ev.Data + Environment.NewLine)));
+                    }
+                };
 
-            try
-            {
-                scrcpyProcess.Start();
-                scrcpyProcess.BeginOutputReadLine();
-                scrcpyProcess.BeginErrorReadLine();
+                try
+                {
+                    scrcpyProcess.Start();
+                    scrcpyProcess.BeginOutputReadLine();
+                    scrcpyProcess.BeginErrorReadLine();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Scrcpy could not be started:\n{ex.Message}", "Error",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Scrcpy could not be started:\n{ex.Message}", "Error",
-                                MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
         #endregion
 
@@ -222,5 +222,20 @@ namespace scrcpyGUI
             MessageBox.Show(aboutMessage, "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         #endregion
+
+        private void helpconsoleStrip_Click(object sender, EventArgs e)
+        {
+            string helpFilePath = Path.Combine(Application.StartupPath, "cli_tools", "help.txt");
+
+            // Dosyayı varsayılan uygulama (Notepad gibi) ile açmak
+            try
+            {
+                Process.Start(helpFilePath);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"File could not be opened: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
