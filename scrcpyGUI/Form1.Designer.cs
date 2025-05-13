@@ -30,87 +30,87 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.noaudioCheckBox = new System.Windows.Forms.CheckBox();
-            this.nocontrolCheckBox = new System.Windows.Forms.CheckBox();
-            this.printfpsCheckBox = new System.Windows.Forms.CheckBox();
-            this.fullscreenCheckBox = new System.Windows.Forms.CheckBox();
-            this.novideoCheckBox = new System.Windows.Forms.CheckBox();
+            this.noAudio = new System.Windows.Forms.CheckBox();
+            this.noControl = new System.Windows.Forms.CheckBox();
+            this.printFps = new System.Windows.Forms.CheckBox();
+            this.fullscreen = new System.Windows.Forms.CheckBox();
+            this.noVideo = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.videocodecComboBox = new System.Windows.Forms.ComboBox();
-            this.fpsTextBox = new System.Windows.Forms.TextBox();
-            this.audiocodecComboBox = new System.Windows.Forms.ComboBox();
+            this.videoCodec = new System.Windows.Forms.ComboBox();
+            this.maxFps = new System.Windows.Forms.TextBox();
+            this.audioCodec = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.orientationComboBox = new System.Windows.Forms.ComboBox();
+            this.captureOrientation = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.angleTextBox = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.angle = new System.Windows.Forms.TextBox();
+            this.displayId = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.crop1 = new System.Windows.Forms.TextBox();
+            this.cropWidth = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.checkBox27 = new System.Windows.Forms.CheckBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.checkBox26 = new System.Windows.Forms.CheckBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.otg = new System.Windows.Forms.CheckBox();
+            this.renderDriver = new System.Windows.Forms.ComboBox();
+            this.noVideoPlayback = new System.Windows.Forms.CheckBox();
+            this.newDisplayDpi = new System.Windows.Forms.TextBox();
+            this.newDisplayHeight = new System.Windows.Forms.TextBox();
+            this.newDisplayWidth = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.noPlayback = new System.Windows.Forms.CheckBox();
+            this.mouse = new System.Windows.Forms.ComboBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
+            this.m = new System.Windows.Forms.CheckBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.maxSize = new System.Windows.Forms.TextBox();
+            this.keyboard = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.noWindow = new System.Windows.Forms.CheckBox();
+            this.k = new System.Windows.Forms.CheckBox();
+            this.gamepad = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.g = new System.Windows.Forms.CheckBox();
+            this.forceAdbForward = new System.Windows.Forms.CheckBox();
+            this.selectTcpip = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.displayOrientation = new System.Windows.Forms.ComboBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.displayImePolicy = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.disableScreensaver = new System.Windows.Forms.CheckBox();
+            this.selectUsb = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.videoBitRate = new System.Windows.Forms.TextBox();
+            this.alwaysOnTop = new System.Windows.Forms.CheckBox();
+            this.orientation = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.crop4 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.crop3 = new System.Windows.Forms.TextBox();
-            this.crop2 = new System.Windows.Forms.TextBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
+            this.cropY = new System.Windows.Forms.TextBox();
+            this.videoBuffer = new System.Windows.Forms.TextBox();
+            this.cropX = new System.Windows.Forms.TextBox();
+            this.cropHeight = new System.Windows.Forms.TextBox();
+            this.noAudioPlayback = new System.Windows.Forms.CheckBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.audioEncoder = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.audioOutputBuffer = new System.Windows.Forms.TextBox();
+            this.audioBitRate = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.audioCodecOptions = new System.Windows.Forms.CheckBox();
             this.label9 = new System.Windows.Forms.Label();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.audioDup = new System.Windows.Forms.CheckBox();
+            this.audioSource = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.audioBuffer = new System.Windows.Forms.TextBox();
             this.consoleOutputRichTextbox = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.listencodersCheckBox = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.listDisplays = new System.Windows.Forms.CheckBox();
+            this.listApps = new System.Windows.Forms.CheckBox();
+            this.listEncoders = new System.Windows.Forms.CheckBox();
+            this.listCameraSizes = new System.Windows.Forms.CheckBox();
+            this.listCameras = new System.Windows.Forms.CheckBox();
             this.consoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearoutputStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
@@ -137,77 +137,77 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.cameraHighSpeed = new System.Windows.Forms.CheckBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.cameraSizeWidth = new System.Windows.Forms.TextBox();
+            this.cameraFps = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cameraId = new System.Windows.Forms.TextBox();
+            this.cameraAr = new System.Windows.Forms.TextBox();
+            this.cameraSizeHeight = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cameraFacing = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.checkBox36 = new System.Windows.Forms.CheckBox();
+            this.videoSource = new System.Windows.Forms.ComboBox();
+            this.noClipboardAutosync = new System.Windows.Forms.CheckBox();
+            this.noCleanup = new System.Windows.Forms.CheckBox();
+            this.verbosity = new System.Windows.Forms.ComboBox();
+            this.stayAwake = new System.Windows.Forms.CheckBox();
             this.label45 = new System.Windows.Forms.Label();
-            this.checkBox35 = new System.Windows.Forms.CheckBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.version = new System.Windows.Forms.CheckBox();
+            this.timeLimit = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
-            this.checkBox33 = new System.Windows.Forms.CheckBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.turnScreenOff = new System.Windows.Forms.CheckBox();
+            this.screenOffTimeout = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
-            this.checkBox29 = new System.Windows.Forms.CheckBox();
-            this.checkBox28 = new System.Windows.Forms.CheckBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.preferText = new System.Windows.Forms.CheckBox();
+            this.powerOffOnClose = new System.Windows.Forms.CheckBox();
+            this.pauseOnExit = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.checkBox23 = new System.Windows.Forms.CheckBox();
-            this.checkBox21 = new System.Windows.Forms.CheckBox();
-            this.checkBox19 = new System.Windows.Forms.CheckBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.noPowerOn = new System.Windows.Forms.CheckBox();
+            this.noMipmaps = new System.Windows.Forms.CheckBox();
+            this.noDownsizeOnError = new System.Windows.Forms.CheckBox();
+            this.tunnelPort = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
-            this.checkBox34 = new System.Windows.Forms.CheckBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.showTouches = new System.Windows.Forms.CheckBox();
+            this.startApp = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.pushTarget = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.port = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.checkBox22 = new System.Windows.Forms.CheckBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.noMouseHover = new System.Windows.Forms.CheckBox();
+            this.recordOrientation = new System.Windows.Forms.ComboBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.recordFormat = new System.Windows.Forms.ComboBox();
+            this.record = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
-            this.checkBox24 = new System.Windows.Forms.CheckBox();
-            this.checkBox25 = new System.Windows.Forms.CheckBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.noVdSystemDecorations = new System.Windows.Forms.CheckBox();
+            this.noVdDestroyContent = new System.Windows.Forms.CheckBox();
+            this.tctPip = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
-            this.checkBox32 = new System.Windows.Forms.CheckBox();
-            this.checkBox31 = new System.Windows.Forms.CheckBox();
-            this.checkBox30 = new System.Windows.Forms.CheckBox();
-            this.checkBox20 = new System.Windows.Forms.CheckBox();
+            this.serial = new System.Windows.Forms.CheckBox();
+            this.requireAudio = new System.Windows.Forms.CheckBox();
+            this.rawKeyEvents = new System.Windows.Forms.CheckBox();
+            this.noKeyRepeat = new System.Windows.Forms.CheckBox();
             this.label46 = new System.Windows.Forms.Label();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.checkBox37 = new System.Windows.Forms.CheckBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.videoEncoder = new System.Windows.Forms.TextBox();
+            this.windowBorderless = new System.Windows.Forms.CheckBox();
+            this.windowTitle = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
-            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.windowX = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
-            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.windowY = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
-            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.windowHeight = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
-            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.windowWidth = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
             this.VideoAndCodecGB = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -216,20 +216,20 @@
             this.DisplayAndWindowGB = new System.Windows.Forms.GroupBox();
             this.InputAndControlsGB = new System.Windows.Forms.GroupBox();
             this.ConnectionAndDeviceOptionsGB = new System.Windows.Forms.GroupBox();
-            this.checkBox38 = new System.Windows.Forms.CheckBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.killAdbOnClose = new System.Windows.Forms.CheckBox();
+            this.tunnelHost = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
             this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.consoleStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.clearoutputStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.Separator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.helpconsoleStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.saveoutputStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpconsoleStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.customizeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.lowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mediumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.highToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lowStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.highStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.bestStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.Separator3 = new System.Windows.Forms.ToolStripSeparator();
             this.newconfigStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.saveconfigStrip = new System.Windows.Forms.ToolStripMenuItem();
@@ -245,7 +245,8 @@
             this.Separator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox39 = new System.Windows.Forms.CheckBox();
+            this.legacyPaste = new System.Windows.Forms.CheckBox();
+            this.Separator7 = new System.Windows.Forms.ToolStripSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -259,55 +260,55 @@
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // noaudioCheckBox
+            // noAudio
             // 
-            this.noaudioCheckBox.AutoSize = true;
-            this.noaudioCheckBox.Location = new System.Drawing.Point(9, 171);
-            this.noaudioCheckBox.Name = "noaudioCheckBox";
-            this.noaudioCheckBox.Size = new System.Drawing.Size(73, 17);
-            this.noaudioCheckBox.TabIndex = 5;
-            this.noaudioCheckBox.Text = "--no-audio";
-            this.noaudioCheckBox.UseVisualStyleBackColor = true;
+            this.noAudio.AutoSize = true;
+            this.noAudio.Location = new System.Drawing.Point(9, 171);
+            this.noAudio.Name = "noAudio";
+            this.noAudio.Size = new System.Drawing.Size(73, 17);
+            this.noAudio.TabIndex = 5;
+            this.noAudio.Text = "--no-audio";
+            this.noAudio.UseVisualStyleBackColor = true;
             // 
-            // nocontrolCheckBox
+            // noControl
             // 
-            this.nocontrolCheckBox.AutoSize = true;
-            this.nocontrolCheckBox.Location = new System.Drawing.Point(117, 62);
-            this.nocontrolCheckBox.Name = "nocontrolCheckBox";
-            this.nocontrolCheckBox.Size = new System.Drawing.Size(79, 17);
-            this.nocontrolCheckBox.TabIndex = 6;
-            this.nocontrolCheckBox.Text = "--no-control";
-            this.nocontrolCheckBox.UseVisualStyleBackColor = true;
+            this.noControl.AutoSize = true;
+            this.noControl.Location = new System.Drawing.Point(117, 62);
+            this.noControl.Name = "noControl";
+            this.noControl.Size = new System.Drawing.Size(79, 17);
+            this.noControl.TabIndex = 6;
+            this.noControl.Text = "--no-control";
+            this.noControl.UseVisualStyleBackColor = true;
             // 
-            // printfpsCheckBox
+            // printFps
             // 
-            this.printfpsCheckBox.AutoSize = true;
-            this.printfpsCheckBox.Location = new System.Drawing.Point(183, 170);
-            this.printfpsCheckBox.Name = "printfpsCheckBox";
-            this.printfpsCheckBox.Size = new System.Drawing.Size(69, 17);
-            this.printfpsCheckBox.TabIndex = 7;
-            this.printfpsCheckBox.Text = "--print-fps";
-            this.printfpsCheckBox.UseVisualStyleBackColor = true;
+            this.printFps.AutoSize = true;
+            this.printFps.Location = new System.Drawing.Point(183, 170);
+            this.printFps.Name = "printFps";
+            this.printFps.Size = new System.Drawing.Size(69, 17);
+            this.printFps.TabIndex = 7;
+            this.printFps.Text = "--print-fps";
+            this.printFps.UseVisualStyleBackColor = true;
             // 
-            // fullscreenCheckBox
+            // fullscreen
             // 
-            this.fullscreenCheckBox.AutoSize = true;
-            this.fullscreenCheckBox.Location = new System.Drawing.Point(150, 186);
-            this.fullscreenCheckBox.Name = "fullscreenCheckBox";
-            this.fullscreenCheckBox.Size = new System.Drawing.Size(77, 17);
-            this.fullscreenCheckBox.TabIndex = 8;
-            this.fullscreenCheckBox.Text = "--fullscreen";
-            this.fullscreenCheckBox.UseVisualStyleBackColor = true;
+            this.fullscreen.AutoSize = true;
+            this.fullscreen.Location = new System.Drawing.Point(150, 186);
+            this.fullscreen.Name = "fullscreen";
+            this.fullscreen.Size = new System.Drawing.Size(77, 17);
+            this.fullscreen.TabIndex = 8;
+            this.fullscreen.Text = "--fullscreen";
+            this.fullscreen.UseVisualStyleBackColor = true;
             // 
-            // novideoCheckBox
+            // noVideo
             // 
-            this.novideoCheckBox.AutoSize = true;
-            this.novideoCheckBox.Location = new System.Drawing.Point(183, 124);
-            this.novideoCheckBox.Name = "novideoCheckBox";
-            this.novideoCheckBox.Size = new System.Drawing.Size(73, 17);
-            this.novideoCheckBox.TabIndex = 9;
-            this.novideoCheckBox.Text = "--no-video";
-            this.novideoCheckBox.UseVisualStyleBackColor = true;
+            this.noVideo.AutoSize = true;
+            this.noVideo.Location = new System.Drawing.Point(183, 124);
+            this.noVideo.Name = "noVideo";
+            this.noVideo.Size = new System.Drawing.Size(73, 17);
+            this.noVideo.TabIndex = 9;
+            this.noVideo.Text = "--no-video";
+            this.noVideo.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -318,40 +319,39 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "--max-fps";
             // 
-            // videocodecComboBox
+            // videoCodec
             // 
-            this.videocodecComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.videocodecComboBox.FormattingEnabled = true;
-            this.videocodecComboBox.Items.AddRange(new object[] {
+            this.videoCodec.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.videoCodec.FormattingEnabled = true;
+            this.videoCodec.Items.AddRange(new object[] {
             "h264",
             "h265",
             "av1"});
-            this.videocodecComboBox.Location = new System.Drawing.Point(9, 80);
-            this.videocodecComboBox.Name = "videocodecComboBox";
-            this.videocodecComboBox.Size = new System.Drawing.Size(68, 21);
-            this.videocodecComboBox.TabIndex = 14;
+            this.videoCodec.Location = new System.Drawing.Point(9, 80);
+            this.videoCodec.Name = "videoCodec";
+            this.videoCodec.Size = new System.Drawing.Size(68, 21);
+            this.videoCodec.TabIndex = 14;
             // 
-            // fpsTextBox
+            // maxFps
             // 
-            this.fpsTextBox.Location = new System.Drawing.Point(87, 124);
-            this.fpsTextBox.Name = "fpsTextBox";
-            this.fpsTextBox.Size = new System.Drawing.Size(78, 20);
-            this.fpsTextBox.TabIndex = 15;
-            this.fpsTextBox.Text = "60";
+            this.maxFps.Location = new System.Drawing.Point(87, 124);
+            this.maxFps.Name = "maxFps";
+            this.maxFps.Size = new System.Drawing.Size(78, 20);
+            this.maxFps.TabIndex = 15;
             // 
-            // audiocodecComboBox
+            // audioCodec
             // 
-            this.audiocodecComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.audiocodecComboBox.FormattingEnabled = true;
-            this.audiocodecComboBox.Items.AddRange(new object[] {
+            this.audioCodec.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.audioCodec.FormattingEnabled = true;
+            this.audioCodec.Items.AddRange(new object[] {
             "opus",
             "aac",
             "flac",
             "raw"});
-            this.audiocodecComboBox.Location = new System.Drawing.Point(9, 80);
-            this.audiocodecComboBox.Name = "audiocodecComboBox";
-            this.audiocodecComboBox.Size = new System.Drawing.Size(70, 21);
-            this.audiocodecComboBox.TabIndex = 16;
+            this.audioCodec.Location = new System.Drawing.Point(9, 80);
+            this.audioCodec.Name = "audioCodec";
+            this.audioCodec.Size = new System.Drawing.Size(70, 21);
+            this.audioCodec.TabIndex = 16;
             // 
             // label2
             // 
@@ -371,11 +371,11 @@
             this.label3.TabIndex = 18;
             this.label3.Text = "--audio-codec";
             // 
-            // orientationComboBox
+            // captureOrientation
             // 
-            this.orientationComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.orientationComboBox.FormattingEnabled = true;
-            this.orientationComboBox.Items.AddRange(new object[] {
+            this.captureOrientation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.captureOrientation.FormattingEnabled = true;
+            this.captureOrientation.Items.AddRange(new object[] {
             "0",
             "@0",
             "90",
@@ -392,10 +392,10 @@
             "@flip180",
             "flip270",
             "@flip270"});
-            this.orientationComboBox.Location = new System.Drawing.Point(9, 138);
-            this.orientationComboBox.Name = "orientationComboBox";
-            this.orientationComboBox.Size = new System.Drawing.Size(95, 21);
-            this.orientationComboBox.TabIndex = 19;
+            this.captureOrientation.Location = new System.Drawing.Point(9, 138);
+            this.captureOrientation.Name = "captureOrientation";
+            this.captureOrientation.Size = new System.Drawing.Size(95, 21);
+            this.captureOrientation.TabIndex = 19;
             // 
             // label4
             // 
@@ -415,21 +415,19 @@
             this.label5.TabIndex = 21;
             this.label5.Text = "--angle";
             // 
-            // angleTextBox
+            // angle
             // 
-            this.angleTextBox.Location = new System.Drawing.Point(9, 253);
-            this.angleTextBox.Name = "angleTextBox";
-            this.angleTextBox.Size = new System.Drawing.Size(50, 20);
-            this.angleTextBox.TabIndex = 22;
-            this.angleTextBox.Text = "0";
+            this.angle.Location = new System.Drawing.Point(9, 253);
+            this.angle.Name = "angle";
+            this.angle.Size = new System.Drawing.Size(50, 20);
+            this.angle.TabIndex = 22;
             // 
-            // textBox3
+            // displayId
             // 
-            this.textBox3.Location = new System.Drawing.Point(75, 232);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(54, 20);
-            this.textBox3.TabIndex = 25;
-            this.textBox3.Text = "0";
+            this.displayId.Location = new System.Drawing.Point(75, 232);
+            this.displayId.Name = "displayId";
+            this.displayId.Size = new System.Drawing.Size(54, 20);
+            this.displayId.TabIndex = 25;
             // 
             // label6
             // 
@@ -440,13 +438,12 @@
             this.label6.TabIndex = 24;
             this.label6.Text = "--display-id";
             // 
-            // crop1
+            // cropWidth
             // 
-            this.crop1.Location = new System.Drawing.Point(9, 210);
-            this.crop1.Name = "crop1";
-            this.crop1.Size = new System.Drawing.Size(34, 20);
-            this.crop1.TabIndex = 27;
-            this.crop1.Text = "width";
+            this.cropWidth.Location = new System.Drawing.Point(9, 210);
+            this.cropWidth.Name = "cropWidth";
+            this.cropWidth.Size = new System.Drawing.Size(34, 20);
+            this.cropWidth.TabIndex = 27;
             // 
             // label7
             // 
@@ -466,65 +463,62 @@
             this.label38.TabIndex = 64;
             this.label38.Text = "--render-driver";
             // 
-            // checkBox27
+            // otg
             // 
-            this.checkBox27.AutoSize = true;
-            this.checkBox27.Location = new System.Drawing.Point(130, 197);
-            this.checkBox27.Name = "checkBox27";
-            this.checkBox27.Size = new System.Drawing.Size(47, 17);
-            this.checkBox27.TabIndex = 81;
-            this.checkBox27.Text = "--otg";
-            this.checkBox27.UseVisualStyleBackColor = true;
+            this.otg.AutoSize = true;
+            this.otg.Location = new System.Drawing.Point(130, 197);
+            this.otg.Name = "otg";
+            this.otg.Size = new System.Drawing.Size(47, 17);
+            this.otg.TabIndex = 81;
+            this.otg.Text = "--otg";
+            this.otg.UseVisualStyleBackColor = true;
             // 
-            // comboBox13
+            // renderDriver
             // 
-            this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Items.AddRange(new object[] {
+            this.renderDriver.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.renderDriver.FormattingEnabled = true;
+            this.renderDriver.Items.AddRange(new object[] {
             "direct3d",
             "opengl",
             "opengles2",
             "opengles",
             "metal",
             "software"});
-            this.comboBox13.Location = new System.Drawing.Point(225, 258);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(77, 21);
-            this.comboBox13.TabIndex = 63;
+            this.renderDriver.Location = new System.Drawing.Point(225, 258);
+            this.renderDriver.Name = "renderDriver";
+            this.renderDriver.Size = new System.Drawing.Size(77, 21);
+            this.renderDriver.TabIndex = 63;
             // 
-            // checkBox26
+            // noVideoPlayback
             // 
-            this.checkBox26.AutoSize = true;
-            this.checkBox26.Location = new System.Drawing.Point(183, 147);
-            this.checkBox26.Name = "checkBox26";
-            this.checkBox26.Size = new System.Drawing.Size(119, 17);
-            this.checkBox26.TabIndex = 80;
-            this.checkBox26.Text = "--no-video-playback";
-            this.checkBox26.UseVisualStyleBackColor = true;
+            this.noVideoPlayback.AutoSize = true;
+            this.noVideoPlayback.Location = new System.Drawing.Point(183, 147);
+            this.noVideoPlayback.Name = "noVideoPlayback";
+            this.noVideoPlayback.Size = new System.Drawing.Size(119, 17);
+            this.noVideoPlayback.TabIndex = 80;
+            this.noVideoPlayback.Text = "--no-video-playback";
+            this.noVideoPlayback.UseVisualStyleBackColor = true;
             // 
-            // textBox18
+            // newDisplayDpi
             // 
-            this.textBox18.Location = new System.Drawing.Point(238, 128);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(35, 20);
-            this.textBox18.TabIndex = 79;
-            this.textBox18.Text = "dpi";
+            this.newDisplayDpi.Location = new System.Drawing.Point(238, 128);
+            this.newDisplayDpi.Name = "newDisplayDpi";
+            this.newDisplayDpi.Size = new System.Drawing.Size(35, 20);
+            this.newDisplayDpi.TabIndex = 79;
             // 
-            // textBox17
+            // newDisplayHeight
             // 
-            this.textBox17.Location = new System.Drawing.Point(197, 129);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(35, 20);
-            this.textBox17.TabIndex = 78;
-            this.textBox17.Text = "height";
+            this.newDisplayHeight.Location = new System.Drawing.Point(197, 129);
+            this.newDisplayHeight.Name = "newDisplayHeight";
+            this.newDisplayHeight.Size = new System.Drawing.Size(35, 20);
+            this.newDisplayHeight.TabIndex = 78;
             // 
-            // textBox16
+            // newDisplayWidth
             // 
-            this.textBox16.Location = new System.Drawing.Point(156, 128);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(35, 20);
-            this.textBox16.TabIndex = 77;
-            this.textBox16.Text = "width";
+            this.newDisplayWidth.Location = new System.Drawing.Point(156, 128);
+            this.newDisplayWidth.Name = "newDisplayWidth";
+            this.newDisplayWidth.Size = new System.Drawing.Size(35, 20);
+            this.newDisplayWidth.TabIndex = 77;
             // 
             // label32
             // 
@@ -535,29 +529,29 @@
             this.label32.TabIndex = 76;
             this.label32.Text = "--new-display";
             // 
-            // checkBox15
+            // noPlayback
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(183, 193);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(90, 17);
-            this.checkBox15.TabIndex = 75;
-            this.checkBox15.Text = "--no-playback";
-            this.checkBox15.UseVisualStyleBackColor = true;
+            this.noPlayback.AutoSize = true;
+            this.noPlayback.Location = new System.Drawing.Point(183, 193);
+            this.noPlayback.Name = "noPlayback";
+            this.noPlayback.Size = new System.Drawing.Size(90, 17);
+            this.noPlayback.TabIndex = 75;
+            this.noPlayback.Text = "--no-playback";
+            this.noPlayback.UseVisualStyleBackColor = true;
             // 
-            // comboBox9
+            // mouse
             // 
-            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
+            this.mouse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.mouse.FormattingEnabled = true;
+            this.mouse.Items.AddRange(new object[] {
             "disabled",
             "sdk",
             "uhid",
             "aoa"});
-            this.comboBox9.Location = new System.Drawing.Point(9, 39);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(54, 21);
-            this.comboBox9.TabIndex = 74;
+            this.mouse.Location = new System.Drawing.Point(9, 39);
+            this.mouse.Name = "mouse";
+            this.mouse.Size = new System.Drawing.Size(54, 21);
+            this.mouse.TabIndex = 74;
             // 
             // label30
             // 
@@ -568,15 +562,15 @@
             this.label30.TabIndex = 73;
             this.label30.Text = "--mouse";
             // 
-            // checkBox14
+            // m
             // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(64, 20);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(38, 17);
-            this.checkBox14.TabIndex = 72;
-            this.checkBox14.Text = "-M";
-            this.checkBox14.UseVisualStyleBackColor = true;
+            this.m.AutoSize = true;
+            this.m.Location = new System.Drawing.Point(64, 20);
+            this.m.Name = "m";
+            this.m.Size = new System.Drawing.Size(38, 17);
+            this.m.TabIndex = 72;
+            this.m.Text = "-M";
+            this.m.UseVisualStyleBackColor = true;
             // 
             // label29
             // 
@@ -587,27 +581,26 @@
             this.label29.TabIndex = 70;
             this.label29.Text = "--max-size";
             // 
-            // textBox15
+            // maxSize
             // 
-            this.textBox15.Location = new System.Drawing.Point(9, 168);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(68, 20);
-            this.textBox15.TabIndex = 71;
-            this.textBox15.Text = "0";
+            this.maxSize.Location = new System.Drawing.Point(9, 168);
+            this.maxSize.Name = "maxSize";
+            this.maxSize.Size = new System.Drawing.Size(68, 20);
+            this.maxSize.TabIndex = 71;
             // 
-            // comboBox8
+            // keyboard
             // 
-            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.keyboard.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.keyboard.FormattingEnabled = true;
+            this.keyboard.Items.AddRange(new object[] {
             "disabled",
             "sdk",
             "uhid",
             "aoa"});
-            this.comboBox8.Location = new System.Drawing.Point(9, 85);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(54, 21);
-            this.comboBox8.TabIndex = 69;
+            this.keyboard.Location = new System.Drawing.Point(9, 85);
+            this.keyboard.Name = "keyboard";
+            this.keyboard.Size = new System.Drawing.Size(54, 21);
+            this.keyboard.TabIndex = 69;
             // 
             // label28
             // 
@@ -618,38 +611,38 @@
             this.label28.TabIndex = 68;
             this.label28.Text = "--keyboard";
             // 
-            // checkBox1
+            // noWindow
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(150, 164);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(83, 17);
-            this.checkBox1.TabIndex = 40;
-            this.checkBox1.Text = "--no-window";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.noWindow.AutoSize = true;
+            this.noWindow.Location = new System.Drawing.Point(150, 164);
+            this.noWindow.Name = "noWindow";
+            this.noWindow.Size = new System.Drawing.Size(83, 17);
+            this.noWindow.TabIndex = 40;
+            this.noWindow.Text = "--no-window";
+            this.noWindow.UseVisualStyleBackColor = true;
             // 
-            // checkBox11
+            // k
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(64, 65);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(36, 17);
-            this.checkBox11.TabIndex = 67;
-            this.checkBox11.Text = "-K";
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.k.AutoSize = true;
+            this.k.Location = new System.Drawing.Point(64, 65);
+            this.k.Name = "k";
+            this.k.Size = new System.Drawing.Size(36, 17);
+            this.k.TabIndex = 67;
+            this.k.Text = "-K";
+            this.k.UseVisualStyleBackColor = true;
             // 
-            // comboBox7
+            // gamepad
             // 
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.gamepad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gamepad.FormattingEnabled = true;
+            this.gamepad.Items.AddRange(new object[] {
             "disabled",
             "uhid",
             "aoa"});
-            this.comboBox7.Location = new System.Drawing.Point(9, 131);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(54, 21);
-            this.comboBox7.TabIndex = 66;
+            this.gamepad.Location = new System.Drawing.Point(9, 131);
+            this.gamepad.Name = "gamepad";
+            this.gamepad.Size = new System.Drawing.Size(54, 21);
+            this.gamepad.TabIndex = 66;
             // 
             // label27
             // 
@@ -660,33 +653,32 @@
             this.label27.TabIndex = 65;
             this.label27.Text = "--gamepad";
             // 
-            // checkBox10
+            // g
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(64, 111);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(37, 17);
-            this.checkBox10.TabIndex = 64;
-            this.checkBox10.Text = "-G";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.g.AutoSize = true;
+            this.g.Location = new System.Drawing.Point(64, 111);
+            this.g.Name = "g";
+            this.g.Size = new System.Drawing.Size(37, 17);
+            this.g.TabIndex = 64;
+            this.g.Text = "-G";
+            this.g.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // forceAdbForward
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(9, 197);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(115, 17);
-            this.checkBox9.TabIndex = 63;
-            this.checkBox9.Text = "--force-adb-forward";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.forceAdbForward.AutoSize = true;
+            this.forceAdbForward.Location = new System.Drawing.Point(9, 197);
+            this.forceAdbForward.Name = "forceAdbForward";
+            this.forceAdbForward.Size = new System.Drawing.Size(115, 17);
+            this.forceAdbForward.TabIndex = 63;
+            this.forceAdbForward.Text = "--force-adb-forward";
+            this.forceAdbForward.UseVisualStyleBackColor = true;
             // 
-            // textBox14
+            // selectTcpip
             // 
-            this.textBox14.Location = new System.Drawing.Point(76, 38);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(64, 20);
-            this.textBox14.TabIndex = 62;
-            this.textBox14.Text = "0";
+            this.selectTcpip.Location = new System.Drawing.Point(76, 38);
+            this.selectTcpip.Name = "selectTcpip";
+            this.selectTcpip.Size = new System.Drawing.Size(64, 20);
+            this.selectTcpip.TabIndex = 62;
             // 
             // label26
             // 
@@ -697,11 +689,11 @@
             this.label26.TabIndex = 61;
             this.label26.Text = "--select-tcpip";
             // 
-            // comboBox6
+            // displayOrientation
             // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.displayOrientation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.displayOrientation.FormattingEnabled = true;
+            this.displayOrientation.Items.AddRange(new object[] {
             "0",
             "@0",
             "90",
@@ -718,10 +710,10 @@
             "@flip180",
             "flip270",
             "@flip270"});
-            this.comboBox6.Location = new System.Drawing.Point(179, 83);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(94, 21);
-            this.comboBox6.TabIndex = 60;
+            this.displayOrientation.Location = new System.Drawing.Point(179, 83);
+            this.displayOrientation.Name = "displayOrientation";
+            this.displayOrientation.Size = new System.Drawing.Size(94, 21);
+            this.displayOrientation.TabIndex = 60;
             // 
             // label25
             // 
@@ -732,18 +724,18 @@
             this.label25.TabIndex = 59;
             this.label25.Text = "--display-orientation";
             // 
-            // comboBox5
+            // displayImePolicy
             // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.displayImePolicy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.displayImePolicy.FormattingEnabled = true;
+            this.displayImePolicy.Items.AddRange(new object[] {
             "local",
             "fallback",
             "hide"});
-            this.comboBox5.Location = new System.Drawing.Point(179, 36);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(91, 21);
-            this.comboBox5.TabIndex = 57;
+            this.displayImePolicy.Location = new System.Drawing.Point(179, 36);
+            this.displayImePolicy.Name = "displayImePolicy";
+            this.displayImePolicy.Size = new System.Drawing.Size(91, 21);
+            this.displayImePolicy.TabIndex = 57;
             // 
             // label24
             // 
@@ -754,23 +746,22 @@
             this.label24.TabIndex = 58;
             this.label24.Text = "--display-ime-policy";
             // 
-            // checkBox8
+            // disableScreensaver
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(150, 232);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(126, 17);
-            this.checkBox8.TabIndex = 56;
-            this.checkBox8.Text = "--disable-screensaver";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.disableScreensaver.AutoSize = true;
+            this.disableScreensaver.Location = new System.Drawing.Point(150, 232);
+            this.disableScreensaver.Name = "disableScreensaver";
+            this.disableScreensaver.Size = new System.Drawing.Size(126, 17);
+            this.disableScreensaver.TabIndex = 56;
+            this.disableScreensaver.Text = "--disable-screensaver";
+            this.disableScreensaver.UseVisualStyleBackColor = true;
             // 
-            // textBox13
+            // selectUsb
             // 
-            this.textBox13.Location = new System.Drawing.Point(9, 38);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(58, 20);
-            this.textBox13.TabIndex = 55;
-            this.textBox13.Text = "0";
+            this.selectUsb.Location = new System.Drawing.Point(9, 38);
+            this.selectUsb.Name = "selectUsb";
+            this.selectUsb.Size = new System.Drawing.Size(58, 20);
+            this.selectUsb.TabIndex = 55;
             // 
             // label23
             // 
@@ -790,31 +781,29 @@
             this.label22.TabIndex = 52;
             this.label22.Text = "--video-bit-rate";
             // 
-            // textBox12
+            // videoBitRate
             // 
-            this.textBox12.Location = new System.Drawing.Point(9, 37);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(71, 20);
-            this.textBox12.TabIndex = 53;
-            this.textBox12.Text = "8M";
+            this.videoBitRate.Location = new System.Drawing.Point(9, 37);
+            this.videoBitRate.Name = "videoBitRate";
+            this.videoBitRate.Size = new System.Drawing.Size(71, 20);
+            this.videoBitRate.TabIndex = 53;
             // 
-            // checkBox6
+            // alwaysOnTop
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(9, 164);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(97, 17);
-            this.checkBox6.TabIndex = 51;
-            this.checkBox6.Text = "--always-on-top";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.alwaysOnTop.AutoSize = true;
+            this.alwaysOnTop.Location = new System.Drawing.Point(9, 164);
+            this.alwaysOnTop.Name = "alwaysOnTop";
+            this.alwaysOnTop.Size = new System.Drawing.Size(97, 17);
+            this.alwaysOnTop.TabIndex = 51;
+            this.alwaysOnTop.Text = "--always-on-top";
+            this.alwaysOnTop.UseVisualStyleBackColor = true;
             // 
-            // textBox6
+            // orientation
             // 
-            this.textBox6.Location = new System.Drawing.Point(75, 258);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(54, 20);
-            this.textBox6.TabIndex = 50;
-            this.textBox6.Text = "0";
+            this.orientation.Location = new System.Drawing.Point(75, 258);
+            this.orientation.Name = "orientation";
+            this.orientation.Size = new System.Drawing.Size(54, 20);
+            this.orientation.TabIndex = 50;
             // 
             // label19
             // 
@@ -834,47 +823,43 @@
             this.label11.TabIndex = 47;
             this.label11.Text = "--video-buffer";
             // 
-            // crop4
+            // cropY
             // 
-            this.crop4.Location = new System.Drawing.Point(131, 210);
-            this.crop4.Name = "crop4";
-            this.crop4.Size = new System.Drawing.Size(34, 20);
-            this.crop4.TabIndex = 43;
-            this.crop4.Text = "y";
+            this.cropY.Location = new System.Drawing.Point(131, 210);
+            this.cropY.Name = "cropY";
+            this.cropY.Size = new System.Drawing.Size(34, 20);
+            this.cropY.TabIndex = 43;
             // 
-            // textBox8
+            // videoBuffer
             // 
-            this.textBox8.Location = new System.Drawing.Point(88, 80);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(77, 20);
-            this.textBox8.TabIndex = 48;
-            this.textBox8.Text = "200ms";
+            this.videoBuffer.Location = new System.Drawing.Point(88, 80);
+            this.videoBuffer.Name = "videoBuffer";
+            this.videoBuffer.Size = new System.Drawing.Size(77, 20);
+            this.videoBuffer.TabIndex = 48;
             // 
-            // crop3
+            // cropX
             // 
-            this.crop3.Location = new System.Drawing.Point(90, 210);
-            this.crop3.Name = "crop3";
-            this.crop3.Size = new System.Drawing.Size(34, 20);
-            this.crop3.TabIndex = 42;
-            this.crop3.Text = "x";
+            this.cropX.Location = new System.Drawing.Point(90, 210);
+            this.cropX.Name = "cropX";
+            this.cropX.Size = new System.Drawing.Size(34, 20);
+            this.cropX.TabIndex = 42;
             // 
-            // crop2
+            // cropHeight
             // 
-            this.crop2.Location = new System.Drawing.Point(49, 210);
-            this.crop2.Name = "crop2";
-            this.crop2.Size = new System.Drawing.Size(34, 20);
-            this.crop2.TabIndex = 41;
-            this.crop2.Text = "height";
+            this.cropHeight.Location = new System.Drawing.Point(49, 210);
+            this.cropHeight.Name = "cropHeight";
+            this.cropHeight.Size = new System.Drawing.Size(34, 20);
+            this.cropHeight.TabIndex = 41;
             // 
-            // checkBox16
+            // noAudioPlayback
             // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(9, 152);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(119, 17);
-            this.checkBox16.TabIndex = 51;
-            this.checkBox16.Text = "--no-audio-playback";
-            this.checkBox16.UseVisualStyleBackColor = true;
+            this.noAudioPlayback.AutoSize = true;
+            this.noAudioPlayback.Location = new System.Drawing.Point(9, 149);
+            this.noAudioPlayback.Name = "noAudioPlayback";
+            this.noAudioPlayback.Size = new System.Drawing.Size(119, 17);
+            this.noAudioPlayback.TabIndex = 51;
+            this.noAudioPlayback.Text = "--no-audio-playback";
+            this.noAudioPlayback.UseVisualStyleBackColor = true;
             // 
             // label21
             // 
@@ -885,19 +870,19 @@
             this.label21.TabIndex = 50;
             this.label21.Text = "--audio-encoder";
             // 
-            // comboBox4
+            // audioEncoder
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.audioEncoder.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.audioEncoder.FormattingEnabled = true;
+            this.audioEncoder.Items.AddRange(new object[] {
             "opus",
             "aac",
             "flac",
             "raw"});
-            this.comboBox4.Location = new System.Drawing.Point(9, 124);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(70, 21);
-            this.comboBox4.TabIndex = 49;
+            this.audioEncoder.Location = new System.Drawing.Point(9, 124);
+            this.audioEncoder.Name = "audioEncoder";
+            this.audioEncoder.Size = new System.Drawing.Size(70, 21);
+            this.audioEncoder.TabIndex = 49;
             // 
             // label12
             // 
@@ -908,21 +893,19 @@
             this.label12.TabIndex = 47;
             this.label12.Text = "--audio-output-buffer";
             // 
-            // textBox9
+            // audioOutputBuffer
             // 
-            this.textBox9.Location = new System.Drawing.Point(89, 81);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(130, 20);
-            this.textBox9.TabIndex = 48;
-            this.textBox9.Text = "10";
+            this.audioOutputBuffer.Location = new System.Drawing.Point(89, 81);
+            this.audioOutputBuffer.Name = "audioOutputBuffer";
+            this.audioOutputBuffer.Size = new System.Drawing.Size(130, 20);
+            this.audioOutputBuffer.TabIndex = 48;
             // 
-            // textBox7
+            // audioBitRate
             // 
-            this.textBox7.Location = new System.Drawing.Point(9, 37);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(71, 20);
-            this.textBox7.TabIndex = 45;
-            this.textBox7.Text = "64K - 64000";
+            this.audioBitRate.Location = new System.Drawing.Point(9, 37);
+            this.audioBitRate.Name = "audioBitRate";
+            this.audioBitRate.Size = new System.Drawing.Size(71, 20);
+            this.audioBitRate.TabIndex = 45;
             // 
             // label10
             // 
@@ -933,15 +916,15 @@
             this.label10.TabIndex = 44;
             this.label10.Text = "--audio-bit-rate";
             // 
-            // checkBox3
+            // audioCodecOptions
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(9, 197);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(238, 17);
-            this.checkBox3.TabIndex = 42;
-            this.checkBox3.Text = "--audio-codec-options=flac-compression-level";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.audioCodecOptions.AutoSize = true;
+            this.audioCodecOptions.Location = new System.Drawing.Point(9, 193);
+            this.audioCodecOptions.Name = "audioCodecOptions";
+            this.audioCodecOptions.Size = new System.Drawing.Size(238, 17);
+            this.audioCodecOptions.TabIndex = 42;
+            this.audioCodecOptions.Text = "--audio-codec-options=flac-compression-level";
+            this.audioCodecOptions.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -961,21 +944,21 @@
             this.trackBar1.Size = new System.Drawing.Size(210, 32);
             this.trackBar1.TabIndex = 40;
             // 
-            // checkBox2
+            // audioDup
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(134, 150);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(79, 17);
-            this.checkBox2.TabIndex = 46;
-            this.checkBox2.Text = "--audio-dup";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.audioDup.AutoSize = true;
+            this.audioDup.Location = new System.Drawing.Point(134, 150);
+            this.audioDup.Name = "audioDup";
+            this.audioDup.Size = new System.Drawing.Size(79, 17);
+            this.audioDup.TabIndex = 46;
+            this.audioDup.Text = "--audio-dup";
+            this.audioDup.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // audioSource
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.audioSource.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.audioSource.FormattingEnabled = true;
+            this.audioSource.Items.AddRange(new object[] {
             "output",
             "playback",
             "mic",
@@ -987,10 +970,10 @@
             "voice-call-uplink",
             "voice-call-downlink",
             "voice-performance"});
-            this.comboBox1.Location = new System.Drawing.Point(89, 123);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(130, 21);
-            this.comboBox1.TabIndex = 44;
+            this.audioSource.Location = new System.Drawing.Point(89, 123);
+            this.audioSource.Name = "audioSource";
+            this.audioSource.Size = new System.Drawing.Size(130, 21);
+            this.audioSource.TabIndex = 44;
             // 
             // label8
             // 
@@ -1001,13 +984,12 @@
             this.label8.TabIndex = 40;
             this.label8.Text = "--audio-buffer";
             // 
-            // textBox5
+            // audioBuffer
             // 
-            this.textBox5.Location = new System.Drawing.Point(89, 36);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(130, 20);
-            this.textBox5.TabIndex = 41;
-            this.textBox5.Text = "60";
+            this.audioBuffer.Location = new System.Drawing.Point(89, 36);
+            this.audioBuffer.Name = "audioBuffer";
+            this.audioBuffer.Size = new System.Drawing.Size(130, 20);
+            this.audioBuffer.TabIndex = 41;
             // 
             // consoleOutputRichTextbox
             // 
@@ -1024,9 +1006,6 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.consoleOutputRichTextbox);
             this.groupBox3.Location = new System.Drawing.Point(12, 499);
             this.groupBox3.Name = "groupBox3";
@@ -1035,55 +1014,55 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "💻 Console Output";
             // 
-            // checkBox13
+            // listDisplays
             // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(183, 216);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(84, 17);
-            this.checkBox13.TabIndex = 54;
-            this.checkBox13.Text = "--list-displays";
-            this.checkBox13.UseVisualStyleBackColor = true;
+            this.listDisplays.AutoSize = true;
+            this.listDisplays.Location = new System.Drawing.Point(183, 216);
+            this.listDisplays.Name = "listDisplays";
+            this.listDisplays.Size = new System.Drawing.Size(84, 17);
+            this.listDisplays.TabIndex = 54;
+            this.listDisplays.Text = "--list-displays";
+            this.listDisplays.UseVisualStyleBackColor = true;
             // 
-            // checkBox12
+            // listApps
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(380, 134);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(70, 17);
-            this.checkBox12.TabIndex = 53;
-            this.checkBox12.Text = "--list-apps";
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.listApps.AutoSize = true;
+            this.listApps.Location = new System.Drawing.Point(380, 134);
+            this.listApps.Name = "listApps";
+            this.listApps.Size = new System.Drawing.Size(70, 17);
+            this.listApps.TabIndex = 53;
+            this.listApps.Text = "--list-apps";
+            this.listApps.UseVisualStyleBackColor = true;
             // 
-            // listencodersCheckBox
+            // listEncoders
             // 
-            this.listencodersCheckBox.AutoSize = true;
-            this.listencodersCheckBox.Location = new System.Drawing.Point(230, 134);
-            this.listencodersCheckBox.Name = "listencodersCheckBox";
-            this.listencodersCheckBox.Size = new System.Drawing.Size(91, 17);
-            this.listencodersCheckBox.TabIndex = 43;
-            this.listencodersCheckBox.Text = "--list-encoders";
-            this.listencodersCheckBox.UseVisualStyleBackColor = true;
+            this.listEncoders.AutoSize = true;
+            this.listEncoders.Location = new System.Drawing.Point(230, 134);
+            this.listEncoders.Name = "listEncoders";
+            this.listEncoders.Size = new System.Drawing.Size(91, 17);
+            this.listEncoders.TabIndex = 43;
+            this.listEncoders.Text = "--list-encoders";
+            this.listEncoders.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // listCameraSizes
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(121, 67);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(108, 17);
-            this.checkBox5.TabIndex = 50;
-            this.checkBox5.Text = "--list-camera-sizes";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.listCameraSizes.AutoSize = true;
+            this.listCameraSizes.Location = new System.Drawing.Point(121, 67);
+            this.listCameraSizes.Name = "listCameraSizes";
+            this.listCameraSizes.Size = new System.Drawing.Size(108, 17);
+            this.listCameraSizes.TabIndex = 50;
+            this.listCameraSizes.Text = "--list-camera-sizes";
+            this.listCameraSizes.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // listCameras
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(121, 43);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(87, 17);
-            this.checkBox4.TabIndex = 49;
-            this.checkBox4.Text = "--list-cameras";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.listCameras.AutoSize = true;
+            this.listCameras.Location = new System.Drawing.Point(121, 43);
+            this.listCameras.Name = "listCameras";
+            this.listCameras.Size = new System.Drawing.Size(87, 17);
+            this.listCameras.TabIndex = 49;
+            this.listCameras.Text = "--list-cameras";
+            this.listCameras.UseVisualStyleBackColor = true;
             // 
             // consoleToolStripMenuItem
             // 
@@ -1266,39 +1245,39 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.checkBox7);
+            this.groupBox4.Controls.Add(this.cameraHighSpeed);
             this.groupBox4.Controls.Add(this.label16);
-            this.groupBox4.Controls.Add(this.textBox1);
-            this.groupBox4.Controls.Add(this.checkBox5);
-            this.groupBox4.Controls.Add(this.orientationComboBox);
-            this.groupBox4.Controls.Add(this.textBox11);
-            this.groupBox4.Controls.Add(this.checkBox4);
+            this.groupBox4.Controls.Add(this.cameraSizeWidth);
+            this.groupBox4.Controls.Add(this.listCameraSizes);
+            this.groupBox4.Controls.Add(this.captureOrientation);
+            this.groupBox4.Controls.Add(this.cameraFps);
+            this.groupBox4.Controls.Add(this.listCameras);
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.label17);
-            this.groupBox4.Controls.Add(this.textBox10);
-            this.groupBox4.Controls.Add(this.textBox4);
-            this.groupBox4.Controls.Add(this.textBox2);
+            this.groupBox4.Controls.Add(this.cameraId);
+            this.groupBox4.Controls.Add(this.cameraAr);
+            this.groupBox4.Controls.Add(this.cameraSizeHeight);
             this.groupBox4.Controls.Add(this.label15);
             this.groupBox4.Controls.Add(this.label18);
             this.groupBox4.Controls.Add(this.label20);
-            this.groupBox4.Controls.Add(this.comboBox3);
+            this.groupBox4.Controls.Add(this.cameraFacing);
             this.groupBox4.Controls.Add(this.label14);
-            this.groupBox4.Location = new System.Drawing.Point(12, 323);
+            this.groupBox4.Location = new System.Drawing.Point(12, 326);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(248, 170);
             this.groupBox4.TabIndex = 40;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "📸 Camera";
             // 
-            // checkBox7
+            // cameraHighSpeed
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(121, 20);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(122, 17);
-            this.checkBox7.TabIndex = 51;
-            this.checkBox7.Text = "--camera-high-speed";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.cameraHighSpeed.AutoSize = true;
+            this.cameraHighSpeed.Location = new System.Drawing.Point(121, 20);
+            this.cameraHighSpeed.Name = "cameraHighSpeed";
+            this.cameraHighSpeed.Size = new System.Drawing.Size(122, 17);
+            this.cameraHighSpeed.TabIndex = 51;
+            this.cameraHighSpeed.Text = "--camera-high-speed";
+            this.cameraHighSpeed.UseVisualStyleBackColor = true;
             // 
             // label16
             // 
@@ -1309,21 +1288,19 @@
             this.label16.TabIndex = 53;
             this.label16.Text = "--camera-size";
             // 
-            // textBox1
+            // cameraSizeWidth
             // 
-            this.textBox1.Location = new System.Drawing.Point(9, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(35, 20);
-            this.textBox1.TabIndex = 54;
-            this.textBox1.Text = "width";
+            this.cameraSizeWidth.Location = new System.Drawing.Point(9, 37);
+            this.cameraSizeWidth.Name = "cameraSizeWidth";
+            this.cameraSizeWidth.Size = new System.Drawing.Size(35, 20);
+            this.cameraSizeWidth.TabIndex = 54;
             // 
-            // textBox11
+            // cameraFps
             // 
-            this.textBox11.Location = new System.Drawing.Point(77, 65);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(30, 20);
-            this.textBox11.TabIndex = 61;
-            this.textBox11.Text = "30";
+            this.cameraFps.Location = new System.Drawing.Point(77, 65);
+            this.cameraFps.Name = "cameraFps";
+            this.cameraFps.Size = new System.Drawing.Size(30, 20);
+            this.cameraFps.TabIndex = 61;
             // 
             // label17
             // 
@@ -1334,29 +1311,26 @@
             this.label17.TabIndex = 56;
             this.label17.Text = "x";
             // 
-            // textBox10
+            // cameraId
             // 
-            this.textBox10.Location = new System.Drawing.Point(183, 91);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(55, 20);
-            this.textBox10.TabIndex = 50;
-            this.textBox10.Text = "1";
+            this.cameraId.Location = new System.Drawing.Point(183, 91);
+            this.cameraId.Name = "cameraId";
+            this.cameraId.Size = new System.Drawing.Size(55, 20);
+            this.cameraId.TabIndex = 50;
             // 
-            // textBox4
+            // cameraAr
             // 
-            this.textBox4.Location = new System.Drawing.Point(77, 91);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(30, 20);
-            this.textBox4.TabIndex = 59;
-            this.textBox4.Text = "1";
+            this.cameraAr.Location = new System.Drawing.Point(77, 91);
+            this.cameraAr.Name = "cameraAr";
+            this.cameraAr.Size = new System.Drawing.Size(30, 20);
+            this.cameraAr.TabIndex = 59;
             // 
-            // textBox2
+            // cameraSizeHeight
             // 
-            this.textBox2.Location = new System.Drawing.Point(66, 36);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(35, 20);
-            this.textBox2.TabIndex = 55;
-            this.textBox2.Text = "height";
+            this.cameraSizeHeight.Location = new System.Drawing.Point(66, 36);
+            this.cameraSizeHeight.Name = "cameraSizeHeight";
+            this.cameraSizeHeight.Size = new System.Drawing.Size(35, 20);
+            this.cameraSizeHeight.TabIndex = 55;
             // 
             // label15
             // 
@@ -1385,18 +1359,18 @@
             this.label20.TabIndex = 60;
             this.label20.Text = "--camera-fps";
             // 
-            // comboBox3
+            // cameraFacing
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cameraFacing.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cameraFacing.FormattingEnabled = true;
+            this.cameraFacing.Items.AddRange(new object[] {
             "front",
             "back",
             "external"});
-            this.comboBox3.Location = new System.Drawing.Point(122, 138);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(76, 21);
-            this.comboBox3.TabIndex = 51;
+            this.cameraFacing.Location = new System.Drawing.Point(122, 138);
+            this.cameraFacing.Name = "cameraFacing";
+            this.cameraFacing.Size = new System.Drawing.Size(76, 21);
+            this.cameraFacing.TabIndex = 51;
             // 
             // label14
             // 
@@ -1425,62 +1399,62 @@
             this.label13.TabIndex = 50;
             this.label13.Text = "--video-source";
             // 
-            // comboBox2
+            // videoSource
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.videoSource.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.videoSource.FormattingEnabled = true;
+            this.videoSource.Items.AddRange(new object[] {
             "display",
             "camera"});
-            this.comboBox2.Location = new System.Drawing.Point(9, 124);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(68, 21);
-            this.comboBox2.TabIndex = 49;
+            this.videoSource.Location = new System.Drawing.Point(9, 124);
+            this.videoSource.Name = "videoSource";
+            this.videoSource.Size = new System.Drawing.Size(68, 21);
+            this.videoSource.TabIndex = 49;
             // 
-            // checkBox18
+            // noClipboardAutosync
             // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Location = new System.Drawing.Point(380, 19);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(136, 17);
-            this.checkBox18.TabIndex = 42;
-            this.checkBox18.Text = "--no-clipboard-autosync";
-            this.checkBox18.UseVisualStyleBackColor = true;
+            this.noClipboardAutosync.AutoSize = true;
+            this.noClipboardAutosync.Location = new System.Drawing.Point(380, 19);
+            this.noClipboardAutosync.Name = "noClipboardAutosync";
+            this.noClipboardAutosync.Size = new System.Drawing.Size(136, 17);
+            this.noClipboardAutosync.TabIndex = 42;
+            this.noClipboardAutosync.Text = "--no-clipboard-autosync";
+            this.noClipboardAutosync.UseVisualStyleBackColor = true;
             // 
-            // checkBox17
+            // noCleanup
             // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Location = new System.Drawing.Point(230, 88);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(85, 17);
-            this.checkBox17.TabIndex = 41;
-            this.checkBox17.Text = "--no-cleanup";
-            this.checkBox17.UseVisualStyleBackColor = true;
+            this.noCleanup.AutoSize = true;
+            this.noCleanup.Location = new System.Drawing.Point(230, 88);
+            this.noCleanup.Name = "noCleanup";
+            this.noCleanup.Size = new System.Drawing.Size(85, 17);
+            this.noCleanup.TabIndex = 41;
+            this.noCleanup.Text = "--no-cleanup";
+            this.noCleanup.UseVisualStyleBackColor = true;
             // 
-            // comboBox14
+            // verbosity
             // 
-            this.comboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Items.AddRange(new object[] {
+            this.verbosity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.verbosity.FormattingEnabled = true;
+            this.verbosity.Items.AddRange(new object[] {
             "verbose",
             "debug",
             "info",
             "warn",
             "error"});
-            this.comboBox14.Location = new System.Drawing.Point(67, 242);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(50, 21);
-            this.comboBox14.TabIndex = 105;
+            this.verbosity.Location = new System.Drawing.Point(67, 242);
+            this.verbosity.Name = "verbosity";
+            this.verbosity.Size = new System.Drawing.Size(50, 21);
+            this.verbosity.TabIndex = 105;
             // 
-            // checkBox36
+            // stayAwake
             // 
-            this.checkBox36.AutoSize = true;
-            this.checkBox36.Location = new System.Drawing.Point(230, 19);
-            this.checkBox36.Name = "checkBox36";
-            this.checkBox36.Size = new System.Drawing.Size(86, 17);
-            this.checkBox36.TabIndex = 85;
-            this.checkBox36.Text = "--stay-awake";
-            this.checkBox36.UseVisualStyleBackColor = true;
+            this.stayAwake.AutoSize = true;
+            this.stayAwake.Location = new System.Drawing.Point(230, 19);
+            this.stayAwake.Name = "stayAwake";
+            this.stayAwake.Size = new System.Drawing.Size(86, 17);
+            this.stayAwake.TabIndex = 85;
+            this.stayAwake.Text = "--stay-awake";
+            this.stayAwake.UseVisualStyleBackColor = true;
             // 
             // label45
             // 
@@ -1491,23 +1465,22 @@
             this.label45.TabIndex = 63;
             this.label45.Text = "--verbosity";
             // 
-            // checkBox35
+            // version
             // 
-            this.checkBox35.AutoSize = true;
-            this.checkBox35.Location = new System.Drawing.Point(130, 243);
-            this.checkBox35.Name = "checkBox35";
-            this.checkBox35.Size = new System.Drawing.Size(66, 17);
-            this.checkBox35.TabIndex = 104;
-            this.checkBox35.Text = "--version";
-            this.checkBox35.UseVisualStyleBackColor = true;
+            this.version.AutoSize = true;
+            this.version.Location = new System.Drawing.Point(130, 243);
+            this.version.Name = "version";
+            this.version.Size = new System.Drawing.Size(66, 17);
+            this.version.TabIndex = 104;
+            this.version.Text = "--version";
+            this.version.UseVisualStyleBackColor = true;
             // 
-            // textBox25
+            // timeLimit
             // 
-            this.textBox25.Location = new System.Drawing.Point(64, 97);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(148, 20);
-            this.textBox25.TabIndex = 101;
-            this.textBox25.Text = "99 (second)";
+            this.timeLimit.Location = new System.Drawing.Point(64, 97);
+            this.timeLimit.Name = "timeLimit";
+            this.timeLimit.Size = new System.Drawing.Size(148, 20);
+            this.timeLimit.TabIndex = 101;
             // 
             // label43
             // 
@@ -1518,23 +1491,22 @@
             this.label43.TabIndex = 100;
             this.label43.Text = "--time-limit";
             // 
-            // checkBox33
+            // turnScreenOff
             // 
-            this.checkBox33.AutoSize = true;
-            this.checkBox33.Location = new System.Drawing.Point(230, 42);
-            this.checkBox33.Name = "checkBox33";
-            this.checkBox33.Size = new System.Drawing.Size(100, 17);
-            this.checkBox33.TabIndex = 94;
-            this.checkBox33.Text = "--turn-screen-off";
-            this.checkBox33.UseVisualStyleBackColor = true;
+            this.turnScreenOff.AutoSize = true;
+            this.turnScreenOff.Location = new System.Drawing.Point(230, 42);
+            this.turnScreenOff.Name = "turnScreenOff";
+            this.turnScreenOff.Size = new System.Drawing.Size(100, 17);
+            this.turnScreenOff.TabIndex = 94;
+            this.turnScreenOff.Text = "--turn-screen-off";
+            this.turnScreenOff.UseVisualStyleBackColor = true;
             // 
-            // textBox22
+            // screenOffTimeout
             // 
-            this.textBox22.Location = new System.Drawing.Point(109, 123);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(103, 20);
-            this.textBox22.TabIndex = 93;
-            this.textBox22.Text = "30";
+            this.screenOffTimeout.Location = new System.Drawing.Point(109, 123);
+            this.screenOffTimeout.Name = "screenOffTimeout";
+            this.screenOffTimeout.Size = new System.Drawing.Size(103, 20);
+            this.screenOffTimeout.TabIndex = 93;
             // 
             // label39
             // 
@@ -1545,38 +1517,38 @@
             this.label39.TabIndex = 92;
             this.label39.Text = "--screen-off-timeout";
             // 
-            // checkBox29
+            // preferText
             // 
-            this.checkBox29.AutoSize = true;
-            this.checkBox29.Location = new System.Drawing.Point(230, 111);
-            this.checkBox29.Name = "checkBox29";
-            this.checkBox29.Size = new System.Drawing.Size(79, 17);
-            this.checkBox29.TabIndex = 85;
-            this.checkBox29.Text = "--prefer-text";
-            this.checkBox29.UseVisualStyleBackColor = true;
+            this.preferText.AutoSize = true;
+            this.preferText.Location = new System.Drawing.Point(230, 111);
+            this.preferText.Name = "preferText";
+            this.preferText.Size = new System.Drawing.Size(79, 17);
+            this.preferText.TabIndex = 85;
+            this.preferText.Text = "--prefer-text";
+            this.preferText.UseVisualStyleBackColor = true;
             // 
-            // checkBox28
+            // powerOffOnClose
             // 
-            this.checkBox28.AutoSize = true;
-            this.checkBox28.Location = new System.Drawing.Point(230, 65);
-            this.checkBox28.Name = "checkBox28";
-            this.checkBox28.Size = new System.Drawing.Size(119, 17);
-            this.checkBox28.TabIndex = 84;
-            this.checkBox28.Text = "--power-off-on-close";
-            this.checkBox28.UseVisualStyleBackColor = true;
+            this.powerOffOnClose.AutoSize = true;
+            this.powerOffOnClose.Location = new System.Drawing.Point(230, 65);
+            this.powerOffOnClose.Name = "powerOffOnClose";
+            this.powerOffOnClose.Size = new System.Drawing.Size(119, 17);
+            this.powerOffOnClose.TabIndex = 84;
+            this.powerOffOnClose.Text = "--power-off-on-close";
+            this.powerOffOnClose.UseVisualStyleBackColor = true;
             // 
-            // comboBox10
+            // pauseOnExit
             // 
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.pauseOnExit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.pauseOnExit.FormattingEnabled = true;
+            this.pauseOnExit.Items.AddRange(new object[] {
             "true",
             "false",
             "if-error"});
-            this.comboBox10.Location = new System.Drawing.Point(88, 70);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(124, 21);
-            this.comboBox10.TabIndex = 83;
+            this.pauseOnExit.Location = new System.Drawing.Point(88, 70);
+            this.pauseOnExit.Name = "pauseOnExit";
+            this.pauseOnExit.Size = new System.Drawing.Size(124, 21);
+            this.pauseOnExit.TabIndex = 83;
             // 
             // label34
             // 
@@ -1587,43 +1559,42 @@
             this.label34.TabIndex = 82;
             this.label34.Text = "--pause-on-exit";
             // 
-            // checkBox23
+            // noPowerOn
             // 
-            this.checkBox23.AutoSize = true;
-            this.checkBox23.Location = new System.Drawing.Point(380, 88);
-            this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(91, 17);
-            this.checkBox23.TabIndex = 47;
-            this.checkBox23.Text = "--no-power-on";
-            this.checkBox23.UseVisualStyleBackColor = true;
+            this.noPowerOn.AutoSize = true;
+            this.noPowerOn.Location = new System.Drawing.Point(380, 88);
+            this.noPowerOn.Name = "noPowerOn";
+            this.noPowerOn.Size = new System.Drawing.Size(91, 17);
+            this.noPowerOn.TabIndex = 47;
+            this.noPowerOn.Text = "--no-power-on";
+            this.noPowerOn.UseVisualStyleBackColor = true;
             // 
-            // checkBox21
+            // noMipmaps
             // 
-            this.checkBox21.AutoSize = true;
-            this.checkBox21.Location = new System.Drawing.Point(380, 65);
-            this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(88, 17);
-            this.checkBox21.TabIndex = 45;
-            this.checkBox21.Text = "--no-mipmaps";
-            this.checkBox21.UseVisualStyleBackColor = true;
+            this.noMipmaps.AutoSize = true;
+            this.noMipmaps.Location = new System.Drawing.Point(380, 65);
+            this.noMipmaps.Name = "noMipmaps";
+            this.noMipmaps.Size = new System.Drawing.Size(88, 17);
+            this.noMipmaps.TabIndex = 45;
+            this.noMipmaps.Text = "--no-mipmaps";
+            this.noMipmaps.UseVisualStyleBackColor = true;
             // 
-            // checkBox19
+            // noDownsizeOnError
             // 
-            this.checkBox19.AutoSize = true;
-            this.checkBox19.Location = new System.Drawing.Point(380, 42);
-            this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(130, 17);
-            this.checkBox19.TabIndex = 43;
-            this.checkBox19.Text = "--no-downsize-on-error";
-            this.checkBox19.UseVisualStyleBackColor = true;
+            this.noDownsizeOnError.AutoSize = true;
+            this.noDownsizeOnError.Location = new System.Drawing.Point(380, 42);
+            this.noDownsizeOnError.Name = "noDownsizeOnError";
+            this.noDownsizeOnError.Size = new System.Drawing.Size(130, 17);
+            this.noDownsizeOnError.TabIndex = 43;
+            this.noDownsizeOnError.Text = "--no-downsize-on-error";
+            this.noDownsizeOnError.UseVisualStyleBackColor = true;
             // 
-            // textBox26
+            // tunnelPort
             // 
-            this.textBox26.Location = new System.Drawing.Point(108, 171);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(100, 20);
-            this.textBox26.TabIndex = 103;
-            this.textBox26.Text = "27183:27199";
+            this.tunnelPort.Location = new System.Drawing.Point(108, 171);
+            this.tunnelPort.Name = "tunnelPort";
+            this.tunnelPort.Size = new System.Drawing.Size(100, 20);
+            this.tunnelPort.TabIndex = 103;
             // 
             // label44
             // 
@@ -1634,23 +1605,22 @@
             this.label44.TabIndex = 102;
             this.label44.Text = "--tunnel-port";
             // 
-            // checkBox34
+            // showTouches
             // 
-            this.checkBox34.AutoSize = true;
-            this.checkBox34.Location = new System.Drawing.Point(117, 85);
-            this.checkBox34.Name = "checkBox34";
-            this.checkBox34.Size = new System.Drawing.Size(98, 17);
-            this.checkBox34.TabIndex = 97;
-            this.checkBox34.Text = "--show-touches";
-            this.checkBox34.UseVisualStyleBackColor = true;
+            this.showTouches.AutoSize = true;
+            this.showTouches.Location = new System.Drawing.Point(117, 85);
+            this.showTouches.Name = "showTouches";
+            this.showTouches.Size = new System.Drawing.Size(98, 17);
+            this.showTouches.TabIndex = 97;
+            this.showTouches.Text = "--show-touches";
+            this.showTouches.UseVisualStyleBackColor = true;
             // 
-            // textBox23
+            // startApp
             // 
-            this.textBox23.Location = new System.Drawing.Point(66, 18);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(146, 20);
-            this.textBox23.TabIndex = 96;
-            this.textBox23.Text = "?firefox / +org.mozilla.firefox";
+            this.startApp.Location = new System.Drawing.Point(35, 19);
+            this.startApp.Name = "startApp";
+            this.startApp.Size = new System.Drawing.Size(146, 20);
+            this.startApp.TabIndex = 96;
             // 
             // label41
             // 
@@ -1670,13 +1640,12 @@
             this.button3.Text = "...";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // textBox20
+            // pushTarget
             // 
-            this.textBox20.Location = new System.Drawing.Point(78, 44);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(103, 20);
-            this.textBox20.TabIndex = 83;
-            this.textBox20.Text = "/sdcard/Download";
+            this.pushTarget.Location = new System.Drawing.Point(78, 44);
+            this.pushTarget.Name = "pushTarget";
+            this.pushTarget.Size = new System.Drawing.Size(103, 20);
+            this.pushTarget.TabIndex = 83;
             // 
             // label35
             // 
@@ -1687,13 +1656,12 @@
             this.label35.TabIndex = 82;
             this.label35.Text = "--push-target";
             // 
-            // textBox19
+            // port
             // 
-            this.textBox19.Location = new System.Drawing.Point(9, 128);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(90, 20);
-            this.textBox19.TabIndex = 83;
-            this.textBox19.Text = "27183:27199";
+            this.port.Location = new System.Drawing.Point(9, 128);
+            this.port.Name = "port";
+            this.port.Size = new System.Drawing.Size(90, 20);
+            this.port.TabIndex = 83;
             // 
             // label33
             // 
@@ -1704,21 +1672,21 @@
             this.label33.TabIndex = 82;
             this.label33.Text = "--port[:port]";
             // 
-            // checkBox22
+            // noMouseHover
             // 
-            this.checkBox22.AutoSize = true;
-            this.checkBox22.Location = new System.Drawing.Point(117, 108);
-            this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(108, 17);
-            this.checkBox22.TabIndex = 46;
-            this.checkBox22.Text = "--no-mouse-hover";
-            this.checkBox22.UseVisualStyleBackColor = true;
+            this.noMouseHover.AutoSize = true;
+            this.noMouseHover.Location = new System.Drawing.Point(117, 108);
+            this.noMouseHover.Name = "noMouseHover";
+            this.noMouseHover.Size = new System.Drawing.Size(108, 17);
+            this.noMouseHover.TabIndex = 46;
+            this.noMouseHover.Text = "--no-mouse-hover";
+            this.noMouseHover.UseVisualStyleBackColor = true;
             // 
-            // comboBox12
+            // recordOrientation
             // 
-            this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Items.AddRange(new object[] {
+            this.recordOrientation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.recordOrientation.FormattingEnabled = true;
+            this.recordOrientation.Items.AddRange(new object[] {
             "0",
             "@0",
             "90",
@@ -1735,10 +1703,10 @@
             "@flip180",
             "flip270",
             "@flip270"});
-            this.comboBox12.Location = new System.Drawing.Point(11, 73);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(94, 21);
-            this.comboBox12.TabIndex = 83;
+            this.recordOrientation.Location = new System.Drawing.Point(11, 73);
+            this.recordOrientation.Name = "recordOrientation";
+            this.recordOrientation.Size = new System.Drawing.Size(94, 21);
+            this.recordOrientation.TabIndex = 83;
             // 
             // label37
             // 
@@ -1749,11 +1717,11 @@
             this.label37.TabIndex = 82;
             this.label37.Text = "--record-orientation";
             // 
-            // comboBox11
+            // recordFormat
             // 
-            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.recordFormat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.recordFormat.FormattingEnabled = true;
+            this.recordFormat.Items.AddRange(new object[] {
             "mp4",
             "mkv",
             "m4a",
@@ -1762,18 +1730,17 @@
             "aac",
             "flac",
             "wav"});
-            this.comboBox11.Location = new System.Drawing.Point(93, 32);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(50, 21);
-            this.comboBox11.TabIndex = 63;
+            this.recordFormat.Location = new System.Drawing.Point(93, 32);
+            this.recordFormat.Name = "recordFormat";
+            this.recordFormat.Size = new System.Drawing.Size(50, 21);
+            this.recordFormat.TabIndex = 63;
             // 
-            // textBox21
+            // record
             // 
-            this.textBox21.Location = new System.Drawing.Point(11, 33);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(76, 20);
-            this.textBox21.TabIndex = 88;
-            this.textBox21.Text = "file";
+            this.record.Location = new System.Drawing.Point(11, 33);
+            this.record.Name = "record";
+            this.record.Size = new System.Drawing.Size(76, 20);
+            this.record.TabIndex = 88;
             // 
             // label36
             // 
@@ -1784,33 +1751,32 @@
             this.label36.TabIndex = 87;
             this.label36.Text = "--record";
             // 
-            // checkBox24
+            // noVdSystemDecorations
             // 
-            this.checkBox24.AutoSize = true;
-            this.checkBox24.Location = new System.Drawing.Point(150, 209);
-            this.checkBox24.Name = "checkBox24";
-            this.checkBox24.Size = new System.Drawing.Size(152, 17);
-            this.checkBox24.TabIndex = 49;
-            this.checkBox24.Text = "--no-vd-system-decorations";
-            this.checkBox24.UseVisualStyleBackColor = true;
+            this.noVdSystemDecorations.AutoSize = true;
+            this.noVdSystemDecorations.Location = new System.Drawing.Point(150, 209);
+            this.noVdSystemDecorations.Name = "noVdSystemDecorations";
+            this.noVdSystemDecorations.Size = new System.Drawing.Size(152, 17);
+            this.noVdSystemDecorations.TabIndex = 49;
+            this.noVdSystemDecorations.Text = "--no-vd-system-decorations";
+            this.noVdSystemDecorations.UseVisualStyleBackColor = true;
             // 
-            // checkBox25
+            // noVdDestroyContent
             // 
-            this.checkBox25.AutoSize = true;
-            this.checkBox25.Location = new System.Drawing.Point(9, 209);
-            this.checkBox25.Name = "checkBox25";
-            this.checkBox25.Size = new System.Drawing.Size(135, 17);
-            this.checkBox25.TabIndex = 48;
-            this.checkBox25.Text = "--no-vd-destroy-content";
-            this.checkBox25.UseVisualStyleBackColor = true;
+            this.noVdDestroyContent.AutoSize = true;
+            this.noVdDestroyContent.Location = new System.Drawing.Point(9, 209);
+            this.noVdDestroyContent.Name = "noVdDestroyContent";
+            this.noVdDestroyContent.Size = new System.Drawing.Size(135, 17);
+            this.noVdDestroyContent.TabIndex = 48;
+            this.noVdDestroyContent.Text = "--no-vd-destroy-content";
+            this.noVdDestroyContent.UseVisualStyleBackColor = true;
             // 
-            // textBox24
+            // tctPip
             // 
-            this.textBox24.Location = new System.Drawing.Point(9, 84);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(92, 20);
-            this.textBox24.TabIndex = 99;
-            this.textBox24.Text = "27183:27199";
+            this.tctPip.Location = new System.Drawing.Point(9, 84);
+            this.tctPip.Name = "tctPip";
+            this.tctPip.Size = new System.Drawing.Size(92, 20);
+            this.tctPip.TabIndex = 99;
             // 
             // label42
             // 
@@ -1830,45 +1796,45 @@
             this.label40.TabIndex = 63;
             this.label40.Text = "--shortcut-mod (ayarlanmadı)";
             // 
-            // checkBox32
+            // serial
             // 
-            this.checkBox32.AutoSize = true;
-            this.checkBox32.Location = new System.Drawing.Point(130, 220);
-            this.checkBox32.Name = "checkBox32";
-            this.checkBox32.Size = new System.Drawing.Size(56, 17);
-            this.checkBox32.TabIndex = 91;
-            this.checkBox32.Text = "--serial";
-            this.checkBox32.UseVisualStyleBackColor = true;
+            this.serial.AutoSize = true;
+            this.serial.Location = new System.Drawing.Point(130, 220);
+            this.serial.Name = "serial";
+            this.serial.Size = new System.Drawing.Size(56, 17);
+            this.serial.TabIndex = 91;
+            this.serial.Text = "--serial";
+            this.serial.UseVisualStyleBackColor = true;
             // 
-            // checkBox31
+            // requireAudio
             // 
-            this.checkBox31.AutoSize = true;
-            this.checkBox31.Location = new System.Drawing.Point(134, 174);
-            this.checkBox31.Name = "checkBox31";
-            this.checkBox31.Size = new System.Drawing.Size(93, 17);
-            this.checkBox31.TabIndex = 90;
-            this.checkBox31.Text = "--require-audio";
-            this.checkBox31.UseVisualStyleBackColor = true;
+            this.requireAudio.AutoSize = true;
+            this.requireAudio.Location = new System.Drawing.Point(134, 174);
+            this.requireAudio.Name = "requireAudio";
+            this.requireAudio.Size = new System.Drawing.Size(93, 17);
+            this.requireAudio.TabIndex = 90;
+            this.requireAudio.Text = "--require-audio";
+            this.requireAudio.UseVisualStyleBackColor = true;
             // 
-            // checkBox30
+            // rawKeyEvents
             // 
-            this.checkBox30.AutoSize = true;
-            this.checkBox30.Location = new System.Drawing.Point(117, 16);
-            this.checkBox30.Name = "checkBox30";
-            this.checkBox30.Size = new System.Drawing.Size(104, 17);
-            this.checkBox30.TabIndex = 89;
-            this.checkBox30.Text = "--raw-key-events";
-            this.checkBox30.UseVisualStyleBackColor = true;
+            this.rawKeyEvents.AutoSize = true;
+            this.rawKeyEvents.Location = new System.Drawing.Point(117, 16);
+            this.rawKeyEvents.Name = "rawKeyEvents";
+            this.rawKeyEvents.Size = new System.Drawing.Size(104, 17);
+            this.rawKeyEvents.TabIndex = 89;
+            this.rawKeyEvents.Text = "--raw-key-events";
+            this.rawKeyEvents.UseVisualStyleBackColor = true;
             // 
-            // checkBox20
+            // noKeyRepeat
             // 
-            this.checkBox20.AutoSize = true;
-            this.checkBox20.Location = new System.Drawing.Point(117, 39);
-            this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(97, 17);
-            this.checkBox20.TabIndex = 44;
-            this.checkBox20.Text = "--no-key-repeat";
-            this.checkBox20.UseVisualStyleBackColor = true;
+            this.noKeyRepeat.AutoSize = true;
+            this.noKeyRepeat.Location = new System.Drawing.Point(117, 39);
+            this.noKeyRepeat.Name = "noKeyRepeat";
+            this.noKeyRepeat.Size = new System.Drawing.Size(97, 17);
+            this.noKeyRepeat.TabIndex = 44;
+            this.noKeyRepeat.Text = "--no-key-repeat";
+            this.noKeyRepeat.UseVisualStyleBackColor = true;
             // 
             // label46
             // 
@@ -1879,31 +1845,29 @@
             this.label46.TabIndex = 83;
             this.label46.Text = "--video-encoder";
             // 
-            // textBox27
+            // videoEncoder
             // 
-            this.textBox27.Location = new System.Drawing.Point(88, 37);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(77, 20);
-            this.textBox27.TabIndex = 84;
-            this.textBox27.Text = "h265";
+            this.videoEncoder.Location = new System.Drawing.Point(88, 37);
+            this.videoEncoder.Name = "videoEncoder";
+            this.videoEncoder.Size = new System.Drawing.Size(77, 20);
+            this.videoEncoder.TabIndex = 84;
             // 
-            // checkBox37
+            // windowBorderless
             // 
-            this.checkBox37.AutoSize = true;
-            this.checkBox37.Location = new System.Drawing.Point(9, 186);
-            this.checkBox37.Name = "checkBox37";
-            this.checkBox37.Size = new System.Drawing.Size(119, 17);
-            this.checkBox37.TabIndex = 86;
-            this.checkBox37.Text = "--window-borderless";
-            this.checkBox37.UseVisualStyleBackColor = true;
+            this.windowBorderless.AutoSize = true;
+            this.windowBorderless.Location = new System.Drawing.Point(9, 186);
+            this.windowBorderless.Name = "windowBorderless";
+            this.windowBorderless.Size = new System.Drawing.Size(119, 17);
+            this.windowBorderless.TabIndex = 86;
+            this.windowBorderless.Text = "--window-borderless";
+            this.windowBorderless.UseVisualStyleBackColor = true;
             // 
-            // textBox28
+            // windowTitle
             // 
-            this.textBox28.Location = new System.Drawing.Point(10, 84);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(152, 20);
-            this.textBox28.TabIndex = 107;
-            this.textBox28.Text = "samsunggg";
+            this.windowTitle.Location = new System.Drawing.Point(10, 84);
+            this.windowTitle.Name = "windowTitle";
+            this.windowTitle.Size = new System.Drawing.Size(152, 20);
+            this.windowTitle.TabIndex = 107;
             // 
             // label47
             // 
@@ -1914,13 +1878,12 @@
             this.label47.TabIndex = 106;
             this.label47.Text = "--window-title";
             // 
-            // textBox32
+            // windowX
             // 
-            this.textBox32.Location = new System.Drawing.Point(10, 130);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(54, 20);
-            this.textBox32.TabIndex = 88;
-            this.textBox32.Text = "auto";
+            this.windowX.Location = new System.Drawing.Point(10, 130);
+            this.windowX.Name = "windowX";
+            this.windowX.Size = new System.Drawing.Size(54, 20);
+            this.windowX.TabIndex = 88;
             // 
             // label48
             // 
@@ -1931,13 +1894,12 @@
             this.label48.TabIndex = 87;
             this.label48.Text = "--window-x";
             // 
-            // textBox29
+            // windowY
             // 
-            this.textBox29.Location = new System.Drawing.Point(70, 130);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(54, 20);
-            this.textBox29.TabIndex = 90;
-            this.textBox29.Text = "auto";
+            this.windowY.Location = new System.Drawing.Point(70, 130);
+            this.windowY.Name = "windowY";
+            this.windowY.Size = new System.Drawing.Size(54, 20);
+            this.windowY.TabIndex = 90;
             // 
             // label49
             // 
@@ -1948,13 +1910,12 @@
             this.label49.TabIndex = 89;
             this.label49.Text = "--window-y";
             // 
-            // textBox30
+            // windowHeight
             // 
-            this.textBox30.Location = new System.Drawing.Point(92, 36);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(78, 20);
-            this.textBox30.TabIndex = 94;
-            this.textBox30.Text = "auto";
+            this.windowHeight.Location = new System.Drawing.Point(92, 36);
+            this.windowHeight.Name = "windowHeight";
+            this.windowHeight.Size = new System.Drawing.Size(78, 20);
+            this.windowHeight.TabIndex = 94;
             // 
             // label50
             // 
@@ -1965,13 +1926,12 @@
             this.label50.TabIndex = 93;
             this.label50.Text = "--window-height";
             // 
-            // textBox31
+            // windowWidth
             // 
-            this.textBox31.Location = new System.Drawing.Point(9, 36);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(74, 20);
-            this.textBox31.TabIndex = 92;
-            this.textBox31.Text = "auto";
+            this.windowWidth.Location = new System.Drawing.Point(9, 36);
+            this.windowWidth.Name = "windowWidth";
+            this.windowWidth.Size = new System.Drawing.Size(74, 20);
+            this.windowWidth.TabIndex = 92;
             // 
             // label51
             // 
@@ -1984,36 +1944,36 @@
             // 
             // VideoAndCodecGB
             // 
-            this.VideoAndCodecGB.Controls.Add(this.checkBox13);
+            this.VideoAndCodecGB.Controls.Add(this.listDisplays);
             this.VideoAndCodecGB.Controls.Add(this.groupBox1);
             this.VideoAndCodecGB.Controls.Add(this.label22);
-            this.VideoAndCodecGB.Controls.Add(this.textBox12);
+            this.VideoAndCodecGB.Controls.Add(this.videoBitRate);
             this.VideoAndCodecGB.Controls.Add(this.label5);
-            this.VideoAndCodecGB.Controls.Add(this.printfpsCheckBox);
+            this.VideoAndCodecGB.Controls.Add(this.printFps);
             this.VideoAndCodecGB.Controls.Add(this.label2);
-            this.VideoAndCodecGB.Controls.Add(this.checkBox15);
-            this.VideoAndCodecGB.Controls.Add(this.angleTextBox);
-            this.VideoAndCodecGB.Controls.Add(this.videocodecComboBox);
+            this.VideoAndCodecGB.Controls.Add(this.noPlayback);
+            this.VideoAndCodecGB.Controls.Add(this.angle);
+            this.VideoAndCodecGB.Controls.Add(this.videoCodec);
             this.VideoAndCodecGB.Controls.Add(this.label46);
-            this.VideoAndCodecGB.Controls.Add(this.textBox15);
-            this.VideoAndCodecGB.Controls.Add(this.textBox27);
+            this.VideoAndCodecGB.Controls.Add(this.maxSize);
+            this.VideoAndCodecGB.Controls.Add(this.videoEncoder);
             this.VideoAndCodecGB.Controls.Add(this.label13);
-            this.VideoAndCodecGB.Controls.Add(this.comboBox2);
-            this.VideoAndCodecGB.Controls.Add(this.novideoCheckBox);
+            this.VideoAndCodecGB.Controls.Add(this.videoSource);
+            this.VideoAndCodecGB.Controls.Add(this.noVideo);
             this.VideoAndCodecGB.Controls.Add(this.label7);
-            this.VideoAndCodecGB.Controls.Add(this.crop1);
-            this.VideoAndCodecGB.Controls.Add(this.checkBox26);
-            this.VideoAndCodecGB.Controls.Add(this.fpsTextBox);
-            this.VideoAndCodecGB.Controls.Add(this.crop2);
+            this.VideoAndCodecGB.Controls.Add(this.cropWidth);
+            this.VideoAndCodecGB.Controls.Add(this.noVideoPlayback);
+            this.VideoAndCodecGB.Controls.Add(this.maxFps);
+            this.VideoAndCodecGB.Controls.Add(this.cropHeight);
             this.VideoAndCodecGB.Controls.Add(this.label29);
-            this.VideoAndCodecGB.Controls.Add(this.crop4);
-            this.VideoAndCodecGB.Controls.Add(this.textBox8);
-            this.VideoAndCodecGB.Controls.Add(this.crop3);
+            this.VideoAndCodecGB.Controls.Add(this.cropY);
+            this.VideoAndCodecGB.Controls.Add(this.videoBuffer);
+            this.VideoAndCodecGB.Controls.Add(this.cropX);
             this.VideoAndCodecGB.Controls.Add(this.label1);
             this.VideoAndCodecGB.Controls.Add(this.label11);
-            this.VideoAndCodecGB.Location = new System.Drawing.Point(332, 38);
+            this.VideoAndCodecGB.Location = new System.Drawing.Point(332, 32);
             this.VideoAndCodecGB.Name = "VideoAndCodecGB";
-            this.VideoAndCodecGB.Size = new System.Drawing.Size(338, 282);
+            this.VideoAndCodecGB.Size = new System.Drawing.Size(338, 288);
             this.VideoAndCodecGB.TabIndex = 64;
             this.VideoAndCodecGB.TabStop = false;
             this.VideoAndCodecGB.Text = "🎬 Video";
@@ -2021,10 +1981,10 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label52);
-            this.groupBox1.Controls.Add(this.comboBox11);
+            this.groupBox1.Controls.Add(this.recordFormat);
             this.groupBox1.Controls.Add(this.label36);
-            this.groupBox1.Controls.Add(this.textBox21);
-            this.groupBox1.Controls.Add(this.comboBox12);
+            this.groupBox1.Controls.Add(this.record);
+            this.groupBox1.Controls.Add(this.recordOrientation);
             this.groupBox1.Controls.Add(this.label37);
             this.groupBox1.Location = new System.Drawing.Point(183, 14);
             this.groupBox1.Name = "groupBox1";
@@ -2044,63 +2004,63 @@
             // 
             // AudioGB
             // 
-            this.AudioGB.Controls.Add(this.checkBox3);
+            this.AudioGB.Controls.Add(this.audioCodecOptions);
             this.AudioGB.Controls.Add(this.label10);
             this.AudioGB.Controls.Add(this.trackBar1);
-            this.AudioGB.Controls.Add(this.textBox7);
-            this.AudioGB.Controls.Add(this.checkBox16);
+            this.AudioGB.Controls.Add(this.audioBitRate);
+            this.AudioGB.Controls.Add(this.noAudioPlayback);
             this.AudioGB.Controls.Add(this.label8);
-            this.AudioGB.Controls.Add(this.textBox5);
-            this.AudioGB.Controls.Add(this.audiocodecComboBox);
+            this.AudioGB.Controls.Add(this.audioBuffer);
+            this.AudioGB.Controls.Add(this.audioCodec);
             this.AudioGB.Controls.Add(this.label3);
             this.AudioGB.Controls.Add(this.label12);
-            this.AudioGB.Controls.Add(this.noaudioCheckBox);
-            this.AudioGB.Controls.Add(this.textBox9);
-            this.AudioGB.Controls.Add(this.comboBox1);
+            this.AudioGB.Controls.Add(this.noAudio);
+            this.AudioGB.Controls.Add(this.audioOutputBuffer);
+            this.AudioGB.Controls.Add(this.audioSource);
             this.AudioGB.Controls.Add(this.label9);
             this.AudioGB.Controls.Add(this.label21);
-            this.AudioGB.Controls.Add(this.comboBox4);
-            this.AudioGB.Controls.Add(this.checkBox31);
-            this.AudioGB.Controls.Add(this.checkBox2);
-            this.AudioGB.Location = new System.Drawing.Point(676, 38);
+            this.AudioGB.Controls.Add(this.audioEncoder);
+            this.AudioGB.Controls.Add(this.requireAudio);
+            this.AudioGB.Controls.Add(this.audioDup);
+            this.AudioGB.Location = new System.Drawing.Point(675, 32);
             this.AudioGB.Name = "AudioGB";
-            this.AudioGB.Size = new System.Drawing.Size(231, 282);
+            this.AudioGB.Size = new System.Drawing.Size(231, 288);
             this.AudioGB.TabIndex = 65;
             this.AudioGB.TabStop = false;
             this.AudioGB.Text = "🔊 Audio";
             // 
             // DisplayAndWindowGB
             // 
-            this.DisplayAndWindowGB.Controls.Add(this.checkBox8);
-            this.DisplayAndWindowGB.Controls.Add(this.textBox6);
+            this.DisplayAndWindowGB.Controls.Add(this.disableScreensaver);
+            this.DisplayAndWindowGB.Controls.Add(this.orientation);
             this.DisplayAndWindowGB.Controls.Add(this.label19);
             this.DisplayAndWindowGB.Controls.Add(this.label51);
-            this.DisplayAndWindowGB.Controls.Add(this.textBox31);
+            this.DisplayAndWindowGB.Controls.Add(this.windowWidth);
             this.DisplayAndWindowGB.Controls.Add(this.label38);
-            this.DisplayAndWindowGB.Controls.Add(this.checkBox25);
-            this.DisplayAndWindowGB.Controls.Add(this.checkBox24);
-            this.DisplayAndWindowGB.Controls.Add(this.comboBox5);
+            this.DisplayAndWindowGB.Controls.Add(this.noVdDestroyContent);
+            this.DisplayAndWindowGB.Controls.Add(this.noVdSystemDecorations);
+            this.DisplayAndWindowGB.Controls.Add(this.displayImePolicy);
             this.DisplayAndWindowGB.Controls.Add(this.label50);
-            this.DisplayAndWindowGB.Controls.Add(this.textBox32);
-            this.DisplayAndWindowGB.Controls.Add(this.comboBox13);
+            this.DisplayAndWindowGB.Controls.Add(this.windowX);
+            this.DisplayAndWindowGB.Controls.Add(this.renderDriver);
             this.DisplayAndWindowGB.Controls.Add(this.label48);
             this.DisplayAndWindowGB.Controls.Add(this.label49);
-            this.DisplayAndWindowGB.Controls.Add(this.textBox3);
-            this.DisplayAndWindowGB.Controls.Add(this.textBox30);
-            this.DisplayAndWindowGB.Controls.Add(this.textBox29);
-            this.DisplayAndWindowGB.Controls.Add(this.textBox18);
+            this.DisplayAndWindowGB.Controls.Add(this.displayId);
+            this.DisplayAndWindowGB.Controls.Add(this.windowHeight);
+            this.DisplayAndWindowGB.Controls.Add(this.windowY);
+            this.DisplayAndWindowGB.Controls.Add(this.newDisplayDpi);
             this.DisplayAndWindowGB.Controls.Add(this.label47);
-            this.DisplayAndWindowGB.Controls.Add(this.fullscreenCheckBox);
-            this.DisplayAndWindowGB.Controls.Add(this.comboBox6);
-            this.DisplayAndWindowGB.Controls.Add(this.textBox28);
-            this.DisplayAndWindowGB.Controls.Add(this.checkBox37);
+            this.DisplayAndWindowGB.Controls.Add(this.fullscreen);
+            this.DisplayAndWindowGB.Controls.Add(this.displayOrientation);
+            this.DisplayAndWindowGB.Controls.Add(this.windowTitle);
+            this.DisplayAndWindowGB.Controls.Add(this.windowBorderless);
             this.DisplayAndWindowGB.Controls.Add(this.label32);
-            this.DisplayAndWindowGB.Controls.Add(this.checkBox1);
-            this.DisplayAndWindowGB.Controls.Add(this.checkBox6);
+            this.DisplayAndWindowGB.Controls.Add(this.noWindow);
+            this.DisplayAndWindowGB.Controls.Add(this.alwaysOnTop);
             this.DisplayAndWindowGB.Controls.Add(this.label25);
             this.DisplayAndWindowGB.Controls.Add(this.label6);
-            this.DisplayAndWindowGB.Controls.Add(this.textBox16);
-            this.DisplayAndWindowGB.Controls.Add(this.textBox17);
+            this.DisplayAndWindowGB.Controls.Add(this.newDisplayWidth);
+            this.DisplayAndWindowGB.Controls.Add(this.newDisplayHeight);
             this.DisplayAndWindowGB.Controls.Add(this.label24);
             this.DisplayAndWindowGB.Location = new System.Drawing.Point(12, 32);
             this.DisplayAndWindowGB.Name = "DisplayAndWindowGB";
@@ -2111,22 +2071,22 @@
             // 
             // InputAndControlsGB
             // 
-            this.InputAndControlsGB.Controls.Add(this.comboBox7);
-            this.InputAndControlsGB.Controls.Add(this.checkBox10);
-            this.InputAndControlsGB.Controls.Add(this.checkBox14);
+            this.InputAndControlsGB.Controls.Add(this.gamepad);
+            this.InputAndControlsGB.Controls.Add(this.g);
+            this.InputAndControlsGB.Controls.Add(this.m);
             this.InputAndControlsGB.Controls.Add(this.label30);
             this.InputAndControlsGB.Controls.Add(this.label31);
-            this.InputAndControlsGB.Controls.Add(this.comboBox9);
+            this.InputAndControlsGB.Controls.Add(this.mouse);
             this.InputAndControlsGB.Controls.Add(this.label28);
-            this.InputAndControlsGB.Controls.Add(this.comboBox8);
-            this.InputAndControlsGB.Controls.Add(this.checkBox34);
-            this.InputAndControlsGB.Controls.Add(this.checkBox11);
-            this.InputAndControlsGB.Controls.Add(this.checkBox20);
+            this.InputAndControlsGB.Controls.Add(this.keyboard);
+            this.InputAndControlsGB.Controls.Add(this.showTouches);
+            this.InputAndControlsGB.Controls.Add(this.k);
+            this.InputAndControlsGB.Controls.Add(this.noKeyRepeat);
             this.InputAndControlsGB.Controls.Add(this.label27);
-            this.InputAndControlsGB.Controls.Add(this.nocontrolCheckBox);
-            this.InputAndControlsGB.Controls.Add(this.checkBox30);
+            this.InputAndControlsGB.Controls.Add(this.noControl);
+            this.InputAndControlsGB.Controls.Add(this.rawKeyEvents);
             this.InputAndControlsGB.Controls.Add(this.label40);
-            this.InputAndControlsGB.Controls.Add(this.checkBox22);
+            this.InputAndControlsGB.Controls.Add(this.noMouseHover);
             this.InputAndControlsGB.Location = new System.Drawing.Point(266, 326);
             this.InputAndControlsGB.Name = "InputAndControlsGB";
             this.InputAndControlsGB.Size = new System.Drawing.Size(285, 170);
@@ -2136,51 +2096,50 @@
             // 
             // ConnectionAndDeviceOptionsGB
             // 
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.comboBox14);
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.checkBox38);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.verbosity);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.killAdbOnClose);
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.label45);
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.textBox33);
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.checkBox35);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.tunnelHost);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.version);
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.label53);
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.checkBox32);
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.textBox26);
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.textBox13);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.serial);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.tunnelPort);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.selectUsb);
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.label23);
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.label44);
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.checkBox27);
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.textBox14);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.otg);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.selectTcpip);
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.label26);
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.textBox24);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.tctPip);
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.label42);
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.label33);
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.checkBox9);
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.textBox19);
-            this.ConnectionAndDeviceOptionsGB.Location = new System.Drawing.Point(913, 38);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.forceAdbForward);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.port);
+            this.ConnectionAndDeviceOptionsGB.Location = new System.Drawing.Point(912, 32);
             this.ConnectionAndDeviceOptionsGB.Name = "ConnectionAndDeviceOptionsGB";
-            this.ConnectionAndDeviceOptionsGB.Size = new System.Drawing.Size(218, 282);
+            this.ConnectionAndDeviceOptionsGB.Size = new System.Drawing.Size(218, 288);
             this.ConnectionAndDeviceOptionsGB.TabIndex = 68;
             this.ConnectionAndDeviceOptionsGB.TabStop = false;
             this.ConnectionAndDeviceOptionsGB.Text = "🔌 Connection && ADB";
             // 
-            // checkBox38
+            // killAdbOnClose
             // 
-            this.checkBox38.AutoSize = true;
-            this.checkBox38.Checked = true;
-            this.checkBox38.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox38.Location = new System.Drawing.Point(9, 220);
-            this.checkBox38.Name = "checkBox38";
-            this.checkBox38.Size = new System.Drawing.Size(108, 17);
-            this.checkBox38.TabIndex = 104;
-            this.checkBox38.Text = "--kill-adb-on-close";
-            this.checkBox38.UseVisualStyleBackColor = true;
+            this.killAdbOnClose.AutoSize = true;
+            this.killAdbOnClose.Checked = true;
+            this.killAdbOnClose.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.killAdbOnClose.Location = new System.Drawing.Point(9, 220);
+            this.killAdbOnClose.Name = "killAdbOnClose";
+            this.killAdbOnClose.Size = new System.Drawing.Size(108, 17);
+            this.killAdbOnClose.TabIndex = 104;
+            this.killAdbOnClose.Text = "--kill-adb-on-close";
+            this.killAdbOnClose.UseVisualStyleBackColor = true;
             // 
-            // textBox33
+            // tunnelHost
             // 
-            this.textBox33.Location = new System.Drawing.Point(9, 171);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(90, 20);
-            this.textBox33.TabIndex = 101;
-            this.textBox33.Text = "192.168.168.168";
+            this.tunnelHost.Location = new System.Drawing.Point(9, 171);
+            this.tunnelHost.Name = "tunnelHost";
+            this.tunnelHost.Size = new System.Drawing.Size(90, 20);
+            this.tunnelHost.TabIndex = 101;
             // 
             // label53
             // 
@@ -2211,8 +2170,8 @@
             this.consoleStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clearoutputStrip,
             this.Separator1,
-            this.helpconsoleStrip,
-            this.saveoutputStrip});
+            this.saveoutputStrip,
+            this.helpconsoleStrip});
             this.consoleStrip.Image = ((System.Drawing.Image)(resources.GetObject("consoleStrip.Image")));
             this.consoleStrip.Name = "consoleStrip";
             this.consoleStrip.Size = new System.Drawing.Size(82, 24);
@@ -2233,14 +2192,6 @@
             this.Separator1.Name = "Separator1";
             this.Separator1.Size = new System.Drawing.Size(185, 6);
             // 
-            // helpconsoleStrip
-            // 
-            this.helpconsoleStrip.Image = global::scrcpyGUI.Properties.Resources.notification;
-            this.helpconsoleStrip.Name = "helpconsoleStrip";
-            this.helpconsoleStrip.Size = new System.Drawing.Size(188, 22);
-            this.helpconsoleStrip.Text = "Help";
-            this.helpconsoleStrip.Click += new System.EventHandler(this.helpconsoleStrip_Click);
-            // 
             // saveoutputStrip
             // 
             this.saveoutputStrip.Image = ((System.Drawing.Image)(resources.GetObject("saveoutputStrip.Image")));
@@ -2250,6 +2201,14 @@
             this.saveoutputStrip.Size = new System.Drawing.Size(188, 22);
             this.saveoutputStrip.Text = "&Print";
             this.saveoutputStrip.Click += new System.EventHandler(this.saveoutputStrip_Click);
+            // 
+            // helpconsoleStrip
+            // 
+            this.helpconsoleStrip.Image = global::scrcpyGUI.Properties.Resources.notification;
+            this.helpconsoleStrip.Name = "helpconsoleStrip";
+            this.helpconsoleStrip.Size = new System.Drawing.Size(188, 22);
+            this.helpconsoleStrip.Text = "Help";
+            this.helpconsoleStrip.Click += new System.EventHandler(this.helpconsoleStrip_Click);
             // 
             // toolsStrip
             // 
@@ -2271,43 +2230,45 @@
             // customizeToolStripMenuItem1
             // 
             this.customizeToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lowToolStripMenuItem,
-            this.mediumToolStripMenuItem,
-            this.highToolStripMenuItem});
+            this.lowStrip,
+            this.highStrip,
+            this.bestStrip,
+            this.Separator7});
             this.customizeToolStripMenuItem1.Name = "customizeToolStripMenuItem1";
             this.customizeToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.K)));
-            this.customizeToolStripMenuItem1.Size = new System.Drawing.Size(209, 22);
+            this.customizeToolStripMenuItem1.Size = new System.Drawing.Size(225, 26);
             this.customizeToolStripMenuItem1.Text = "&Templates";
             // 
-            // lowToolStripMenuItem
+            // lowStrip
             // 
-            this.lowToolStripMenuItem.Name = "lowToolStripMenuItem";
-            this.lowToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
-            this.lowToolStripMenuItem.Text = "Low";
+            this.lowStrip.Name = "lowStrip";
+            this.lowStrip.Size = new System.Drawing.Size(184, 26);
+            this.lowStrip.Text = "Low";
             // 
-            // mediumToolStripMenuItem
+            // highStrip
             // 
-            this.mediumToolStripMenuItem.Name = "mediumToolStripMenuItem";
-            this.mediumToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
-            this.mediumToolStripMenuItem.Text = "Medium";
+            this.highStrip.Name = "highStrip";
+            this.highStrip.Size = new System.Drawing.Size(184, 26);
+            this.highStrip.Text = "High";
             // 
-            // highToolStripMenuItem
+            // bestStrip
             // 
-            this.highToolStripMenuItem.Name = "highToolStripMenuItem";
-            this.highToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
-            this.highToolStripMenuItem.Text = "High";
+            this.bestStrip.Image = global::scrcpyGUI.Properties.Resources.star;
+            this.bestStrip.Name = "bestStrip";
+            this.bestStrip.Size = new System.Drawing.Size(184, 26);
+            this.bestStrip.Text = "Best";
             // 
             // Separator3
             // 
             this.Separator3.Name = "Separator3";
-            this.Separator3.Size = new System.Drawing.Size(206, 6);
+            this.Separator3.Size = new System.Drawing.Size(222, 6);
             // 
             // newconfigStrip
             // 
             this.newconfigStrip.Image = global::scrcpyGUI.Properties.Resources.edit;
             this.newconfigStrip.Name = "newconfigStrip";
             this.newconfigStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newconfigStrip.Size = new System.Drawing.Size(209, 22);
+            this.newconfigStrip.Size = new System.Drawing.Size(225, 26);
             this.newconfigStrip.Text = "&New Config";
             // 
             // saveconfigStrip
@@ -2317,7 +2278,7 @@
             this.saveconfigStrip.Name = "saveconfigStrip";
             this.saveconfigStrip.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.S)));
-            this.saveconfigStrip.Size = new System.Drawing.Size(209, 22);
+            this.saveconfigStrip.Size = new System.Drawing.Size(225, 26);
             this.saveconfigStrip.Text = "&Save Config";
             // 
             // openconfigStrip
@@ -2326,32 +2287,35 @@
             this.openconfigStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openconfigStrip.Name = "openconfigStrip";
             this.openconfigStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openconfigStrip.Size = new System.Drawing.Size(209, 22);
+            this.openconfigStrip.Size = new System.Drawing.Size(225, 26);
             this.openconfigStrip.Text = "&Open Config";
             // 
             // Separator4
             // 
             this.Separator4.Name = "Separator4";
-            this.Separator4.Size = new System.Drawing.Size(206, 6);
+            this.Separator4.Size = new System.Drawing.Size(222, 6);
             // 
             // configfolderStrip
             // 
             this.configfolderStrip.Image = global::scrcpyGUI.Properties.Resources.diskette;
             this.configfolderStrip.Name = "configfolderStrip";
-            this.configfolderStrip.Size = new System.Drawing.Size(209, 22);
+            this.configfolderStrip.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.O)));
+            this.configfolderStrip.Size = new System.Drawing.Size(225, 26);
             this.configfolderStrip.Text = "&Config Folder";
+            this.configfolderStrip.Click += new System.EventHandler(this.configfolderStrip_Click);
             // 
             // Separator6
             // 
             this.Separator6.Name = "Separator6";
-            this.Separator6.Size = new System.Drawing.Size(206, 6);
+            this.Separator6.Size = new System.Drawing.Size(222, 6);
             // 
             // preferencesStrip
             // 
             this.preferencesStrip.Image = global::scrcpyGUI.Properties.Resources.gear;
             this.preferencesStrip.Name = "preferencesStrip";
             this.preferencesStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.preferencesStrip.Size = new System.Drawing.Size(209, 22);
+            this.preferencesStrip.Size = new System.Drawing.Size(225, 26);
             this.preferencesStrip.Text = "&Preferences";
             // 
             // startStrip
@@ -2406,29 +2370,29 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.checkBox39);
-            this.groupBox2.Controls.Add(this.textBox23);
-            this.groupBox2.Controls.Add(this.checkBox12);
-            this.groupBox2.Controls.Add(this.checkBox17);
-            this.groupBox2.Controls.Add(this.checkBox18);
-            this.groupBox2.Controls.Add(this.listencodersCheckBox);
+            this.groupBox2.Controls.Add(this.legacyPaste);
+            this.groupBox2.Controls.Add(this.startApp);
+            this.groupBox2.Controls.Add(this.listApps);
+            this.groupBox2.Controls.Add(this.noCleanup);
+            this.groupBox2.Controls.Add(this.noClipboardAutosync);
+            this.groupBox2.Controls.Add(this.listEncoders);
             this.groupBox2.Controls.Add(this.label41);
             this.groupBox2.Controls.Add(this.label35);
-            this.groupBox2.Controls.Add(this.textBox20);
+            this.groupBox2.Controls.Add(this.pushTarget);
             this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.checkBox36);
-            this.groupBox2.Controls.Add(this.checkBox29);
-            this.groupBox2.Controls.Add(this.checkBox23);
-            this.groupBox2.Controls.Add(this.checkBox33);
-            this.groupBox2.Controls.Add(this.checkBox21);
-            this.groupBox2.Controls.Add(this.textBox22);
-            this.groupBox2.Controls.Add(this.checkBox19);
+            this.groupBox2.Controls.Add(this.stayAwake);
+            this.groupBox2.Controls.Add(this.preferText);
+            this.groupBox2.Controls.Add(this.noPowerOn);
+            this.groupBox2.Controls.Add(this.turnScreenOff);
+            this.groupBox2.Controls.Add(this.noMipmaps);
+            this.groupBox2.Controls.Add(this.screenOffTimeout);
+            this.groupBox2.Controls.Add(this.noDownsizeOnError);
             this.groupBox2.Controls.Add(this.label34);
             this.groupBox2.Controls.Add(this.label39);
-            this.groupBox2.Controls.Add(this.comboBox10);
-            this.groupBox2.Controls.Add(this.textBox25);
+            this.groupBox2.Controls.Add(this.pauseOnExit);
+            this.groupBox2.Controls.Add(this.timeLimit);
             this.groupBox2.Controls.Add(this.label43);
-            this.groupBox2.Controls.Add(this.checkBox28);
+            this.groupBox2.Controls.Add(this.powerOffOnClose);
             this.groupBox2.Location = new System.Drawing.Point(557, 326);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(574, 170);
@@ -2436,15 +2400,20 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "⚙️ Behavior && Execution";
             // 
-            // checkBox39
+            // legacyPaste
             // 
-            this.checkBox39.AutoSize = true;
-            this.checkBox39.Location = new System.Drawing.Point(380, 111);
-            this.checkBox39.Name = "checkBox39";
-            this.checkBox39.Size = new System.Drawing.Size(92, 17);
-            this.checkBox39.TabIndex = 102;
-            this.checkBox39.Text = "--legacy-paste";
-            this.checkBox39.UseVisualStyleBackColor = true;
+            this.legacyPaste.AutoSize = true;
+            this.legacyPaste.Location = new System.Drawing.Point(380, 111);
+            this.legacyPaste.Name = "legacyPaste";
+            this.legacyPaste.Size = new System.Drawing.Size(92, 17);
+            this.legacyPaste.TabIndex = 102;
+            this.legacyPaste.Text = "--legacy-paste";
+            this.legacyPaste.UseVisualStyleBackColor = true;
+            // 
+            // Separator7
+            // 
+            this.Separator7.Name = "Separator7";
+            this.Separator7.Size = new System.Drawing.Size(181, 6);
             // 
             // Form1
             // 
@@ -2463,6 +2432,9 @@
             this.Controls.Add(this.MenuStrip);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1159, 700);
+            this.MinimumSize = new System.Drawing.Size(240, 180);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Basic Scrcpy GUI";
@@ -2493,30 +2465,30 @@
         }
 
         #endregion
-        private System.Windows.Forms.CheckBox noaudioCheckBox;
-        private System.Windows.Forms.CheckBox nocontrolCheckBox;
-        private System.Windows.Forms.CheckBox printfpsCheckBox;
-        private System.Windows.Forms.CheckBox fullscreenCheckBox;
-        private System.Windows.Forms.CheckBox novideoCheckBox;
+        private System.Windows.Forms.CheckBox noAudio;
+        private System.Windows.Forms.CheckBox noControl;
+        private System.Windows.Forms.CheckBox printFps;
+        private System.Windows.Forms.CheckBox fullscreen;
+        private System.Windows.Forms.CheckBox noVideo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox videocodecComboBox;
-        private System.Windows.Forms.TextBox fpsTextBox;
-        private System.Windows.Forms.ComboBox audiocodecComboBox;
+        private System.Windows.Forms.ComboBox videoCodec;
+        private System.Windows.Forms.TextBox maxFps;
+        private System.Windows.Forms.ComboBox audioCodec;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox orientationComboBox;
+        private System.Windows.Forms.ComboBox captureOrientation;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox angleTextBox;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox angle;
+        private System.Windows.Forms.TextBox displayId;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox crop1;
+        private System.Windows.Forms.TextBox cropWidth;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.RichTextBox consoleOutputRichTextbox;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox crop4;
-        private System.Windows.Forms.TextBox crop3;
-        private System.Windows.Forms.TextBox crop2;
+        private System.Windows.Forms.TextBox cropY;
+        private System.Windows.Forms.TextBox cropX;
+        private System.Windows.Forms.TextBox cropHeight;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
@@ -2541,136 +2513,136 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox noWindow;
         private System.Windows.Forms.ToolTip ToolTip;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.CheckBox listencodersCheckBox;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.TextBox audioBuffer;
+        private System.Windows.Forms.CheckBox listEncoders;
+        private System.Windows.Forms.ComboBox audioSource;
+        private System.Windows.Forms.CheckBox audioDup;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.CheckBox audioCodecOptions;
+        private System.Windows.Forms.TextBox audioBitRate;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox videoBuffer;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox audioOutputBuffer;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.ComboBox videoSource;
+        private System.Windows.Forms.CheckBox listCameras;
+        private System.Windows.Forms.CheckBox listCameraSizes;
+        private System.Windows.Forms.TextBox cameraId;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox cameraSizeWidth;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox cameraSizeHeight;
+        private System.Windows.Forms.TextBox cameraAr;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox orientation;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.TextBox cameraFps;
+        private System.Windows.Forms.CheckBox alwaysOnTop;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox videoBitRate;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox audioEncoder;
+        private System.Windows.Forms.ComboBox cameraFacing;
+        private System.Windows.Forms.CheckBox cameraHighSpeed;
+        private System.Windows.Forms.ComboBox displayOrientation;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox displayImePolicy;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.CheckBox disableScreensaver;
+        private System.Windows.Forms.TextBox selectUsb;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.CheckBox forceAdbForward;
+        private System.Windows.Forms.TextBox selectTcpip;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox keyboard;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.CheckBox k;
+        private System.Windows.Forms.ComboBox gamepad;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.CheckBox g;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.TextBox maxSize;
+        private System.Windows.Forms.CheckBox listDisplays;
+        private System.Windows.Forms.CheckBox listApps;
+        private System.Windows.Forms.ComboBox mouse;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox15;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.CheckBox m;
+        private System.Windows.Forms.CheckBox noPlayback;
+        private System.Windows.Forms.TextBox newDisplayWidth;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.CheckBox checkBox22;
-        private System.Windows.Forms.CheckBox checkBox21;
-        private System.Windows.Forms.CheckBox checkBox20;
-        private System.Windows.Forms.CheckBox checkBox19;
-        private System.Windows.Forms.CheckBox checkBox18;
-        private System.Windows.Forms.CheckBox checkBox17;
-        private System.Windows.Forms.CheckBox checkBox26;
-        private System.Windows.Forms.CheckBox checkBox24;
-        private System.Windows.Forms.CheckBox checkBox25;
-        private System.Windows.Forms.CheckBox checkBox23;
-        private System.Windows.Forms.CheckBox checkBox27;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox newDisplayHeight;
+        private System.Windows.Forms.TextBox newDisplayDpi;
+        private System.Windows.Forms.CheckBox noAudioPlayback;
+        private System.Windows.Forms.CheckBox noMouseHover;
+        private System.Windows.Forms.CheckBox noMipmaps;
+        private System.Windows.Forms.CheckBox noKeyRepeat;
+        private System.Windows.Forms.CheckBox noDownsizeOnError;
+        private System.Windows.Forms.CheckBox noClipboardAutosync;
+        private System.Windows.Forms.CheckBox noCleanup;
+        private System.Windows.Forms.CheckBox noVideoPlayback;
+        private System.Windows.Forms.CheckBox noVdSystemDecorations;
+        private System.Windows.Forms.CheckBox noVdDestroyContent;
+        private System.Windows.Forms.CheckBox noPowerOn;
+        private System.Windows.Forms.CheckBox otg;
+        private System.Windows.Forms.TextBox port;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ComboBox pauseOnExit;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox pushTarget;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.CheckBox checkBox29;
-        private System.Windows.Forms.CheckBox checkBox28;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.CheckBox preferText;
+        private System.Windows.Forms.CheckBox powerOffOnClose;
+        private System.Windows.Forms.TextBox record;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.ComboBox recordOrientation;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.CheckBox checkBox30;
+        private System.Windows.Forms.ComboBox recordFormat;
+        private System.Windows.Forms.CheckBox rawKeyEvents;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.ComboBox renderDriver;
+        private System.Windows.Forms.TextBox screenOffTimeout;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.CheckBox checkBox32;
-        private System.Windows.Forms.CheckBox checkBox31;
-        private System.Windows.Forms.CheckBox checkBox33;
+        private System.Windows.Forms.CheckBox serial;
+        private System.Windows.Forms.CheckBox requireAudio;
+        private System.Windows.Forms.CheckBox turnScreenOff;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox startApp;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox tctPip;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.CheckBox checkBox34;
+        private System.Windows.Forms.CheckBox showTouches;
         private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.CheckBox checkBox35;
-        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.CheckBox version;
+        private System.Windows.Forms.TextBox tunnelPort;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox timeLimit;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.ComboBox comboBox14;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.ComboBox verbosity;
+        private System.Windows.Forms.TextBox videoEncoder;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.CheckBox checkBox36;
-        private System.Windows.Forms.CheckBox checkBox37;
-        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.CheckBox stayAwake;
+        private System.Windows.Forms.CheckBox windowBorderless;
+        private System.Windows.Forms.TextBox windowTitle;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.TextBox textBox30;
+        private System.Windows.Forms.TextBox windowHeight;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.TextBox textBox31;
+        private System.Windows.Forms.TextBox windowWidth;
         private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.TextBox textBox29;
+        private System.Windows.Forms.TextBox windowY;
         private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.TextBox textBox32;
+        private System.Windows.Forms.TextBox windowX;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.GroupBox VideoAndCodecGB;
         private System.Windows.Forms.GroupBox AudioGB;
@@ -2701,14 +2673,15 @@
         private System.Windows.Forms.ToolStripSeparator Separator6;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.TextBox textBox33;
+        private System.Windows.Forms.TextBox tunnelHost;
         private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.CheckBox checkBox38;
+        private System.Windows.Forms.CheckBox killAdbOnClose;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox checkBox39;
-        private System.Windows.Forms.ToolStripMenuItem lowToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mediumToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem highToolStripMenuItem;
+        private System.Windows.Forms.CheckBox legacyPaste;
+        private System.Windows.Forms.ToolStripMenuItem lowStrip;
+        private System.Windows.Forms.ToolStripMenuItem highStrip;
+        private System.Windows.Forms.ToolStripMenuItem bestStrip;
+        private System.Windows.Forms.ToolStripSeparator Separator7;
     }
 }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
@@ -22,6 +23,16 @@ namespace scrcpyGUI
         #region Form Events
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            string adbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "cli_tools", "adb.exe");
+            ProcessStartInfo psi = new ProcessStartInfo
+            {
+                    FileName = adbPath,
+                    Arguments = "kill-server",
+                    CreateNoWindow = true,
+                    UseShellExecute = false
+            };
+            Process.Start(psi);
+
             if (scrcpyProcess != null && !scrcpyProcess.HasExited)
             {
                 scrcpyProcess.Kill();
@@ -37,40 +48,130 @@ namespace scrcpyGUI
         {
             var arguments = new StringBuilder();
 
-            if (fullscreenCheckBox.Checked)
-                arguments.Append("--fullscreen ");
+            // CheckBox Options
+            var checkBoxOptions = new Dictionary<CheckBox, string>
+            {
+                { alwaysOnTop, "--always-on-top" },
+                { fullscreen, "--fullscreen" },
+                { noAudio, "--no-audio" },
+                { noControl, "--no-control" },
+                { printFps, "--print-fps" },
+                { noVideo, "--no-video" },
+                { listEncoders, "--list-encoders" },
+                { stayAwake, "--stay-awake" },
+                { disableScreensaver, "--disable-screensaver" },
+                { killAdbOnClose, "--kill-adb-on-close" },
+                { legacyPaste, "--legacy-paste" },
+                { turnScreenOff, "--turn-screen-off" },
+                { showTouches, "--show-touches" },
+                { forceAdbForward, "--force-adb-forward" },
+                { cameraHighSpeed, "--camera-high-speed" },
+                { audioDup, "--audio-dup" },
+                { requireAudio, "--require-audio" },
+                { noPlayback, "--no-playback" },
+                { noCleanup, "--no-cleanup" },
+                { noMipmaps, "--no-mipmaps" },
+                { noKeyRepeat, "--no-key-repeat" },
+                { noMouseHover, "--no-mouse-hover" },
+                { noPowerOn, "--no-power-on" },
+                { noClipboardAutosync, "--no-clipboard-autosync" },
+                { noDownsizeOnError, "--no-downsize-on-error" },
+                { noVideoPlayback, "--no-video-playback" },
+                { noWindow, "--no-window" },
+                { otg, "--otg" },
+                { preferText, "--prefer-text" },
+                { rawKeyEvents, "--raw-key-events" },
+                { windowBorderless, "--window-borderless" },
+                { listApps, "--list-apps" },
+                { listCameras, "--list-cameras" },
+                { listCameraSizes, "--list-camera-sizes" },
+                { listDisplays, "--list-displays" }
+            };
 
-            if (noaudioCheckBox.Checked)
-                arguments.Append("--no-audio ");
+            foreach (var option in checkBoxOptions)
+            {
+                if (option.Key.Checked)
+                    arguments.Append(option.Value + " ");
+            }
 
-            if (nocontrolCheckBox.Checked)
-                arguments.Append("--no-control ");
+            // Int TextBox Options (Aslında ayırmaya gerek yok)
+            var intOptions = new List<(TextBox, string)>
+            {
+                (angle, "--angle"),
+                (maxFps, "--max-fps"),
+                (videoBitRate, "--video-bit-rate"),
+                (audioBitRate, "--audio-bit-rate"),
+                (audioBuffer, "--audio-buffer"),
+                (audioOutputBuffer, "--audio-output-buffer"),
+                (screenOffTimeout, "--screen-off-timeout"),
+                (windowX, "--window-x"),
+                (windowY, "--window-y"),
+                (windowWidth, "--window-width"),
+                (windowHeight, "--window-height"),
+                (cameraFps, "--camera-fps"),
+                (port, "--port"),
+                (timeLimit, "--time-limit"),
+                (tunnelPort, "--tunnel-port")
+            };
 
-            if (printfpsCheckBox.Checked)
-                arguments.Append("--print-fps ");
+            foreach (var (box, argName) in intOptions)
+            {
+                if (int.TryParse(box.Text.Trim(), out int value))
+                    arguments.Append($"{argName}={value} ");
+            }
 
-            if (novideoCheckBox.Checked)
-                arguments.Append("--no-video ");
+            // Direct String Options
+            var stringOptions = new List<(TextBox, string)>
+            {
+                // checkb { serial, "--serial" },
+                (record, "--record"),
+                (videoEncoder, "--video-encoder"),
+                (startApp, "--start-app"),
+                (windowTitle, "--window-title"),
+                (cameraAr, "--camera-ar"),
+                (cameraId, "--camera-id"),
+                (displayId, "--display-id"),
+                (pushTarget, "--push-target"),
+                //ayarlanmadı (shortcutMod, "--shortcut-mod"),
+                // text (tcpip, "--tcpip"),
+                // (tunnelHost, "--tunnel-host"),
+                // (videoCodecOptions, "--video-codec-options"),
+                // (audioCodecOptions, "--audio-codec-options")
+            };
 
-            if (int.TryParse(angleTextBox.Text, out int angle) && angle >= 0 && angle <= 360)
-                arguments.Append($"--angle={angle} ");
-            else
-                arguments.Append("--angle=0 ");
+            foreach (var (box, argName) in stringOptions)
+            {
+                string value = box.Text.Trim();
+                if (!string.IsNullOrEmpty(value))
+                    arguments.Append($"{argName}={value} ");
+            }
 
-            if (int.TryParse(fpsTextBox.Text, out int fps) && fps > 0)
-                arguments.Append($"--max-fps={fps} ");
+            // ComboBox Options
+            var comboBoxOptions = new Dictionary<ComboBox, string>
+            {
+                { audioCodec, "--audio-codec" },
+                { audioEncoder, "--audio-encoder" },
+                { audioSource, "--audio-source" },
+                { videoCodec, "--video-codec" },
+                { cameraFacing, "--camera-facing" },
+                { recordFormat, "--record-format" },
+                { videoSource, "--video-source" },
+                { captureOrientation, "--capture-orientation" },
+                { displayOrientation, "--display-orientation" },
+                { displayImePolicy, "--display-ime-policy" },
+                { keyboard, "--keyboard" },
+                { gamepad, "--gamepad" },
+                { mouse, "--mouse" },
+                { recordOrientation, "--record-orientation" },
+                { renderDriver, "--render-driver" },
+                { verbosity, "--verbosity" }
+            };
 
-            if (orientationComboBox.SelectedItem != null)
-                arguments.Append($"--capture-orientation={orientationComboBox.SelectedItem} ");
-
-            if (videocodecComboBox.SelectedItem != null)
-                arguments.Append($"--video-codec={videocodecComboBox.SelectedItem} ");
-
-            if (audiocodecComboBox.SelectedItem != null)
-                arguments.Append($"--audio-codec={audiocodecComboBox.SelectedItem} ");
-
-            if (listencodersCheckBox.Checked)
-                arguments.Append("--list-encoders ");
+            foreach (var option in comboBoxOptions)
+            {
+                if (!string.IsNullOrWhiteSpace(option.Key.Text))
+                    arguments.Append($"{option.Value}={option.Key.Text.Trim()} ");
+            }
 
             return arguments.ToString().Trim();
         }
@@ -78,7 +179,7 @@ namespace scrcpyGUI
         #endregion
 
         #region Start Scrcpy
-            private void StartScrcpy()
+        private void StartScrcpy()
             {
                 string args = BuildArguments();
                 string exePath = Path.Combine(Application.StartupPath, "cli_tools", "scrcpy.exe");
@@ -146,10 +247,24 @@ namespace scrcpyGUI
                     scrcpyProcess.Dispose();
                     scrcpyProcess = null;
                 }
+
+                string adbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "cli_tools", "adb.exe");
+                if (killAdbOnClose.Checked)
+                {
+                    ProcessStartInfo psi = new ProcessStartInfo
+                    {
+                        FileName = adbPath,
+                        Arguments = "kill-server",
+                        CreateNoWindow = true,
+                        UseShellExecute = false
+                    };
+
+                    Process.Start(psi);
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Scrcpy could not be closed:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show($"scrcpy kapatılamadı:\n{ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         #endregion
@@ -221,13 +336,10 @@ namespace scrcpyGUI
 
             MessageBox.Show(aboutMessage, "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-        #endregion
-
+        // Open Help.txt
         private void helpconsoleStrip_Click(object sender, EventArgs e)
         {
             string helpFilePath = Path.Combine(Application.StartupPath, "cli_tools", "help.txt");
-
-            // Dosyayı varsayılan uygulama (Notepad gibi) ile açmak
             try
             {
                 Process.Start(helpFilePath);
@@ -237,5 +349,19 @@ namespace scrcpyGUI
                 MessageBox.Show($"File could not be opened: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        // Open Config Folder
+        private void configfolderStrip_Click(object sender, EventArgs e)
+        {
+            string configFilePath = Path.Combine(Application.StartupPath, "config");
+            try
+            {
+                Process.Start(configFilePath);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"File could not be opened: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        #endregion
     }
 }
