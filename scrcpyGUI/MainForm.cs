@@ -11,11 +11,11 @@ using static System.Net.WebRequestMethods;
 
 namespace scrcpyGUI
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         private Process scrcpyProcess;
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -54,9 +54,12 @@ namespace scrcpyGUI
                 { alwaysOnTop, "--always-on-top" },
                 { fullscreen, "--fullscreen" },
                 { noAudio, "--no-audio" },
+                { noAudioPlayback, "--no-audio-playback" },
                 { noControl, "--no-control" },
                 { printFps, "--print-fps" },
                 { noVideo, "--no-video" },
+                { noVdDestroyContent, "--no-vd-destroy-content" },
+                { noVdSystemDecorations, "--no-vd-system-decorations" },
                 { listEncoders, "--list-encoders" },
                 { stayAwake, "--stay-awake" },
                 { disableScreensaver, "--disable-screensaver" },
@@ -74,6 +77,7 @@ namespace scrcpyGUI
                 { noKeyRepeat, "--no-key-repeat" },
                 { noMouseHover, "--no-mouse-hover" },
                 { noPowerOn, "--no-power-on" },
+                { powerOffOnClose, "--no-power-off-on-close" },
                 { noClipboardAutosync, "--no-clipboard-autosync" },
                 { noDownsizeOnError, "--no-downsize-on-error" },
                 { noVideoPlayback, "--no-video-playback" },
@@ -85,7 +89,12 @@ namespace scrcpyGUI
                 { listApps, "--list-apps" },
                 { listCameras, "--list-cameras" },
                 { listCameraSizes, "--list-camera-sizes" },
-                { listDisplays, "--list-displays" }
+                { listDisplays, "--list-displays" },
+                { version, "--version" },
+                { m, "--m" },
+                { k, "--k" },
+                { g, "--g" },
+
             };
 
             foreach (var option in checkBoxOptions)
@@ -287,6 +296,12 @@ namespace scrcpyGUI
             }
 
         }
+        // Open Preferences Form (AppSetting.cs)
+        private void preferencesStrip_Click(object sender, EventArgs e)
+        {
+            AppSettings appSettings = new AppSettings();
+            appSettings.ShowDialog();
+        }
         // Start Scrcpy
         private void startStrip_Click(object sender, EventArgs e)
         { 
@@ -325,11 +340,11 @@ namespace scrcpyGUI
         private void aboutStrip_Click(object sender, EventArgs e)
         {
             string appName = "Scrcpy for Basic GUI";
-            string version = "Version: 2025.05.12";
+            string version = "Version: 2025.05.14";
             string developer = "Ahrezan";
             string githubLink = "GitHub: github.com/Ahrezan";
-            string license = "Licence: MIT";
-            string releaseDate = "Latest Update: 2025-05-12";
+            string license = "Licence: Apache License 2.0";
+            string releaseDate = "Latest Update: 2025-05-14";
             string scrcpyVersion = "Scrcpy Version: v3.2";
 
             string aboutMessage = $"{appName}\n{version}\n\n{developer}\n{githubLink}\n{license}\n{scrcpyVersion}\n{releaseDate}";
