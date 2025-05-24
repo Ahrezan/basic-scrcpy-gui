@@ -1,43 +1,182 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
-using System.Runtime.InteropServices;
+using System.IO.Compression;
 using System.Text;
 using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
-using static System.Net.WebRequestMethods;
+
 
 namespace scrcpyGUI
 {
     public partial class MainForm : Form
     {
+        #region Start
         private Process scrcpyProcess;
 
         public MainForm()
         {
             InitializeComponent();
+            this.Shown += MainForm_Shown;
+        }
+        #endregion
+
+        #region Download Scrcpy
+        private string[] requiredFiles = {
+            "adb.exe",
+            "AdbWinApi.dll",
+            "AdbWinUsbApi.dll",
+            "avcodec-61.dll",
+            "avformat-61.dll",
+            "avutil-59.dll",
+            "icon.png",
+            "libusb-1.0.dll",
+            "open_a_terminal_here.bat",
+            "scrcpy.exe",
+            "scrcpy-console.bat",
+            "scrcpy-noconsole.vbs",
+            "scrcpy-server",
+            "SDL2.dll",
+            "swresample-5.dll"
+        };
+
+        private string downloadFolder = Path.Combine(Application.StartupPath, "cli_tools");
+        private string zipFileName = "download.zip";
+
+        private void CheckAndDownloadFiles()
+        {
+            if (!AreRequiredFilesPresent())
+            {
+                var result = MessageBox.Show(
+                    "Required files are missing.\nDo you want to download them?",
+                    "Missing Files",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    using (var downloader = new DownloadForm())
+                    {
+                        downloader.DownloadCompleted += () =>
+                        {
+                            ExtractZipAndCleanup();
+                            MessageBox.Show("Files were successfully downloaded and extracted.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        };
+
+                        downloader.DownloadCanceled += () =>
+                        {
+                            DeleteFileIfExists(Path.Combine(downloadFolder, zipFileName));
+                            MessageBox.Show("Download canceled.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        };
+
+                        downloader.ShowDialog();
+                    }
+                }
+            }
         }
 
-        #region Form Events
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        private bool AreRequiredFilesPresent()
         {
-            string adbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "cli_tools", "adb.exe");
-            ProcessStartInfo psi = new ProcessStartInfo
+            foreach (var file in requiredFiles)
             {
-                    FileName = adbPath,
-                    Arguments = "kill-server",
-                    CreateNoWindow = true,
-                    UseShellExecute = false
-            };
-            Process.Start(psi);
+                if (!File.Exists(Path.Combine(downloadFolder, file)))
+                    return false;
+            }
+            return true;
+        }
 
-            if (scrcpyProcess != null && !scrcpyProcess.HasExited)
+        private void ExtractZipAndCleanup()
+        {
+            string zipPath = Path.Combine(downloadFolder, zipFileName);
+            string tempExtractPath = Path.Combine(downloadFolder, "tempExtract");
+
+            if (File.Exists(zipPath))
             {
-                scrcpyProcess.Kill();
-                scrcpyProcess.Dispose();
-                scrcpyProcess = null;
+                if (Directory.Exists(tempExtractPath))
+                    Directory.Delete(tempExtractPath, true);
+
+                ZipFile.ExtractToDirectory(zipPath, tempExtractPath);
+
+                string[] directories = Directory.GetDirectories(tempExtractPath);
+                if (directories.Length == 1)
+                {
+                    string innerFolder = directories[0];
+
+                    foreach (var file in Directory.GetFiles(innerFolder, "*", SearchOption.AllDirectories))
+                    {
+                        string relativePath = file.Substring(innerFolder.Length + 1);
+                        string destinationPath = Path.Combine(downloadFolder, relativePath);
+                        string destinationDir = Path.GetDirectoryName(destinationPath);
+
+                        if (!Directory.Exists(destinationDir))
+                            Directory.CreateDirectory(destinationDir);
+
+                        File.Copy(file, destinationPath, true);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Unexpected ZIP structure. A single folder was expected.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                Directory.Delete(tempExtractPath, true);
+                File.Delete(zipPath);
+            }
+        }
+
+        private void DeleteFileIfExists(string path)
+        {
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
+        }
+        #endregion
+
+        #region Form Events
+        private bool hasCheckedFiles = false;
+
+        private void MainForm_Shown(object sender, EventArgs e)
+        {
+            if(!hasCheckedFiles)
+            {
+                hasCheckedFiles = true;
+                BeginInvoke((MethodInvoker)CheckAndDownloadFiles);
+            }
+        }
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                string adbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "cli_tools", "adb.exe");
+                if (File.Exists(adbPath))
+                {
+                    ProcessStartInfo psi = new ProcessStartInfo
+                    {
+                        FileName = adbPath,
+                        Arguments = "kill-server",
+                        CreateNoWindow = true,
+                        UseShellExecute = false
+                    };
+                    Process.Start(psi);
+                }
+
+                if (scrcpyProcess != null && !scrcpyProcess.HasExited)
+                {
+                    scrcpyProcess.Kill();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while closing:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                if (scrcpyProcess != null)
+                {
+                    scrcpyProcess.Dispose();
+                    scrcpyProcess = null;
+                }
             }
         }
         #endregion
@@ -377,6 +516,7 @@ namespace scrcpyGUI
                 MessageBox.Show($"File could not be opened: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         #endregion
     }
 }

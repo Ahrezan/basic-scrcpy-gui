@@ -227,6 +227,8 @@
             this.helpconsoleStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.customizeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.Separator8 = new System.Windows.Forms.ToolStripSeparator();
             this.lowStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.highStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.bestStrip = new System.Windows.Forms.ToolStripMenuItem();
@@ -247,8 +249,6 @@
             this.aboutStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.legacyPaste = new System.Windows.Forms.CheckBox();
-            this.resetStrip = new System.Windows.Forms.ToolStripMenuItem();
-            this.Separator8 = new System.Windows.Forms.ToolStripSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -2185,14 +2185,14 @@
             this.clearoutputStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.clearoutputStrip.Name = "clearoutputStrip";
             this.clearoutputStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F3)));
-            this.clearoutputStrip.Size = new System.Drawing.Size(192, 26);
+            this.clearoutputStrip.Size = new System.Drawing.Size(188, 22);
             this.clearoutputStrip.Text = "&Clear Output";
             this.clearoutputStrip.Click += new System.EventHandler(this.clearoutputStrip_Click);
             // 
             // Separator1
             // 
             this.Separator1.Name = "Separator1";
-            this.Separator1.Size = new System.Drawing.Size(189, 6);
+            this.Separator1.Size = new System.Drawing.Size(185, 6);
             // 
             // saveoutputStrip
             // 
@@ -2200,7 +2200,7 @@
             this.saveoutputStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveoutputStrip.Name = "saveoutputStrip";
             this.saveoutputStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.saveoutputStrip.Size = new System.Drawing.Size(192, 26);
+            this.saveoutputStrip.Size = new System.Drawing.Size(188, 22);
             this.saveoutputStrip.Text = "&Print";
             this.saveoutputStrip.Click += new System.EventHandler(this.saveoutputStrip_Click);
             // 
@@ -2209,7 +2209,7 @@
             this.helpconsoleStrip.Image = global::scrcpyGUI.Properties.Resources.notification;
             this.helpconsoleStrip.Name = "helpconsoleStrip";
             this.helpconsoleStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
-            this.helpconsoleStrip.Size = new System.Drawing.Size(192, 26);
+            this.helpconsoleStrip.Size = new System.Drawing.Size(188, 22);
             this.helpconsoleStrip.Text = "Help";
             this.helpconsoleStrip.Click += new System.EventHandler(this.helpconsoleStrip_Click);
             // 
@@ -2241,44 +2241,56 @@
             this.Separator7});
             this.customizeToolStripMenuItem1.Name = "customizeToolStripMenuItem1";
             this.customizeToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.K)));
-            this.customizeToolStripMenuItem1.Size = new System.Drawing.Size(225, 26);
+            this.customizeToolStripMenuItem1.Size = new System.Drawing.Size(221, 22);
             this.customizeToolStripMenuItem1.Text = "&Templates";
+            // 
+            // resetStrip
+            // 
+            this.resetStrip.Image = global::scrcpyGUI.Properties.Resources.reload;
+            this.resetStrip.Name = "resetStrip";
+            this.resetStrip.Size = new System.Drawing.Size(102, 22);
+            this.resetStrip.Text = "&Reset";
+            // 
+            // Separator8
+            // 
+            this.Separator8.Name = "Separator8";
+            this.Separator8.Size = new System.Drawing.Size(99, 6);
             // 
             // lowStrip
             // 
             this.lowStrip.Name = "lowStrip";
-            this.lowStrip.Size = new System.Drawing.Size(184, 26);
+            this.lowStrip.Size = new System.Drawing.Size(102, 22);
             this.lowStrip.Text = "&Low";
             // 
             // highStrip
             // 
             this.highStrip.Name = "highStrip";
-            this.highStrip.Size = new System.Drawing.Size(184, 26);
+            this.highStrip.Size = new System.Drawing.Size(102, 22);
             this.highStrip.Text = "&High";
             // 
             // bestStrip
             // 
             this.bestStrip.Image = global::scrcpyGUI.Properties.Resources.star;
             this.bestStrip.Name = "bestStrip";
-            this.bestStrip.Size = new System.Drawing.Size(184, 26);
+            this.bestStrip.Size = new System.Drawing.Size(102, 22);
             this.bestStrip.Text = "&Best";
             // 
             // Separator7
             // 
             this.Separator7.Name = "Separator7";
-            this.Separator7.Size = new System.Drawing.Size(181, 6);
+            this.Separator7.Size = new System.Drawing.Size(99, 6);
             // 
             // Separator3
             // 
             this.Separator3.Name = "Separator3";
-            this.Separator3.Size = new System.Drawing.Size(222, 6);
+            this.Separator3.Size = new System.Drawing.Size(218, 6);
             // 
             // newconfigStrip
             // 
             this.newconfigStrip.Image = global::scrcpyGUI.Properties.Resources.edit;
             this.newconfigStrip.Name = "newconfigStrip";
             this.newconfigStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newconfigStrip.Size = new System.Drawing.Size(225, 26);
+            this.newconfigStrip.Size = new System.Drawing.Size(221, 22);
             this.newconfigStrip.Text = "&New Config";
             // 
             // saveconfigStrip
@@ -2288,7 +2300,7 @@
             this.saveconfigStrip.Name = "saveconfigStrip";
             this.saveconfigStrip.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.S)));
-            this.saveconfigStrip.Size = new System.Drawing.Size(225, 26);
+            this.saveconfigStrip.Size = new System.Drawing.Size(221, 22);
             this.saveconfigStrip.Text = "&Save Config";
             // 
             // openconfigStrip
@@ -2297,13 +2309,13 @@
             this.openconfigStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openconfigStrip.Name = "openconfigStrip";
             this.openconfigStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openconfigStrip.Size = new System.Drawing.Size(225, 26);
+            this.openconfigStrip.Size = new System.Drawing.Size(221, 22);
             this.openconfigStrip.Text = "&Open Config";
             // 
             // Separator4
             // 
             this.Separator4.Name = "Separator4";
-            this.Separator4.Size = new System.Drawing.Size(222, 6);
+            this.Separator4.Size = new System.Drawing.Size(218, 6);
             // 
             // configfolderStrip
             // 
@@ -2311,21 +2323,21 @@
             this.configfolderStrip.Name = "configfolderStrip";
             this.configfolderStrip.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.O)));
-            this.configfolderStrip.Size = new System.Drawing.Size(225, 26);
+            this.configfolderStrip.Size = new System.Drawing.Size(221, 22);
             this.configfolderStrip.Text = "&Config Folder";
             this.configfolderStrip.Click += new System.EventHandler(this.configfolderStrip_Click);
             // 
             // Separator6
             // 
             this.Separator6.Name = "Separator6";
-            this.Separator6.Size = new System.Drawing.Size(222, 6);
+            this.Separator6.Size = new System.Drawing.Size(218, 6);
             // 
             // preferencesStrip
             // 
             this.preferencesStrip.Image = global::scrcpyGUI.Properties.Resources.gear;
             this.preferencesStrip.Name = "preferencesStrip";
             this.preferencesStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.preferencesStrip.Size = new System.Drawing.Size(225, 26);
+            this.preferencesStrip.Size = new System.Drawing.Size(221, 22);
             this.preferencesStrip.Text = "&Preferences";
             this.preferencesStrip.Click += new System.EventHandler(this.preferencesStrip_Click);
             // 
@@ -2362,21 +2374,21 @@
             // 
             this.websiteStrip.Image = global::scrcpyGUI.Properties.Resources.world;
             this.websiteStrip.Name = "websiteStrip";
-            this.websiteStrip.Size = new System.Drawing.Size(184, 26);
+            this.websiteStrip.Size = new System.Drawing.Size(145, 22);
             this.websiteStrip.Text = "&Website...";
             this.websiteStrip.Click += new System.EventHandler(this.websiteStrip_Click);
             // 
             // Separator5
             // 
             this.Separator5.Name = "Separator5";
-            this.Separator5.Size = new System.Drawing.Size(181, 6);
+            this.Separator5.Size = new System.Drawing.Size(142, 6);
             // 
             // aboutStrip
             // 
             this.aboutStrip.Image = global::scrcpyGUI.Properties.Resources.info;
             this.aboutStrip.Name = "aboutStrip";
             this.aboutStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
-            this.aboutStrip.Size = new System.Drawing.Size(184, 26);
+            this.aboutStrip.Size = new System.Drawing.Size(145, 22);
             this.aboutStrip.Text = "&About";
             this.aboutStrip.Click += new System.EventHandler(this.aboutStrip_Click);
             // 
@@ -2422,18 +2434,6 @@
             this.legacyPaste.Text = "--legacy-paste";
             this.legacyPaste.UseVisualStyleBackColor = true;
             // 
-            // resetStrip
-            // 
-            this.resetStrip.Image = global::scrcpyGUI.Properties.Resources.reload;
-            this.resetStrip.Name = "resetStrip";
-            this.resetStrip.Size = new System.Drawing.Size(184, 26);
-            this.resetStrip.Text = "&Reset";
-            // 
-            // Separator8
-            // 
-            this.Separator8.Name = "Separator8";
-            this.Separator8.Size = new System.Drawing.Size(181, 6);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -2457,7 +2457,8 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Basic Scrcpy GUI";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+            this.Shown += new System.EventHandler(this.MainForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
