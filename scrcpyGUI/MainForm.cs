@@ -187,14 +187,14 @@ namespace scrcpyGUI
         {
             var arguments = new StringBuilder();
 
-            // CheckBox Options
+            #region CheckBox Options
             var checkBoxOptions = new Dictionary<CheckBox, string>
             {
                 { alwaysOnTop, "--always-on-top" },
                 { fullscreen, "--fullscreen" },
                 { noAudio, "--no-audio" },
                 { noAudioPlayback, "--no-audio-playback" },
-                { noControl, "--no-control" },
+                { noControl, "--no-control" }, //
                 { printFps, "--print-fps" },
                 { noVideo, "--no-video" },
                 { noVdDestroyContent, "--no-vd-destroy-content" },
@@ -241,60 +241,42 @@ namespace scrcpyGUI
                 if (option.Key.Checked)
                     arguments.Append(option.Value + " ");
             }
+            #endregion
 
-            // Int TextBox Options (Aslında ayırmaya gerek yok)
-            var intOptions = new List<(TextBox, string)>
+            #region TextBox Options
+            var textOptions = new List<(TextBox box, string argName)>
             {
-                (angle, "--angle"),
-                (maxFps, "--max-fps"),
-                (videoBitRate, "--video-bit-rate"),
-                (audioBitRate, "--audio-bit-rate"),
-                (audioBuffer, "--audio-buffer"),
+                (angle,             "--angle"),
+                (maxFps,            "--max-fps"),
+                (videoBitRate,      "--video-bit-rate"),
+                (audioBitRate,      "--audio-bit-rate"),
+                (audioBuffer,       "--audio-buffer"),
+                (videoBuffer,       "--video-buffer"),
+                (videoEncoder,      "--video-encoder"),
+                (maxSize,           "--max-size"),
                 (audioOutputBuffer, "--audio-output-buffer"),
-                (screenOffTimeout, "--screen-off-timeout"),
-                (windowX, "--window-x"),
-                (windowY, "--window-y"),
-                (windowWidth, "--window-width"),
-                (windowHeight, "--window-height"),
-                (cameraFps, "--camera-fps"),
-                (port, "--port"),
-                (timeLimit, "--time-limit"),
-                (tunnelPort, "--tunnel-port")
+                (screenOffTimeout,  "--screen-off-timeout"),
+                (record,            "--record"),
+
+                (windowX,           "--window-x"),
+                (windowY,           "--window-y"),
+                (windowWidth,       "--window-width"),
+                (windowHeight,      "--window-height"),
+                (cameraFps,         "--camera-fps"),
+                (port,              "--port"),
+                (timeLimit,         "--time-limit"),
+                (tunnelPort,        "--tunnel-port"),
             };
 
-            foreach (var (box, argName) in intOptions)
+            foreach (var (box, name) in textOptions)
             {
-                if (int.TryParse(box.Text.Trim(), out int value))
-                    arguments.Append($"{argName}={value} ");
+                var txt = box.Text.Trim();
+                if (!string.IsNullOrEmpty(txt))
+                    arguments.Append($"{name}={txt} ").Append(' ');
             }
+            #endregion
 
-            // Direct String Options
-            var stringOptions = new List<(TextBox, string)>
-            {
-                // checkb { serial, "--serial" },
-                (record, "--record"),
-                (videoEncoder, "--video-encoder"),
-                (startApp, "--start-app"),
-                (windowTitle, "--window-title"),
-                (cameraAr, "--camera-ar"),
-                (cameraId, "--camera-id"),
-                (displayId, "--display-id"),
-                (pushTarget, "--push-target"),
-                //ayarlanmadı (shortcutMod, "--shortcut-mod"),
-                // text (tcpip, "--tcpip"),
-                // (tunnelHost, "--tunnel-host"),
-                // (videoCodecOptions, "--video-codec-options"),
-                // (audioCodecOptions, "--audio-codec-options")
-            };
-
-            foreach (var (box, argName) in stringOptions)
-            {
-                string value = box.Text.Trim();
-                if (!string.IsNullOrEmpty(value))
-                    arguments.Append($"{argName}={value} ");
-            }
-
-            // ComboBox Options
+            #region ComboBox Options
             var comboBoxOptions = new Dictionary<ComboBox, string>
             {
                 { audioCodec, "--audio-codec" },
@@ -304,6 +286,7 @@ namespace scrcpyGUI
                 { cameraFacing, "--camera-facing" },
                 { recordFormat, "--record-format" },
                 { videoSource, "--video-source" },
+
                 { captureOrientation, "--capture-orientation" },
                 { displayOrientation, "--display-orientation" },
                 { displayImePolicy, "--display-ime-policy" },
@@ -322,6 +305,7 @@ namespace scrcpyGUI
             }
 
             return arguments.ToString().Trim();
+            #endregion
         }
 
         #endregion
@@ -479,11 +463,11 @@ namespace scrcpyGUI
         private void aboutStrip_Click(object sender, EventArgs e)
         {
             string appName = "Scrcpy for Basic GUI";
-            string version = "Version: 2025.05.14";
+            string version = "Version: 2025.05.24";
             string developer = "Ahrezan";
             string githubLink = "GitHub: github.com/Ahrezan";
             string license = "Licence: Apache License 2.0";
-            string releaseDate = "Latest Update: 2025-05-14";
+            string releaseDate = "Latest Update: 2025-05-24";
             string scrcpyVersion = "Scrcpy Version: v3.2";
 
             string aboutMessage = $"{appName}\n{version}\n\n{developer}\n{githubLink}\n{license}\n{scrcpyVersion}\n{releaseDate}";

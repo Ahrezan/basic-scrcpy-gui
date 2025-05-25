@@ -35,74 +35,73 @@
             this.printFps = new System.Windows.Forms.CheckBox();
             this.fullscreen = new System.Windows.Forms.CheckBox();
             this.noVideo = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblMaxFps = new System.Windows.Forms.Label();
             this.videoCodec = new System.Windows.Forms.ComboBox();
             this.maxFps = new System.Windows.Forms.TextBox();
             this.audioCodec = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblVideoCodec = new System.Windows.Forms.Label();
+            this.lblAudioCodec = new System.Windows.Forms.Label();
             this.captureOrientation = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblCaptureOrientation = new System.Windows.Forms.Label();
+            this.lblAngle = new System.Windows.Forms.Label();
             this.angle = new System.Windows.Forms.TextBox();
             this.displayId = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblDisplayID = new System.Windows.Forms.Label();
             this.cropWidth = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
+            this.lblCrop = new System.Windows.Forms.Label();
+            this.lblRenderDriver = new System.Windows.Forms.Label();
             this.otg = new System.Windows.Forms.CheckBox();
             this.renderDriver = new System.Windows.Forms.ComboBox();
             this.noVideoPlayback = new System.Windows.Forms.CheckBox();
-            this.newDisplayDpi = new System.Windows.Forms.TextBox();
             this.newDisplayHeight = new System.Windows.Forms.TextBox();
             this.newDisplayWidth = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
+            this.lblNewDisplay = new System.Windows.Forms.Label();
             this.noPlayback = new System.Windows.Forms.CheckBox();
             this.mouse = new System.Windows.Forms.ComboBox();
-            this.label30 = new System.Windows.Forms.Label();
+            this.lblMouse = new System.Windows.Forms.Label();
             this.m = new System.Windows.Forms.CheckBox();
-            this.label29 = new System.Windows.Forms.Label();
+            this.lblMaxSize = new System.Windows.Forms.Label();
             this.maxSize = new System.Windows.Forms.TextBox();
             this.keyboard = new System.Windows.Forms.ComboBox();
-            this.label28 = new System.Windows.Forms.Label();
+            this.lblKeyboard = new System.Windows.Forms.Label();
             this.noWindow = new System.Windows.Forms.CheckBox();
             this.k = new System.Windows.Forms.CheckBox();
             this.gamepad = new System.Windows.Forms.ComboBox();
-            this.label27 = new System.Windows.Forms.Label();
+            this.lblGamepad = new System.Windows.Forms.Label();
             this.g = new System.Windows.Forms.CheckBox();
             this.forceAdbForward = new System.Windows.Forms.CheckBox();
             this.selectTcpip = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
+            this.lblSelectTcpip = new System.Windows.Forms.Label();
             this.displayOrientation = new System.Windows.Forms.ComboBox();
-            this.label25 = new System.Windows.Forms.Label();
+            this.lblDisplayOrientation = new System.Windows.Forms.Label();
             this.displayImePolicy = new System.Windows.Forms.ComboBox();
-            this.label24 = new System.Windows.Forms.Label();
+            this.lblDisplayImePolicy = new System.Windows.Forms.Label();
             this.disableScreensaver = new System.Windows.Forms.CheckBox();
             this.selectUsb = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
+            this.lblSelectUSB = new System.Windows.Forms.Label();
+            this.lblVideoBitrate = new System.Windows.Forms.Label();
             this.videoBitRate = new System.Windows.Forms.TextBox();
             this.alwaysOnTop = new System.Windows.Forms.CheckBox();
             this.orientation = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblOrientation = new System.Windows.Forms.Label();
+            this.lblVideoBuffer = new System.Windows.Forms.Label();
             this.cropY = new System.Windows.Forms.TextBox();
             this.videoBuffer = new System.Windows.Forms.TextBox();
             this.cropX = new System.Windows.Forms.TextBox();
             this.cropHeight = new System.Windows.Forms.TextBox();
             this.noAudioPlayback = new System.Windows.Forms.CheckBox();
-            this.label21 = new System.Windows.Forms.Label();
+            this.lblAudioEncoder = new System.Windows.Forms.Label();
             this.audioEncoder = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblAudioOutputBuffer = new System.Windows.Forms.Label();
             this.audioOutputBuffer = new System.Windows.Forms.TextBox();
             this.audioBitRate = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblAudioBitrate = new System.Windows.Forms.Label();
             this.audioCodecOptions = new System.Windows.Forms.CheckBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblAudioSource = new System.Windows.Forms.Label();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.audioDup = new System.Windows.Forms.CheckBox();
             this.audioSource = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblAudioBuffer = new System.Windows.Forms.Label();
             this.audioBuffer = new System.Windows.Forms.TextBox();
             this.consoleOutputRichTextbox = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -138,87 +137,87 @@
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cameraHighSpeed = new System.Windows.Forms.CheckBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lblCameraSize = new System.Windows.Forms.Label();
             this.cameraSizeWidth = new System.Windows.Forms.TextBox();
             this.cameraFps = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.cameraId = new System.Windows.Forms.TextBox();
             this.cameraAr = new System.Windows.Forms.TextBox();
             this.cameraSizeHeight = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.lblCameraID = new System.Windows.Forms.Label();
+            this.lblCameraAR = new System.Windows.Forms.Label();
+            this.lblCameraFPS = new System.Windows.Forms.Label();
             this.cameraFacing = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lblCameraFacing = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lblVideoSource = new System.Windows.Forms.Label();
             this.videoSource = new System.Windows.Forms.ComboBox();
             this.noClipboardAutosync = new System.Windows.Forms.CheckBox();
             this.noCleanup = new System.Windows.Forms.CheckBox();
             this.verbosity = new System.Windows.Forms.ComboBox();
             this.stayAwake = new System.Windows.Forms.CheckBox();
-            this.label45 = new System.Windows.Forms.Label();
+            this.lblVerbosity = new System.Windows.Forms.Label();
             this.version = new System.Windows.Forms.CheckBox();
             this.timeLimit = new System.Windows.Forms.TextBox();
-            this.label43 = new System.Windows.Forms.Label();
+            this.lblTimeLimit = new System.Windows.Forms.Label();
             this.turnScreenOff = new System.Windows.Forms.CheckBox();
             this.screenOffTimeout = new System.Windows.Forms.TextBox();
-            this.label39 = new System.Windows.Forms.Label();
+            this.lblScreenOffTimeout = new System.Windows.Forms.Label();
             this.preferText = new System.Windows.Forms.CheckBox();
             this.powerOffOnClose = new System.Windows.Forms.CheckBox();
             this.pauseOnExit = new System.Windows.Forms.ComboBox();
-            this.label34 = new System.Windows.Forms.Label();
+            this.lblPauseOnExit = new System.Windows.Forms.Label();
             this.noPowerOn = new System.Windows.Forms.CheckBox();
             this.noMipmaps = new System.Windows.Forms.CheckBox();
             this.noDownsizeOnError = new System.Windows.Forms.CheckBox();
             this.tunnelPort = new System.Windows.Forms.TextBox();
-            this.label44 = new System.Windows.Forms.Label();
+            this.lblTunnelPort = new System.Windows.Forms.Label();
             this.showTouches = new System.Windows.Forms.CheckBox();
             this.startApp = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
+            this.lblStart = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.pushTarget = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
+            this.lblPushTarget = new System.Windows.Forms.Label();
             this.port = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
+            this.lblPort = new System.Windows.Forms.Label();
             this.noMouseHover = new System.Windows.Forms.CheckBox();
             this.recordOrientation = new System.Windows.Forms.ComboBox();
-            this.label37 = new System.Windows.Forms.Label();
+            this.lblRecordOrientation = new System.Windows.Forms.Label();
             this.recordFormat = new System.Windows.Forms.ComboBox();
             this.record = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
+            this.lblRecord = new System.Windows.Forms.Label();
             this.noVdSystemDecorations = new System.Windows.Forms.CheckBox();
             this.noVdDestroyContent = new System.Windows.Forms.CheckBox();
             this.tctPip = new System.Windows.Forms.TextBox();
-            this.label42 = new System.Windows.Forms.Label();
+            this.lblTcpip = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.serial = new System.Windows.Forms.CheckBox();
             this.requireAudio = new System.Windows.Forms.CheckBox();
             this.rawKeyEvents = new System.Windows.Forms.CheckBox();
             this.noKeyRepeat = new System.Windows.Forms.CheckBox();
-            this.label46 = new System.Windows.Forms.Label();
+            this.lblVideoEncoder = new System.Windows.Forms.Label();
             this.videoEncoder = new System.Windows.Forms.TextBox();
             this.windowBorderless = new System.Windows.Forms.CheckBox();
             this.windowTitle = new System.Windows.Forms.TextBox();
-            this.label47 = new System.Windows.Forms.Label();
+            this.lblWindowTitle = new System.Windows.Forms.Label();
             this.windowX = new System.Windows.Forms.TextBox();
-            this.label48 = new System.Windows.Forms.Label();
+            this.lblWindowX = new System.Windows.Forms.Label();
             this.windowY = new System.Windows.Forms.TextBox();
-            this.label49 = new System.Windows.Forms.Label();
+            this.lblWindowY = new System.Windows.Forms.Label();
             this.windowHeight = new System.Windows.Forms.TextBox();
-            this.label50 = new System.Windows.Forms.Label();
+            this.lblWindowHeight = new System.Windows.Forms.Label();
             this.windowWidth = new System.Windows.Forms.TextBox();
-            this.label51 = new System.Windows.Forms.Label();
+            this.lblWindowWidth = new System.Windows.Forms.Label();
             this.VideoAndCodecGB = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label52 = new System.Windows.Forms.Label();
+            this.lblRecordFormat = new System.Windows.Forms.Label();
             this.AudioGB = new System.Windows.Forms.GroupBox();
             this.DisplayAndWindowGB = new System.Windows.Forms.GroupBox();
             this.InputAndControlsGB = new System.Windows.Forms.GroupBox();
             this.ConnectionAndDeviceOptionsGB = new System.Windows.Forms.GroupBox();
             this.killAdbOnClose = new System.Windows.Forms.CheckBox();
             this.tunnelHost = new System.Windows.Forms.TextBox();
-            this.label53 = new System.Windows.Forms.Label();
+            this.lblTunnelHost = new System.Windows.Forms.Label();
             this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.consoleStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.clearoutputStrip = new System.Windows.Forms.ToolStripMenuItem();
@@ -265,11 +264,11 @@
             // noAudio
             // 
             this.noAudio.AutoSize = true;
-            this.noAudio.Location = new System.Drawing.Point(9, 171);
+            this.noAudio.Location = new System.Drawing.Point(112, 216);
             this.noAudio.Name = "noAudio";
-            this.noAudio.Size = new System.Drawing.Size(73, 17);
+            this.noAudio.Size = new System.Drawing.Size(91, 17);
             this.noAudio.TabIndex = 5;
-            this.noAudio.Text = "--no-audio";
+            this.noAudio.Text = "Disable Audio";
             this.noAudio.UseVisualStyleBackColor = true;
             // 
             // noControl
@@ -297,9 +296,9 @@
             this.fullscreen.AutoSize = true;
             this.fullscreen.Location = new System.Drawing.Point(150, 186);
             this.fullscreen.Name = "fullscreen";
-            this.fullscreen.Size = new System.Drawing.Size(77, 17);
+            this.fullscreen.Size = new System.Drawing.Size(104, 17);
             this.fullscreen.TabIndex = 8;
-            this.fullscreen.Text = "--fullscreen";
+            this.fullscreen.Text = "Fullscreen Mode";
             this.fullscreen.UseVisualStyleBackColor = true;
             // 
             // noVideo
@@ -312,14 +311,14 @@
             this.noVideo.Text = "--no-video";
             this.noVideo.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblMaxFps
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(86, 108);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "--max-fps";
+            this.lblMaxFps.AutoSize = true;
+            this.lblMaxFps.Location = new System.Drawing.Point(86, 108);
+            this.lblMaxFps.Name = "lblMaxFps";
+            this.lblMaxFps.Size = new System.Drawing.Size(50, 13);
+            this.lblMaxFps.TabIndex = 13;
+            this.lblMaxFps.Text = "Max FPS";
             // 
             // videoCodec
             // 
@@ -355,23 +354,23 @@
             this.audioCodec.Size = new System.Drawing.Size(70, 21);
             this.audioCodec.TabIndex = 16;
             // 
-            // label2
+            // lblVideoCodec
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 64);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 13);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "--video-codec";
+            this.lblVideoCodec.AutoSize = true;
+            this.lblVideoCodec.Location = new System.Drawing.Point(6, 64);
+            this.lblVideoCodec.Name = "lblVideoCodec";
+            this.lblVideoCodec.Size = new System.Drawing.Size(68, 13);
+            this.lblVideoCodec.TabIndex = 17;
+            this.lblVideoCodec.Text = "Video Codec";
             // 
-            // label3
+            // lblAudioCodec
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 64);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 13);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "--audio-codec";
+            this.lblAudioCodec.AutoSize = true;
+            this.lblAudioCodec.Location = new System.Drawing.Point(6, 64);
+            this.lblAudioCodec.Name = "lblAudioCodec";
+            this.lblAudioCodec.Size = new System.Drawing.Size(68, 13);
+            this.lblAudioCodec.TabIndex = 18;
+            this.lblAudioCodec.Text = "Audio Codec";
             // 
             // captureOrientation
             // 
@@ -399,23 +398,23 @@
             this.captureOrientation.Size = new System.Drawing.Size(95, 21);
             this.captureOrientation.TabIndex = 19;
             // 
-            // label4
+            // lblCaptureOrientation
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 120);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 13);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "--capture-orientation";
+            this.lblCaptureOrientation.AutoSize = true;
+            this.lblCaptureOrientation.Location = new System.Drawing.Point(6, 120);
+            this.lblCaptureOrientation.Name = "lblCaptureOrientation";
+            this.lblCaptureOrientation.Size = new System.Drawing.Size(125, 13);
+            this.lblCaptureOrientation.TabIndex = 20;
+            this.lblCaptureOrientation.Text = "Lock Capture Orientation";
             // 
-            // label5
+            // lblAngle
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 237);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 13);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "--angle";
+            this.lblAngle.AutoSize = true;
+            this.lblAngle.Location = new System.Drawing.Point(6, 237);
+            this.lblAngle.Name = "lblAngle";
+            this.lblAngle.Size = new System.Drawing.Size(39, 13);
+            this.lblAngle.TabIndex = 21;
+            this.lblAngle.Text = "--angle";
             // 
             // angle
             // 
@@ -431,14 +430,14 @@
             this.displayId.Size = new System.Drawing.Size(54, 20);
             this.displayId.TabIndex = 25;
             // 
-            // label6
+            // lblDisplayID
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 235);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 13);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "--display-id";
+            this.lblDisplayID.AutoSize = true;
+            this.lblDisplayID.Location = new System.Drawing.Point(6, 235);
+            this.lblDisplayID.Name = "lblDisplayID";
+            this.lblDisplayID.Size = new System.Drawing.Size(56, 13);
+            this.lblDisplayID.TabIndex = 24;
+            this.lblDisplayID.Text = "--display-id";
             // 
             // cropWidth
             // 
@@ -447,23 +446,23 @@
             this.cropWidth.Size = new System.Drawing.Size(34, 20);
             this.cropWidth.TabIndex = 27;
             // 
-            // label7
+            // lblCrop
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 194);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(34, 13);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "--crop";
+            this.lblCrop.AutoSize = true;
+            this.lblCrop.Location = new System.Drawing.Point(6, 194);
+            this.lblCrop.Name = "lblCrop";
+            this.lblCrop.Size = new System.Drawing.Size(34, 13);
+            this.lblCrop.TabIndex = 26;
+            this.lblCrop.Text = "--crop";
             // 
-            // label38
+            // lblRenderDriver
             // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(147, 261);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(72, 13);
-            this.label38.TabIndex = 64;
-            this.label38.Text = "--render-driver";
+            this.lblRenderDriver.AutoSize = true;
+            this.lblRenderDriver.Location = new System.Drawing.Point(147, 261);
+            this.lblRenderDriver.Name = "lblRenderDriver";
+            this.lblRenderDriver.Size = new System.Drawing.Size(73, 13);
+            this.lblRenderDriver.TabIndex = 64;
+            this.lblRenderDriver.Text = "Render Driver";
             // 
             // otg
             // 
@@ -501,35 +500,28 @@
             this.noVideoPlayback.Text = "--no-video-playback";
             this.noVideoPlayback.UseVisualStyleBackColor = true;
             // 
-            // newDisplayDpi
-            // 
-            this.newDisplayDpi.Location = new System.Drawing.Point(238, 128);
-            this.newDisplayDpi.Name = "newDisplayDpi";
-            this.newDisplayDpi.Size = new System.Drawing.Size(35, 20);
-            this.newDisplayDpi.TabIndex = 79;
-            // 
             // newDisplayHeight
             // 
-            this.newDisplayHeight.Location = new System.Drawing.Point(197, 129);
+            this.newDisplayHeight.Location = new System.Drawing.Point(219, 130);
             this.newDisplayHeight.Name = "newDisplayHeight";
-            this.newDisplayHeight.Size = new System.Drawing.Size(35, 20);
+            this.newDisplayHeight.Size = new System.Drawing.Size(51, 20);
             this.newDisplayHeight.TabIndex = 78;
             // 
             // newDisplayWidth
             // 
-            this.newDisplayWidth.Location = new System.Drawing.Point(156, 128);
+            this.newDisplayWidth.Location = new System.Drawing.Point(157, 130);
             this.newDisplayWidth.Name = "newDisplayWidth";
-            this.newDisplayWidth.Size = new System.Drawing.Size(35, 20);
+            this.newDisplayWidth.Size = new System.Drawing.Size(56, 20);
             this.newDisplayWidth.TabIndex = 77;
             // 
-            // label32
+            // lblNewDisplay
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(154, 112);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(68, 13);
-            this.label32.TabIndex = 76;
-            this.label32.Text = "--new-display";
+            this.lblNewDisplay.AutoSize = true;
+            this.lblNewDisplay.Location = new System.Drawing.Point(154, 112);
+            this.lblNewDisplay.Name = "lblNewDisplay";
+            this.lblNewDisplay.Size = new System.Drawing.Size(68, 13);
+            this.lblNewDisplay.TabIndex = 76;
+            this.lblNewDisplay.Text = "--new-display";
             // 
             // noPlayback
             // 
@@ -555,14 +547,14 @@
             this.mouse.Size = new System.Drawing.Size(54, 21);
             this.mouse.TabIndex = 74;
             // 
-            // label30
+            // lblMouse
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(6, 20);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(44, 13);
-            this.label30.TabIndex = 73;
-            this.label30.Text = "--mouse";
+            this.lblMouse.AutoSize = true;
+            this.lblMouse.Location = new System.Drawing.Point(6, 20);
+            this.lblMouse.Name = "lblMouse";
+            this.lblMouse.Size = new System.Drawing.Size(39, 13);
+            this.lblMouse.TabIndex = 73;
+            this.lblMouse.Text = "Mouse";
             // 
             // m
             // 
@@ -574,14 +566,14 @@
             this.m.Text = "-M";
             this.m.UseVisualStyleBackColor = true;
             // 
-            // label29
+            // lblMaxSize
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(6, 152);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(53, 13);
-            this.label29.TabIndex = 70;
-            this.label29.Text = "--max-size";
+            this.lblMaxSize.AutoSize = true;
+            this.lblMaxSize.Location = new System.Drawing.Point(6, 152);
+            this.lblMaxSize.Name = "lblMaxSize";
+            this.lblMaxSize.Size = new System.Drawing.Size(50, 13);
+            this.lblMaxSize.TabIndex = 70;
+            this.lblMaxSize.Text = "Max Size";
             // 
             // maxSize
             // 
@@ -604,23 +596,23 @@
             this.keyboard.Size = new System.Drawing.Size(54, 21);
             this.keyboard.TabIndex = 69;
             // 
-            // label28
+            // lblKeyboard
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(6, 66);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(57, 13);
-            this.label28.TabIndex = 68;
-            this.label28.Text = "--keyboard";
+            this.lblKeyboard.AutoSize = true;
+            this.lblKeyboard.Location = new System.Drawing.Point(6, 66);
+            this.lblKeyboard.Name = "lblKeyboard";
+            this.lblKeyboard.Size = new System.Drawing.Size(52, 13);
+            this.lblKeyboard.TabIndex = 68;
+            this.lblKeyboard.Text = "Keyboard";
             // 
             // noWindow
             // 
             this.noWindow.AutoSize = true;
             this.noWindow.Location = new System.Drawing.Point(150, 164);
             this.noWindow.Name = "noWindow";
-            this.noWindow.Size = new System.Drawing.Size(83, 17);
+            this.noWindow.Size = new System.Drawing.Size(140, 17);
             this.noWindow.TabIndex = 40;
-            this.noWindow.Text = "--no-window";
+            this.noWindow.Text = "Disable Window Display";
             this.noWindow.UseVisualStyleBackColor = true;
             // 
             // k
@@ -646,14 +638,14 @@
             this.gamepad.Size = new System.Drawing.Size(54, 21);
             this.gamepad.TabIndex = 66;
             // 
-            // label27
+            // lblGamepad
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(6, 112);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(57, 13);
-            this.label27.TabIndex = 65;
-            this.label27.Text = "--gamepad";
+            this.lblGamepad.AutoSize = true;
+            this.lblGamepad.Location = new System.Drawing.Point(6, 112);
+            this.lblGamepad.Name = "lblGamepad";
+            this.lblGamepad.Size = new System.Drawing.Size(53, 13);
+            this.lblGamepad.TabIndex = 65;
+            this.lblGamepad.Text = "Gamepad";
             // 
             // g
             // 
@@ -682,14 +674,14 @@
             this.selectTcpip.Size = new System.Drawing.Size(64, 20);
             this.selectTcpip.TabIndex = 62;
             // 
-            // label26
+            // lblSelectTcpip
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(73, 22);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(67, 13);
-            this.label26.TabIndex = 61;
-            this.label26.Text = "--select-tcpip";
+            this.lblSelectTcpip.AutoSize = true;
+            this.lblSelectTcpip.Location = new System.Drawing.Point(73, 22);
+            this.lblSelectTcpip.Name = "lblSelectTcpip";
+            this.lblSelectTcpip.Size = new System.Drawing.Size(67, 13);
+            this.lblSelectTcpip.TabIndex = 61;
+            this.lblSelectTcpip.Text = "--select-tcpip";
             // 
             // displayOrientation
             // 
@@ -714,17 +706,17 @@
             "@flip270"});
             this.displayOrientation.Location = new System.Drawing.Point(179, 83);
             this.displayOrientation.Name = "displayOrientation";
-            this.displayOrientation.Size = new System.Drawing.Size(94, 21);
+            this.displayOrientation.Size = new System.Drawing.Size(91, 21);
             this.displayOrientation.TabIndex = 60;
             // 
-            // label25
+            // lblDisplayOrientation
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(176, 67);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(97, 13);
-            this.label25.TabIndex = 59;
-            this.label25.Text = "--display-orientation";
+            this.lblDisplayOrientation.AutoSize = true;
+            this.lblDisplayOrientation.Location = new System.Drawing.Point(176, 67);
+            this.lblDisplayOrientation.Name = "lblDisplayOrientation";
+            this.lblDisplayOrientation.Size = new System.Drawing.Size(95, 13);
+            this.lblDisplayOrientation.TabIndex = 59;
+            this.lblDisplayOrientation.Text = "Display Orientation";
             // 
             // displayImePolicy
             // 
@@ -739,14 +731,14 @@
             this.displayImePolicy.Size = new System.Drawing.Size(91, 21);
             this.displayImePolicy.TabIndex = 57;
             // 
-            // label24
+            // lblDisplayImePolicy
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(176, 20);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(94, 13);
-            this.label24.TabIndex = 58;
-            this.label24.Text = "--display-ime-policy";
+            this.lblDisplayImePolicy.AutoSize = true;
+            this.lblDisplayImePolicy.Location = new System.Drawing.Point(176, 20);
+            this.lblDisplayImePolicy.Name = "lblDisplayImePolicy";
+            this.lblDisplayImePolicy.Size = new System.Drawing.Size(94, 13);
+            this.lblDisplayImePolicy.TabIndex = 58;
+            this.lblDisplayImePolicy.Text = "IME Display Policy";
             // 
             // disableScreensaver
             // 
@@ -765,23 +757,23 @@
             this.selectUsb.Size = new System.Drawing.Size(58, 20);
             this.selectUsb.TabIndex = 55;
             // 
-            // label23
+            // lblSelectUSB
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(6, 21);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(61, 13);
-            this.label23.TabIndex = 54;
-            this.label23.Text = "--select-usb";
+            this.lblSelectUSB.AutoSize = true;
+            this.lblSelectUSB.Location = new System.Drawing.Point(6, 21);
+            this.lblSelectUSB.Name = "lblSelectUSB";
+            this.lblSelectUSB.Size = new System.Drawing.Size(61, 13);
+            this.lblSelectUSB.TabIndex = 54;
+            this.lblSelectUSB.Text = "--select-usb";
             // 
-            // label22
+            // lblVideoBitrate
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(6, 20);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(74, 13);
-            this.label22.TabIndex = 52;
-            this.label22.Text = "--video-bit-rate";
+            this.lblVideoBitrate.AutoSize = true;
+            this.lblVideoBitrate.Location = new System.Drawing.Point(6, 20);
+            this.lblVideoBitrate.Name = "lblVideoBitrate";
+            this.lblVideoBitrate.Size = new System.Drawing.Size(67, 13);
+            this.lblVideoBitrate.TabIndex = 52;
+            this.lblVideoBitrate.Text = "Video Bitrate";
             // 
             // videoBitRate
             // 
@@ -795,9 +787,9 @@
             this.alwaysOnTop.AutoSize = true;
             this.alwaysOnTop.Location = new System.Drawing.Point(9, 164);
             this.alwaysOnTop.Name = "alwaysOnTop";
-            this.alwaysOnTop.Size = new System.Drawing.Size(97, 17);
+            this.alwaysOnTop.Size = new System.Drawing.Size(96, 17);
             this.alwaysOnTop.TabIndex = 51;
-            this.alwaysOnTop.Text = "--always-on-top";
+            this.alwaysOnTop.Text = "Always on Top";
             this.alwaysOnTop.UseVisualStyleBackColor = true;
             // 
             // orientation
@@ -807,23 +799,23 @@
             this.orientation.Size = new System.Drawing.Size(54, 20);
             this.orientation.TabIndex = 50;
             // 
-            // label19
+            // lblOrientation
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(6, 262);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(62, 13);
-            this.label19.TabIndex = 49;
-            this.label19.Text = "--orientation";
+            this.lblOrientation.AutoSize = true;
+            this.lblOrientation.Location = new System.Drawing.Point(6, 262);
+            this.lblOrientation.Name = "lblOrientation";
+            this.lblOrientation.Size = new System.Drawing.Size(62, 13);
+            this.lblOrientation.TabIndex = 49;
+            this.lblOrientation.Text = "--orientation";
             // 
-            // label11
+            // lblVideoBuffer
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(86, 64);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(69, 13);
-            this.label11.TabIndex = 47;
-            this.label11.Text = "--video-buffer";
+            this.lblVideoBuffer.AutoSize = true;
+            this.lblVideoBuffer.Location = new System.Drawing.Point(86, 64);
+            this.lblVideoBuffer.Name = "lblVideoBuffer";
+            this.lblVideoBuffer.Size = new System.Drawing.Size(87, 13);
+            this.lblVideoBuffer.TabIndex = 47;
+            this.lblVideoBuffer.Text = "Video Buffer (ms)";
             // 
             // cropY
             // 
@@ -858,19 +850,19 @@
             this.noAudioPlayback.AutoSize = true;
             this.noAudioPlayback.Location = new System.Drawing.Point(9, 149);
             this.noAudioPlayback.Name = "noAudioPlayback";
-            this.noAudioPlayback.Size = new System.Drawing.Size(119, 17);
+            this.noAudioPlayback.Size = new System.Drawing.Size(138, 17);
             this.noAudioPlayback.TabIndex = 51;
-            this.noAudioPlayback.Text = "--no-audio-playback";
+            this.noAudioPlayback.Text = "Disable Audio Playback";
             this.noAudioPlayback.UseVisualStyleBackColor = true;
             // 
-            // label21
+            // lblAudioEncoder
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(6, 108);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(81, 13);
-            this.label21.TabIndex = 50;
-            this.label21.Text = "--audio-encoder";
+            this.lblAudioEncoder.AutoSize = true;
+            this.lblAudioEncoder.Location = new System.Drawing.Point(6, 108);
+            this.lblAudioEncoder.Name = "lblAudioEncoder";
+            this.lblAudioEncoder.Size = new System.Drawing.Size(77, 13);
+            this.lblAudioEncoder.TabIndex = 50;
+            this.lblAudioEncoder.Text = "Audio Encoder";
             // 
             // audioEncoder
             // 
@@ -886,14 +878,14 @@
             this.audioEncoder.Size = new System.Drawing.Size(70, 21);
             this.audioEncoder.TabIndex = 49;
             // 
-            // label12
+            // lblAudioOutputBuffer
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(86, 64);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(102, 13);
-            this.label12.TabIndex = 47;
-            this.label12.Text = "--audio-output-buffer";
+            this.lblAudioOutputBuffer.AutoSize = true;
+            this.lblAudioOutputBuffer.Location = new System.Drawing.Point(86, 64);
+            this.lblAudioOutputBuffer.Name = "lblAudioOutputBuffer";
+            this.lblAudioOutputBuffer.Size = new System.Drawing.Size(122, 13);
+            this.lblAudioOutputBuffer.TabIndex = 47;
+            this.lblAudioOutputBuffer.Text = "Audio Output Buffer (ms)";
             // 
             // audioOutputBuffer
             // 
@@ -909,14 +901,14 @@
             this.audioBitRate.Size = new System.Drawing.Size(71, 20);
             this.audioBitRate.TabIndex = 45;
             // 
-            // label10
+            // lblAudioBitrate
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 20);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(74, 13);
-            this.label10.TabIndex = 44;
-            this.label10.Text = "--audio-bit-rate";
+            this.lblAudioBitrate.AutoSize = true;
+            this.lblAudioBitrate.Location = new System.Drawing.Point(6, 20);
+            this.lblAudioBitrate.Name = "lblAudioBitrate";
+            this.lblAudioBitrate.Size = new System.Drawing.Size(67, 13);
+            this.lblAudioBitrate.TabIndex = 44;
+            this.lblAudioBitrate.Text = "Audio Bitrate";
             // 
             // audioCodecOptions
             // 
@@ -928,19 +920,19 @@
             this.audioCodecOptions.Text = "--audio-codec-options=flac-compression-level";
             this.audioCodecOptions.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // lblAudioSource
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(89, 107);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 13);
-            this.label9.TabIndex = 45;
-            this.label9.Text = "--audio-source";
+            this.lblAudioSource.AutoSize = true;
+            this.lblAudioSource.Location = new System.Drawing.Point(89, 107);
+            this.lblAudioSource.Name = "lblAudioSource";
+            this.lblAudioSource.Size = new System.Drawing.Size(71, 13);
+            this.lblAudioSource.TabIndex = 45;
+            this.lblAudioSource.Text = "Audio Source";
             // 
             // trackBar1
             // 
             this.trackBar1.AutoSize = false;
-            this.trackBar1.Location = new System.Drawing.Point(6, 220);
+            this.trackBar1.Location = new System.Drawing.Point(6, 239);
             this.trackBar1.Maximum = 8;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(210, 32);
@@ -949,11 +941,11 @@
             // audioDup
             // 
             this.audioDup.AutoSize = true;
-            this.audioDup.Location = new System.Drawing.Point(134, 150);
+            this.audioDup.Location = new System.Drawing.Point(9, 171);
             this.audioDup.Name = "audioDup";
-            this.audioDup.Size = new System.Drawing.Size(79, 17);
+            this.audioDup.Size = new System.Drawing.Size(161, 17);
             this.audioDup.TabIndex = 46;
-            this.audioDup.Text = "--audio-dup";
+            this.audioDup.Text = "Duplicate Audio to Speakers";
             this.audioDup.UseVisualStyleBackColor = true;
             // 
             // audioSource
@@ -977,14 +969,14 @@
             this.audioSource.Size = new System.Drawing.Size(130, 21);
             this.audioSource.TabIndex = 44;
             // 
-            // label8
+            // lblAudioBuffer
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(86, 21);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 13);
-            this.label8.TabIndex = 40;
-            this.label8.Text = "--audio-buffer";
+            this.lblAudioBuffer.AutoSize = true;
+            this.lblAudioBuffer.Location = new System.Drawing.Point(86, 21);
+            this.lblAudioBuffer.Name = "lblAudioBuffer";
+            this.lblAudioBuffer.Size = new System.Drawing.Size(87, 13);
+            this.lblAudioBuffer.TabIndex = 40;
+            this.lblAudioBuffer.Text = "Audio Buffer (ms)";
             // 
             // audioBuffer
             // 
@@ -1248,22 +1240,22 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.cameraHighSpeed);
-            this.groupBox4.Controls.Add(this.label16);
+            this.groupBox4.Controls.Add(this.lblCameraSize);
             this.groupBox4.Controls.Add(this.cameraSizeWidth);
             this.groupBox4.Controls.Add(this.listCameraSizes);
             this.groupBox4.Controls.Add(this.captureOrientation);
             this.groupBox4.Controls.Add(this.cameraFps);
             this.groupBox4.Controls.Add(this.listCameras);
-            this.groupBox4.Controls.Add(this.label4);
+            this.groupBox4.Controls.Add(this.lblCaptureOrientation);
             this.groupBox4.Controls.Add(this.label17);
             this.groupBox4.Controls.Add(this.cameraId);
             this.groupBox4.Controls.Add(this.cameraAr);
             this.groupBox4.Controls.Add(this.cameraSizeHeight);
-            this.groupBox4.Controls.Add(this.label15);
-            this.groupBox4.Controls.Add(this.label18);
-            this.groupBox4.Controls.Add(this.label20);
+            this.groupBox4.Controls.Add(this.lblCameraID);
+            this.groupBox4.Controls.Add(this.lblCameraAR);
+            this.groupBox4.Controls.Add(this.lblCameraFPS);
             this.groupBox4.Controls.Add(this.cameraFacing);
-            this.groupBox4.Controls.Add(this.label14);
+            this.groupBox4.Controls.Add(this.lblCameraFacing);
             this.groupBox4.Location = new System.Drawing.Point(12, 326);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(248, 170);
@@ -1281,14 +1273,14 @@
             this.cameraHighSpeed.Text = "--camera-high-speed";
             this.cameraHighSpeed.UseVisualStyleBackColor = true;
             // 
-            // label16
+            // lblCameraSize
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(6, 20);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(69, 13);
-            this.label16.TabIndex = 53;
-            this.label16.Text = "--camera-size";
+            this.lblCameraSize.AutoSize = true;
+            this.lblCameraSize.Location = new System.Drawing.Point(6, 20);
+            this.lblCameraSize.Name = "lblCameraSize";
+            this.lblCameraSize.Size = new System.Drawing.Size(69, 13);
+            this.lblCameraSize.TabIndex = 53;
+            this.lblCameraSize.Text = "--camera-size";
             // 
             // cameraSizeWidth
             // 
@@ -1334,32 +1326,32 @@
             this.cameraSizeHeight.Size = new System.Drawing.Size(35, 20);
             this.cameraSizeHeight.TabIndex = 55;
             // 
-            // label15
+            // lblCameraID
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(118, 94);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(59, 13);
-            this.label15.TabIndex = 49;
-            this.label15.Text = "--camera-id";
+            this.lblCameraID.AutoSize = true;
+            this.lblCameraID.Location = new System.Drawing.Point(118, 94);
+            this.lblCameraID.Name = "lblCameraID";
+            this.lblCameraID.Size = new System.Drawing.Size(59, 13);
+            this.lblCameraID.TabIndex = 49;
+            this.lblCameraID.Text = "--camera-id";
             // 
-            // label18
+            // lblCameraAR
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(6, 94);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(60, 13);
-            this.label18.TabIndex = 58;
-            this.label18.Text = "--camera-ar";
+            this.lblCameraAR.AutoSize = true;
+            this.lblCameraAR.Location = new System.Drawing.Point(6, 94);
+            this.lblCameraAR.Name = "lblCameraAR";
+            this.lblCameraAR.Size = new System.Drawing.Size(60, 13);
+            this.lblCameraAR.TabIndex = 58;
+            this.lblCameraAR.Text = "--camera-ar";
             // 
-            // label20
+            // lblCameraFPS
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(6, 67);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(65, 13);
-            this.label20.TabIndex = 60;
-            this.label20.Text = "--camera-fps";
+            this.lblCameraFPS.AutoSize = true;
+            this.lblCameraFPS.Location = new System.Drawing.Point(6, 67);
+            this.lblCameraFPS.Name = "lblCameraFPS";
+            this.lblCameraFPS.Size = new System.Drawing.Size(66, 13);
+            this.lblCameraFPS.TabIndex = 60;
+            this.lblCameraFPS.Text = "Camera FPS";
             // 
             // cameraFacing
             // 
@@ -1369,19 +1361,19 @@
             "front",
             "back",
             "external"});
-            this.cameraFacing.Location = new System.Drawing.Point(122, 138);
+            this.cameraFacing.Location = new System.Drawing.Point(137, 138);
             this.cameraFacing.Name = "cameraFacing";
             this.cameraFacing.Size = new System.Drawing.Size(76, 21);
             this.cameraFacing.TabIndex = 51;
             // 
-            // label14
+            // lblCameraFacing
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(118, 120);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(80, 13);
-            this.label14.TabIndex = 52;
-            this.label14.Text = "--camera-facing";
+            this.lblCameraFacing.AutoSize = true;
+            this.lblCameraFacing.Location = new System.Drawing.Point(137, 120);
+            this.lblCameraFacing.Name = "lblCameraFacing";
+            this.lblCameraFacing.Size = new System.Drawing.Size(78, 13);
+            this.lblCameraFacing.TabIndex = 52;
+            this.lblCameraFacing.Text = "Camera Facing";
             // 
             // label31
             // 
@@ -1392,14 +1384,14 @@
             this.label31.TabIndex = 62;
             this.label31.Text = "--mouse-bind (ayarlanmadı)";
             // 
-            // label13
+            // lblVideoSource
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(6, 108);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(74, 13);
-            this.label13.TabIndex = 50;
-            this.label13.Text = "--video-source";
+            this.lblVideoSource.AutoSize = true;
+            this.lblVideoSource.Location = new System.Drawing.Point(6, 108);
+            this.lblVideoSource.Name = "lblVideoSource";
+            this.lblVideoSource.Size = new System.Drawing.Size(71, 13);
+            this.lblVideoSource.TabIndex = 50;
+            this.lblVideoSource.Text = "Video Source";
             // 
             // videoSource
             // 
@@ -1458,14 +1450,14 @@
             this.stayAwake.Text = "--stay-awake";
             this.stayAwake.UseVisualStyleBackColor = true;
             // 
-            // label45
+            // lblVerbosity
             // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(6, 244);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(55, 13);
-            this.label45.TabIndex = 63;
-            this.label45.Text = "--verbosity";
+            this.lblVerbosity.AutoSize = true;
+            this.lblVerbosity.Location = new System.Drawing.Point(11, 245);
+            this.lblVerbosity.Name = "lblVerbosity";
+            this.lblVerbosity.Size = new System.Drawing.Size(50, 13);
+            this.lblVerbosity.TabIndex = 63;
+            this.lblVerbosity.Text = "Verbosity";
             // 
             // version
             // 
@@ -1484,14 +1476,14 @@
             this.timeLimit.Size = new System.Drawing.Size(148, 20);
             this.timeLimit.TabIndex = 101;
             // 
-            // label43
+            // lblTimeLimit
             // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(6, 100);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(52, 13);
-            this.label43.TabIndex = 100;
-            this.label43.Text = "--time-limit";
+            this.lblTimeLimit.AutoSize = true;
+            this.lblTimeLimit.Location = new System.Drawing.Point(6, 100);
+            this.lblTimeLimit.Name = "lblTimeLimit";
+            this.lblTimeLimit.Size = new System.Drawing.Size(52, 13);
+            this.lblTimeLimit.TabIndex = 100;
+            this.lblTimeLimit.Text = "--time-limit";
             // 
             // turnScreenOff
             // 
@@ -1510,14 +1502,14 @@
             this.screenOffTimeout.Size = new System.Drawing.Size(103, 20);
             this.screenOffTimeout.TabIndex = 93;
             // 
-            // label39
+            // lblScreenOffTimeout
             // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(6, 126);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(97, 13);
-            this.label39.TabIndex = 92;
-            this.label39.Text = "--screen-off-timeout";
+            this.lblScreenOffTimeout.AutoSize = true;
+            this.lblScreenOffTimeout.Location = new System.Drawing.Point(6, 126);
+            this.lblScreenOffTimeout.Name = "lblScreenOffTimeout";
+            this.lblScreenOffTimeout.Size = new System.Drawing.Size(97, 13);
+            this.lblScreenOffTimeout.TabIndex = 92;
+            this.lblScreenOffTimeout.Text = "--screen-off-timeout";
             // 
             // preferText
             // 
@@ -1552,14 +1544,14 @@
             this.pauseOnExit.Size = new System.Drawing.Size(124, 21);
             this.pauseOnExit.TabIndex = 83;
             // 
-            // label34
+            // lblPauseOnExit
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(6, 73);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(76, 13);
-            this.label34.TabIndex = 82;
-            this.label34.Text = "--pause-on-exit";
+            this.lblPauseOnExit.AutoSize = true;
+            this.lblPauseOnExit.Location = new System.Drawing.Point(6, 73);
+            this.lblPauseOnExit.Name = "lblPauseOnExit";
+            this.lblPauseOnExit.Size = new System.Drawing.Size(72, 13);
+            this.lblPauseOnExit.TabIndex = 82;
+            this.lblPauseOnExit.Text = "Pause on Exit";
             // 
             // noPowerOn
             // 
@@ -1598,14 +1590,14 @@
             this.tunnelPort.Size = new System.Drawing.Size(100, 20);
             this.tunnelPort.TabIndex = 103;
             // 
-            // label44
+            // lblTunnelPort
             // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(106, 153);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(63, 13);
-            this.label44.TabIndex = 102;
-            this.label44.Text = "--tunnel-port";
+            this.lblTunnelPort.AutoSize = true;
+            this.lblTunnelPort.Location = new System.Drawing.Point(105, 155);
+            this.lblTunnelPort.Name = "lblTunnelPort";
+            this.lblTunnelPort.Size = new System.Drawing.Size(63, 13);
+            this.lblTunnelPort.TabIndex = 102;
+            this.lblTunnelPort.Text = "--tunnel-port";
             // 
             // showTouches
             // 
@@ -1624,14 +1616,14 @@
             this.startApp.Size = new System.Drawing.Size(146, 20);
             this.startApp.TabIndex = 96;
             // 
-            // label41
+            // lblStart
             // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(6, 20);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(54, 13);
-            this.label41.TabIndex = 95;
-            this.label41.Text = "--start-app";
+            this.lblStart.AutoSize = true;
+            this.lblStart.Location = new System.Drawing.Point(6, 20);
+            this.lblStart.Name = "lblStart";
+            this.lblStart.Size = new System.Drawing.Size(54, 13);
+            this.lblStart.TabIndex = 95;
+            this.lblStart.Text = "--start-app";
             // 
             // button3
             // 
@@ -1649,14 +1641,14 @@
             this.pushTarget.Size = new System.Drawing.Size(103, 20);
             this.pushTarget.TabIndex = 83;
             // 
-            // label35
+            // lblPushTarget
             // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(6, 47);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(66, 13);
-            this.label35.TabIndex = 82;
-            this.label35.Text = "--push-target";
+            this.lblPushTarget.AutoSize = true;
+            this.lblPushTarget.Location = new System.Drawing.Point(6, 47);
+            this.lblPushTarget.Name = "lblPushTarget";
+            this.lblPushTarget.Size = new System.Drawing.Size(66, 13);
+            this.lblPushTarget.TabIndex = 82;
+            this.lblPushTarget.Text = "--push-target";
             // 
             // port
             // 
@@ -1665,14 +1657,14 @@
             this.port.Size = new System.Drawing.Size(90, 20);
             this.port.TabIndex = 83;
             // 
-            // label33
+            // lblPort
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(6, 111);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(58, 13);
-            this.label33.TabIndex = 82;
-            this.label33.Text = "--port[:port]";
+            this.lblPort.AutoSize = true;
+            this.lblPort.Location = new System.Drawing.Point(6, 111);
+            this.lblPort.Name = "lblPort";
+            this.lblPort.Size = new System.Drawing.Size(58, 13);
+            this.lblPort.TabIndex = 82;
+            this.lblPort.Text = "--port[:port]";
             // 
             // noMouseHover
             // 
@@ -1710,14 +1702,14 @@
             this.recordOrientation.Size = new System.Drawing.Size(94, 21);
             this.recordOrientation.TabIndex = 83;
             // 
-            // label37
+            // lblRecordOrientation
             // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(8, 57);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(95, 13);
-            this.label37.TabIndex = 82;
-            this.label37.Text = "--record-orientation";
+            this.lblRecordOrientation.AutoSize = true;
+            this.lblRecordOrientation.Location = new System.Drawing.Point(8, 57);
+            this.lblRecordOrientation.Name = "lblRecordOrientation";
+            this.lblRecordOrientation.Size = new System.Drawing.Size(96, 13);
+            this.lblRecordOrientation.TabIndex = 82;
+            this.lblRecordOrientation.Text = "Record Orientation";
             // 
             // recordFormat
             // 
@@ -1744,14 +1736,14 @@
             this.record.Size = new System.Drawing.Size(76, 20);
             this.record.TabIndex = 88;
             // 
-            // label36
+            // lblRecord
             // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(8, 16);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(43, 13);
-            this.label36.TabIndex = 87;
-            this.label36.Text = "--record";
+            this.lblRecord.AutoSize = true;
+            this.lblRecord.Location = new System.Drawing.Point(8, 16);
+            this.lblRecord.Name = "lblRecord";
+            this.lblRecord.Size = new System.Drawing.Size(61, 13);
+            this.lblRecord.TabIndex = 87;
+            this.lblRecord.Text = "Record File";
             // 
             // noVdSystemDecorations
             // 
@@ -1780,14 +1772,14 @@
             this.tctPip.Size = new System.Drawing.Size(92, 20);
             this.tctPip.TabIndex = 99;
             // 
-            // label42
+            // lblTcpip
             // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(6, 66);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(95, 13);
-            this.label42.TabIndex = 98;
-            this.label42.Text = "--tcpip[=[+]ip[:port]]";
+            this.lblTcpip.AutoSize = true;
+            this.lblTcpip.Location = new System.Drawing.Point(6, 66);
+            this.lblTcpip.Name = "lblTcpip";
+            this.lblTcpip.Size = new System.Drawing.Size(95, 13);
+            this.lblTcpip.TabIndex = 98;
+            this.lblTcpip.Text = "--tcpip[=[+]ip[:port]]";
             // 
             // label40
             // 
@@ -1811,11 +1803,11 @@
             // requireAudio
             // 
             this.requireAudio.AutoSize = true;
-            this.requireAudio.Location = new System.Drawing.Point(134, 174);
+            this.requireAudio.Location = new System.Drawing.Point(9, 216);
             this.requireAudio.Name = "requireAudio";
             this.requireAudio.Size = new System.Drawing.Size(93, 17);
             this.requireAudio.TabIndex = 90;
-            this.requireAudio.Text = "--require-audio";
+            this.requireAudio.Text = "Require Audio";
             this.requireAudio.UseVisualStyleBackColor = true;
             // 
             // rawKeyEvents
@@ -1838,14 +1830,14 @@
             this.noKeyRepeat.Text = "--no-key-repeat";
             this.noKeyRepeat.UseVisualStyleBackColor = true;
             // 
-            // label46
+            // lblVideoEncoder
             // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(84, 20);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(81, 13);
-            this.label46.TabIndex = 83;
-            this.label46.Text = "--video-encoder";
+            this.lblVideoEncoder.AutoSize = true;
+            this.lblVideoEncoder.Location = new System.Drawing.Point(84, 20);
+            this.lblVideoEncoder.Name = "lblVideoEncoder";
+            this.lblVideoEncoder.Size = new System.Drawing.Size(77, 13);
+            this.lblVideoEncoder.TabIndex = 83;
+            this.lblVideoEncoder.Text = "Video Encoder";
             // 
             // videoEncoder
             // 
@@ -1859,9 +1851,9 @@
             this.windowBorderless.AutoSize = true;
             this.windowBorderless.Location = new System.Drawing.Point(9, 186);
             this.windowBorderless.Name = "windowBorderless";
-            this.windowBorderless.Size = new System.Drawing.Size(119, 17);
+            this.windowBorderless.Size = new System.Drawing.Size(117, 17);
             this.windowBorderless.TabIndex = 86;
-            this.windowBorderless.Text = "--window-borderless";
+            this.windowBorderless.Text = "Borderless Window";
             this.windowBorderless.UseVisualStyleBackColor = true;
             // 
             // windowTitle
@@ -1871,14 +1863,14 @@
             this.windowTitle.Size = new System.Drawing.Size(152, 20);
             this.windowTitle.TabIndex = 107;
             // 
-            // label47
+            // lblWindowTitle
             // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(7, 68);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(68, 13);
-            this.label47.TabIndex = 106;
-            this.label47.Text = "--window-title";
+            this.lblWindowTitle.AutoSize = true;
+            this.lblWindowTitle.Location = new System.Drawing.Point(7, 68);
+            this.lblWindowTitle.Name = "lblWindowTitle";
+            this.lblWindowTitle.Size = new System.Drawing.Size(69, 13);
+            this.lblWindowTitle.TabIndex = 106;
+            this.lblWindowTitle.Text = "Window Title";
             // 
             // windowX
             // 
@@ -1887,14 +1879,14 @@
             this.windowX.Size = new System.Drawing.Size(54, 20);
             this.windowX.TabIndex = 88;
             // 
-            // label48
+            // lblWindowX
             // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(7, 114);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(57, 13);
-            this.label48.TabIndex = 87;
-            this.label48.Text = "--window-x";
+            this.lblWindowX.AutoSize = true;
+            this.lblWindowX.Location = new System.Drawing.Point(7, 114);
+            this.lblWindowX.Name = "lblWindowX";
+            this.lblWindowX.Size = new System.Drawing.Size(57, 13);
+            this.lblWindowX.TabIndex = 87;
+            this.lblWindowX.Text = "--window-x";
             // 
             // windowY
             // 
@@ -1903,14 +1895,14 @@
             this.windowY.Size = new System.Drawing.Size(54, 20);
             this.windowY.TabIndex = 90;
             // 
-            // label49
+            // lblWindowY
             // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(67, 114);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(57, 13);
-            this.label49.TabIndex = 89;
-            this.label49.Text = "--window-y";
+            this.lblWindowY.AutoSize = true;
+            this.lblWindowY.Location = new System.Drawing.Point(67, 114);
+            this.lblWindowY.Name = "lblWindowY";
+            this.lblWindowY.Size = new System.Drawing.Size(57, 13);
+            this.lblWindowY.TabIndex = 89;
+            this.lblWindowY.Text = "--window-y";
             // 
             // windowHeight
             // 
@@ -1919,14 +1911,14 @@
             this.windowHeight.Size = new System.Drawing.Size(78, 20);
             this.windowHeight.TabIndex = 94;
             // 
-            // label50
+            // lblWindowHeight
             // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(89, 20);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(81, 13);
-            this.label50.TabIndex = 93;
-            this.label50.Text = "--window-height";
+            this.lblWindowHeight.AutoSize = true;
+            this.lblWindowHeight.Location = new System.Drawing.Point(89, 20);
+            this.lblWindowHeight.Name = "lblWindowHeight";
+            this.lblWindowHeight.Size = new System.Drawing.Size(81, 13);
+            this.lblWindowHeight.TabIndex = 93;
+            this.lblWindowHeight.Text = "--window-height";
             // 
             // windowWidth
             // 
@@ -1935,44 +1927,44 @@
             this.windowWidth.Size = new System.Drawing.Size(74, 20);
             this.windowWidth.TabIndex = 92;
             // 
-            // label51
+            // lblWindowWidth
             // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(6, 20);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(77, 13);
-            this.label51.TabIndex = 91;
-            this.label51.Text = "--window-width";
+            this.lblWindowWidth.AutoSize = true;
+            this.lblWindowWidth.Location = new System.Drawing.Point(6, 20);
+            this.lblWindowWidth.Name = "lblWindowWidth";
+            this.lblWindowWidth.Size = new System.Drawing.Size(77, 13);
+            this.lblWindowWidth.TabIndex = 91;
+            this.lblWindowWidth.Text = "--window-width";
             // 
             // VideoAndCodecGB
             // 
             this.VideoAndCodecGB.Controls.Add(this.listDisplays);
             this.VideoAndCodecGB.Controls.Add(this.groupBox1);
-            this.VideoAndCodecGB.Controls.Add(this.label22);
+            this.VideoAndCodecGB.Controls.Add(this.lblVideoBitrate);
             this.VideoAndCodecGB.Controls.Add(this.videoBitRate);
-            this.VideoAndCodecGB.Controls.Add(this.label5);
+            this.VideoAndCodecGB.Controls.Add(this.lblAngle);
             this.VideoAndCodecGB.Controls.Add(this.printFps);
-            this.VideoAndCodecGB.Controls.Add(this.label2);
+            this.VideoAndCodecGB.Controls.Add(this.lblVideoCodec);
             this.VideoAndCodecGB.Controls.Add(this.noPlayback);
             this.VideoAndCodecGB.Controls.Add(this.angle);
             this.VideoAndCodecGB.Controls.Add(this.videoCodec);
-            this.VideoAndCodecGB.Controls.Add(this.label46);
+            this.VideoAndCodecGB.Controls.Add(this.lblVideoEncoder);
             this.VideoAndCodecGB.Controls.Add(this.maxSize);
             this.VideoAndCodecGB.Controls.Add(this.videoEncoder);
-            this.VideoAndCodecGB.Controls.Add(this.label13);
+            this.VideoAndCodecGB.Controls.Add(this.lblVideoSource);
             this.VideoAndCodecGB.Controls.Add(this.videoSource);
             this.VideoAndCodecGB.Controls.Add(this.noVideo);
-            this.VideoAndCodecGB.Controls.Add(this.label7);
+            this.VideoAndCodecGB.Controls.Add(this.lblCrop);
             this.VideoAndCodecGB.Controls.Add(this.cropWidth);
             this.VideoAndCodecGB.Controls.Add(this.noVideoPlayback);
             this.VideoAndCodecGB.Controls.Add(this.maxFps);
             this.VideoAndCodecGB.Controls.Add(this.cropHeight);
-            this.VideoAndCodecGB.Controls.Add(this.label29);
+            this.VideoAndCodecGB.Controls.Add(this.lblMaxSize);
             this.VideoAndCodecGB.Controls.Add(this.cropY);
             this.VideoAndCodecGB.Controls.Add(this.videoBuffer);
             this.VideoAndCodecGB.Controls.Add(this.cropX);
-            this.VideoAndCodecGB.Controls.Add(this.label1);
-            this.VideoAndCodecGB.Controls.Add(this.label11);
+            this.VideoAndCodecGB.Controls.Add(this.lblMaxFps);
+            this.VideoAndCodecGB.Controls.Add(this.lblVideoBuffer);
             this.VideoAndCodecGB.Location = new System.Drawing.Point(332, 32);
             this.VideoAndCodecGB.Name = "VideoAndCodecGB";
             this.VideoAndCodecGB.Size = new System.Drawing.Size(338, 288);
@@ -1982,12 +1974,12 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label52);
+            this.groupBox1.Controls.Add(this.lblRecordFormat);
             this.groupBox1.Controls.Add(this.recordFormat);
-            this.groupBox1.Controls.Add(this.label36);
+            this.groupBox1.Controls.Add(this.lblRecord);
             this.groupBox1.Controls.Add(this.record);
             this.groupBox1.Controls.Add(this.recordOrientation);
-            this.groupBox1.Controls.Add(this.label37);
+            this.groupBox1.Controls.Add(this.lblRecordOrientation);
             this.groupBox1.Location = new System.Drawing.Point(183, 14);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(149, 104);
@@ -1995,32 +1987,32 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "🎥 Record";
             // 
-            // label52
+            // lblRecordFormat
             // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(73, 17);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(75, 13);
-            this.label52.TabIndex = 89;
-            this.label52.Text = "--record-format";
+            this.lblRecordFormat.AutoSize = true;
+            this.lblRecordFormat.Location = new System.Drawing.Point(90, 16);
+            this.lblRecordFormat.Name = "lblRecordFormat";
+            this.lblRecordFormat.Size = new System.Drawing.Size(39, 13);
+            this.lblRecordFormat.TabIndex = 89;
+            this.lblRecordFormat.Text = "Format";
             // 
             // AudioGB
             // 
             this.AudioGB.Controls.Add(this.audioCodecOptions);
-            this.AudioGB.Controls.Add(this.label10);
+            this.AudioGB.Controls.Add(this.lblAudioBitrate);
             this.AudioGB.Controls.Add(this.trackBar1);
             this.AudioGB.Controls.Add(this.audioBitRate);
             this.AudioGB.Controls.Add(this.noAudioPlayback);
-            this.AudioGB.Controls.Add(this.label8);
+            this.AudioGB.Controls.Add(this.lblAudioBuffer);
             this.AudioGB.Controls.Add(this.audioBuffer);
             this.AudioGB.Controls.Add(this.audioCodec);
-            this.AudioGB.Controls.Add(this.label3);
-            this.AudioGB.Controls.Add(this.label12);
+            this.AudioGB.Controls.Add(this.lblAudioCodec);
+            this.AudioGB.Controls.Add(this.lblAudioOutputBuffer);
             this.AudioGB.Controls.Add(this.noAudio);
             this.AudioGB.Controls.Add(this.audioOutputBuffer);
             this.AudioGB.Controls.Add(this.audioSource);
-            this.AudioGB.Controls.Add(this.label9);
-            this.AudioGB.Controls.Add(this.label21);
+            this.AudioGB.Controls.Add(this.lblAudioSource);
+            this.AudioGB.Controls.Add(this.lblAudioEncoder);
             this.AudioGB.Controls.Add(this.audioEncoder);
             this.AudioGB.Controls.Add(this.requireAudio);
             this.AudioGB.Controls.Add(this.audioDup);
@@ -2035,35 +2027,34 @@
             // 
             this.DisplayAndWindowGB.Controls.Add(this.disableScreensaver);
             this.DisplayAndWindowGB.Controls.Add(this.orientation);
-            this.DisplayAndWindowGB.Controls.Add(this.label19);
-            this.DisplayAndWindowGB.Controls.Add(this.label51);
+            this.DisplayAndWindowGB.Controls.Add(this.lblOrientation);
+            this.DisplayAndWindowGB.Controls.Add(this.lblWindowWidth);
             this.DisplayAndWindowGB.Controls.Add(this.windowWidth);
-            this.DisplayAndWindowGB.Controls.Add(this.label38);
+            this.DisplayAndWindowGB.Controls.Add(this.lblRenderDriver);
             this.DisplayAndWindowGB.Controls.Add(this.noVdDestroyContent);
             this.DisplayAndWindowGB.Controls.Add(this.noVdSystemDecorations);
             this.DisplayAndWindowGB.Controls.Add(this.displayImePolicy);
-            this.DisplayAndWindowGB.Controls.Add(this.label50);
+            this.DisplayAndWindowGB.Controls.Add(this.lblWindowHeight);
             this.DisplayAndWindowGB.Controls.Add(this.windowX);
             this.DisplayAndWindowGB.Controls.Add(this.renderDriver);
-            this.DisplayAndWindowGB.Controls.Add(this.label48);
-            this.DisplayAndWindowGB.Controls.Add(this.label49);
+            this.DisplayAndWindowGB.Controls.Add(this.lblWindowX);
+            this.DisplayAndWindowGB.Controls.Add(this.lblWindowY);
             this.DisplayAndWindowGB.Controls.Add(this.displayId);
             this.DisplayAndWindowGB.Controls.Add(this.windowHeight);
             this.DisplayAndWindowGB.Controls.Add(this.windowY);
-            this.DisplayAndWindowGB.Controls.Add(this.newDisplayDpi);
-            this.DisplayAndWindowGB.Controls.Add(this.label47);
+            this.DisplayAndWindowGB.Controls.Add(this.lblWindowTitle);
             this.DisplayAndWindowGB.Controls.Add(this.fullscreen);
             this.DisplayAndWindowGB.Controls.Add(this.displayOrientation);
             this.DisplayAndWindowGB.Controls.Add(this.windowTitle);
             this.DisplayAndWindowGB.Controls.Add(this.windowBorderless);
-            this.DisplayAndWindowGB.Controls.Add(this.label32);
+            this.DisplayAndWindowGB.Controls.Add(this.lblNewDisplay);
             this.DisplayAndWindowGB.Controls.Add(this.noWindow);
             this.DisplayAndWindowGB.Controls.Add(this.alwaysOnTop);
-            this.DisplayAndWindowGB.Controls.Add(this.label25);
-            this.DisplayAndWindowGB.Controls.Add(this.label6);
+            this.DisplayAndWindowGB.Controls.Add(this.lblDisplayOrientation);
+            this.DisplayAndWindowGB.Controls.Add(this.lblDisplayID);
             this.DisplayAndWindowGB.Controls.Add(this.newDisplayWidth);
             this.DisplayAndWindowGB.Controls.Add(this.newDisplayHeight);
-            this.DisplayAndWindowGB.Controls.Add(this.label24);
+            this.DisplayAndWindowGB.Controls.Add(this.lblDisplayImePolicy);
             this.DisplayAndWindowGB.Location = new System.Drawing.Point(12, 32);
             this.DisplayAndWindowGB.Name = "DisplayAndWindowGB";
             this.DisplayAndWindowGB.Size = new System.Drawing.Size(314, 288);
@@ -2076,15 +2067,15 @@
             this.InputAndControlsGB.Controls.Add(this.gamepad);
             this.InputAndControlsGB.Controls.Add(this.g);
             this.InputAndControlsGB.Controls.Add(this.m);
-            this.InputAndControlsGB.Controls.Add(this.label30);
+            this.InputAndControlsGB.Controls.Add(this.lblMouse);
             this.InputAndControlsGB.Controls.Add(this.label31);
             this.InputAndControlsGB.Controls.Add(this.mouse);
-            this.InputAndControlsGB.Controls.Add(this.label28);
+            this.InputAndControlsGB.Controls.Add(this.lblKeyboard);
             this.InputAndControlsGB.Controls.Add(this.keyboard);
             this.InputAndControlsGB.Controls.Add(this.showTouches);
             this.InputAndControlsGB.Controls.Add(this.k);
             this.InputAndControlsGB.Controls.Add(this.noKeyRepeat);
-            this.InputAndControlsGB.Controls.Add(this.label27);
+            this.InputAndControlsGB.Controls.Add(this.lblGamepad);
             this.InputAndControlsGB.Controls.Add(this.noControl);
             this.InputAndControlsGB.Controls.Add(this.rawKeyEvents);
             this.InputAndControlsGB.Controls.Add(this.label40);
@@ -2100,21 +2091,21 @@
             // 
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.verbosity);
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.killAdbOnClose);
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.label45);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.lblVerbosity);
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.tunnelHost);
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.version);
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.label53);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.lblTunnelHost);
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.serial);
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.tunnelPort);
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.selectUsb);
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.label23);
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.label44);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.lblSelectUSB);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.lblTunnelPort);
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.otg);
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.selectTcpip);
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.label26);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.lblSelectTcpip);
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.tctPip);
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.label42);
-            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.label33);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.lblTcpip);
+            this.ConnectionAndDeviceOptionsGB.Controls.Add(this.lblPort);
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.forceAdbForward);
             this.ConnectionAndDeviceOptionsGB.Controls.Add(this.port);
             this.ConnectionAndDeviceOptionsGB.Location = new System.Drawing.Point(912, 32);
@@ -2143,14 +2134,14 @@
             this.tunnelHost.Size = new System.Drawing.Size(90, 20);
             this.tunnelHost.TabIndex = 101;
             // 
-            // label53
+            // lblTunnelHost
             // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(6, 155);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(65, 13);
-            this.label53.TabIndex = 100;
-            this.label53.Text = "--tunnel-host";
+            this.lblTunnelHost.AutoSize = true;
+            this.lblTunnelHost.Location = new System.Drawing.Point(6, 155);
+            this.lblTunnelHost.Name = "lblTunnelHost";
+            this.lblTunnelHost.Size = new System.Drawing.Size(65, 13);
+            this.lblTunnelHost.TabIndex = 100;
+            this.lblTunnelHost.Text = "--tunnel-host";
             // 
             // MenuStrip
             // 
@@ -2400,8 +2391,8 @@
             this.groupBox2.Controls.Add(this.noCleanup);
             this.groupBox2.Controls.Add(this.noClipboardAutosync);
             this.groupBox2.Controls.Add(this.listEncoders);
-            this.groupBox2.Controls.Add(this.label41);
-            this.groupBox2.Controls.Add(this.label35);
+            this.groupBox2.Controls.Add(this.lblStart);
+            this.groupBox2.Controls.Add(this.lblPushTarget);
             this.groupBox2.Controls.Add(this.pushTarget);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.stayAwake);
@@ -2411,11 +2402,11 @@
             this.groupBox2.Controls.Add(this.noMipmaps);
             this.groupBox2.Controls.Add(this.screenOffTimeout);
             this.groupBox2.Controls.Add(this.noDownsizeOnError);
-            this.groupBox2.Controls.Add(this.label34);
-            this.groupBox2.Controls.Add(this.label39);
+            this.groupBox2.Controls.Add(this.lblPauseOnExit);
+            this.groupBox2.Controls.Add(this.lblScreenOffTimeout);
             this.groupBox2.Controls.Add(this.pauseOnExit);
             this.groupBox2.Controls.Add(this.timeLimit);
-            this.groupBox2.Controls.Add(this.label43);
+            this.groupBox2.Controls.Add(this.lblTimeLimit);
             this.groupBox2.Controls.Add(this.powerOffOnClose);
             this.groupBox2.Location = new System.Drawing.Point(557, 326);
             this.groupBox2.Name = "groupBox2";
@@ -2490,20 +2481,20 @@
         private System.Windows.Forms.CheckBox printFps;
         private System.Windows.Forms.CheckBox fullscreen;
         private System.Windows.Forms.CheckBox noVideo;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblMaxFps;
         private System.Windows.Forms.ComboBox videoCodec;
         private System.Windows.Forms.TextBox maxFps;
         private System.Windows.Forms.ComboBox audioCodec;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblVideoCodec;
+        private System.Windows.Forms.Label lblAudioCodec;
         private System.Windows.Forms.ComboBox captureOrientation;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblCaptureOrientation;
+        private System.Windows.Forms.Label lblAngle;
         private System.Windows.Forms.TextBox angle;
         private System.Windows.Forms.TextBox displayId;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblDisplayID;
         private System.Windows.Forms.TextBox cropWidth;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblCrop;
         private System.Windows.Forms.RichTextBox consoleOutputRichTextbox;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox cropY;
@@ -2535,74 +2526,73 @@
         private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem;
         private System.Windows.Forms.CheckBox noWindow;
         private System.Windows.Forms.ToolTip ToolTip;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblAudioBuffer;
         private System.Windows.Forms.TextBox audioBuffer;
         private System.Windows.Forms.CheckBox listEncoders;
         private System.Windows.Forms.ComboBox audioSource;
         private System.Windows.Forms.CheckBox audioDup;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblAudioSource;
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.CheckBox audioCodecOptions;
         private System.Windows.Forms.TextBox audioBitRate;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblAudioBitrate;
+        private System.Windows.Forms.Label lblVideoBuffer;
         private System.Windows.Forms.TextBox videoBuffer;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblAudioOutputBuffer;
         private System.Windows.Forms.TextBox audioOutputBuffer;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblVideoSource;
         private System.Windows.Forms.ComboBox videoSource;
         private System.Windows.Forms.CheckBox listCameras;
         private System.Windows.Forms.CheckBox listCameraSizes;
         private System.Windows.Forms.TextBox cameraId;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lblCameraID;
+        private System.Windows.Forms.Label lblCameraFacing;
+        private System.Windows.Forms.Label lblCameraSize;
         private System.Windows.Forms.TextBox cameraSizeWidth;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox cameraSizeHeight;
         private System.Windows.Forms.TextBox cameraAr;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblCameraAR;
         private System.Windows.Forms.TextBox orientation;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lblOrientation;
+        private System.Windows.Forms.Label lblCameraFPS;
         private System.Windows.Forms.TextBox cameraFps;
         private System.Windows.Forms.CheckBox alwaysOnTop;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label lblVideoBitrate;
         private System.Windows.Forms.TextBox videoBitRate;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lblAudioEncoder;
         private System.Windows.Forms.ComboBox audioEncoder;
         private System.Windows.Forms.ComboBox cameraFacing;
         private System.Windows.Forms.CheckBox cameraHighSpeed;
         private System.Windows.Forms.ComboBox displayOrientation;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label lblDisplayOrientation;
         private System.Windows.Forms.ComboBox displayImePolicy;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label lblDisplayImePolicy;
         private System.Windows.Forms.CheckBox disableScreensaver;
         private System.Windows.Forms.TextBox selectUsb;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label lblSelectUSB;
         private System.Windows.Forms.CheckBox forceAdbForward;
         private System.Windows.Forms.TextBox selectTcpip;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label lblSelectTcpip;
         private System.Windows.Forms.ComboBox keyboard;
-        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label lblKeyboard;
         private System.Windows.Forms.CheckBox k;
         private System.Windows.Forms.ComboBox gamepad;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label lblGamepad;
         private System.Windows.Forms.CheckBox g;
-        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label lblMaxSize;
         private System.Windows.Forms.TextBox maxSize;
         private System.Windows.Forms.CheckBox listDisplays;
         private System.Windows.Forms.CheckBox listApps;
         private System.Windows.Forms.ComboBox mouse;
-        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label lblMouse;
         private System.Windows.Forms.CheckBox m;
         private System.Windows.Forms.CheckBox noPlayback;
         private System.Windows.Forms.TextBox newDisplayWidth;
-        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label lblNewDisplay;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.TextBox newDisplayHeight;
-        private System.Windows.Forms.TextBox newDisplayDpi;
         private System.Windows.Forms.CheckBox noAudioPlayback;
         private System.Windows.Forms.CheckBox noMouseHover;
         private System.Windows.Forms.CheckBox noMipmaps;
@@ -2616,54 +2606,54 @@
         private System.Windows.Forms.CheckBox noPowerOn;
         private System.Windows.Forms.CheckBox otg;
         private System.Windows.Forms.TextBox port;
-        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label lblPort;
         private System.Windows.Forms.ComboBox pauseOnExit;
-        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label lblPauseOnExit;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox pushTarget;
-        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label lblPushTarget;
         private System.Windows.Forms.CheckBox preferText;
         private System.Windows.Forms.CheckBox powerOffOnClose;
         private System.Windows.Forms.TextBox record;
-        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label lblRecord;
         private System.Windows.Forms.ComboBox recordOrientation;
-        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label lblRecordOrientation;
         private System.Windows.Forms.ComboBox recordFormat;
         private System.Windows.Forms.CheckBox rawKeyEvents;
-        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label lblRenderDriver;
         private System.Windows.Forms.ComboBox renderDriver;
         private System.Windows.Forms.TextBox screenOffTimeout;
-        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label lblScreenOffTimeout;
         private System.Windows.Forms.CheckBox serial;
         private System.Windows.Forms.CheckBox requireAudio;
         private System.Windows.Forms.CheckBox turnScreenOff;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.TextBox startApp;
-        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label lblStart;
         private System.Windows.Forms.TextBox tctPip;
-        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label lblTcpip;
         private System.Windows.Forms.CheckBox showTouches;
-        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label lblVerbosity;
         private System.Windows.Forms.CheckBox version;
         private System.Windows.Forms.TextBox tunnelPort;
-        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label lblTunnelPort;
         private System.Windows.Forms.TextBox timeLimit;
-        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label lblTimeLimit;
         private System.Windows.Forms.ComboBox verbosity;
         private System.Windows.Forms.TextBox videoEncoder;
-        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label lblVideoEncoder;
         private System.Windows.Forms.CheckBox stayAwake;
         private System.Windows.Forms.CheckBox windowBorderless;
         private System.Windows.Forms.TextBox windowTitle;
-        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label lblWindowTitle;
         private System.Windows.Forms.TextBox windowHeight;
-        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label lblWindowHeight;
         private System.Windows.Forms.TextBox windowWidth;
-        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label lblWindowWidth;
         private System.Windows.Forms.TextBox windowY;
-        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label lblWindowY;
         private System.Windows.Forms.TextBox windowX;
-        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label lblWindowX;
         private System.Windows.Forms.GroupBox VideoAndCodecGB;
         private System.Windows.Forms.GroupBox AudioGB;
         private System.Windows.Forms.GroupBox DisplayAndWindowGB;
@@ -2692,9 +2682,9 @@
         private System.Windows.Forms.ToolStripMenuItem configfolderStrip;
         private System.Windows.Forms.ToolStripSeparator Separator6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label lblRecordFormat;
         private System.Windows.Forms.TextBox tunnelHost;
-        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label lblTunnelHost;
         private System.Windows.Forms.CheckBox killAdbOnClose;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.CheckBox legacyPaste;

@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AppSettings));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.VariousGB = new System.Windows.Forms.GroupBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.LanguageAndThemeGB = new System.Windows.Forms.GroupBox();
             this.language = new System.Windows.Forms.ComboBox();
             this.theme = new System.Windows.Forms.ComboBox();
             this.updateApp = new System.Windows.Forms.Button();
             this.updateScrcpy = new System.Windows.Forms.Button();
             this.saveSettings = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.VariousGB.SuspendLayout();
+            this.LanguageAndThemeGB.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // VariousGB
             // 
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(244, 67);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Various";
+            this.VariousGB.Controls.Add(this.checkBox2);
+            this.VariousGB.Controls.Add(this.checkBox1);
+            this.VariousGB.Location = new System.Drawing.Point(12, 3);
+            this.VariousGB.Name = "VariousGB";
+            this.VariousGB.Size = new System.Drawing.Size(244, 67);
+            this.VariousGB.TabIndex = 0;
+            this.VariousGB.TabStop = false;
+            this.VariousGB.Text = "Various";
             // 
             // checkBox2
             // 
@@ -73,16 +73,16 @@
             this.checkBox1.Text = "Keep screen sharing after app closes";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
+            // LanguageAndThemeGB
             // 
-            this.groupBox2.Controls.Add(this.language);
-            this.groupBox2.Controls.Add(this.theme);
-            this.groupBox2.Location = new System.Drawing.Point(12, 76);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(244, 81);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Language && Theme";
+            this.LanguageAndThemeGB.Controls.Add(this.language);
+            this.LanguageAndThemeGB.Controls.Add(this.theme);
+            this.LanguageAndThemeGB.Location = new System.Drawing.Point(12, 76);
+            this.LanguageAndThemeGB.Name = "LanguageAndThemeGB";
+            this.LanguageAndThemeGB.Size = new System.Drawing.Size(244, 81);
+            this.LanguageAndThemeGB.TabIndex = 1;
+            this.LanguageAndThemeGB.TabStop = false;
+            this.LanguageAndThemeGB.Text = "Language && Theme";
             // 
             // language
             // 
@@ -145,8 +145,8 @@
             this.Controls.Add(this.saveSettings);
             this.Controls.Add(this.updateScrcpy);
             this.Controls.Add(this.updateApp);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.LanguageAndThemeGB);
+            this.Controls.Add(this.VariousGB);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -154,18 +154,18 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";
             this.Load += new System.EventHandler(this.AppSettings_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.VariousGB.ResumeLayout(false);
+            this.VariousGB.PerformLayout();
+            this.LanguageAndThemeGB.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox VariousGB;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox LanguageAndThemeGB;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.ComboBox language;
         private System.Windows.Forms.ComboBox theme;
