@@ -135,6 +135,8 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.pauseOnExit = new System.Windows.Forms.ComboBox();
+            this.windowTitle = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cameraHighSpeed = new System.Windows.Forms.CheckBox();
             this.lblCameraSize = new System.Windows.Forms.Label();
@@ -165,7 +167,6 @@
             this.lblScreenOffTimeout = new System.Windows.Forms.Label();
             this.preferText = new System.Windows.Forms.CheckBox();
             this.powerOffOnClose = new System.Windows.Forms.CheckBox();
-            this.pauseOnExit = new System.Windows.Forms.ComboBox();
             this.lblPauseOnExit = new System.Windows.Forms.Label();
             this.noPowerOn = new System.Windows.Forms.CheckBox();
             this.noMipmaps = new System.Windows.Forms.CheckBox();
@@ -198,7 +199,6 @@
             this.lblVideoEncoder = new System.Windows.Forms.Label();
             this.videoEncoder = new System.Windows.Forms.TextBox();
             this.windowBorderless = new System.Windows.Forms.CheckBox();
-            this.windowTitle = new System.Windows.Forms.TextBox();
             this.lblWindowTitle = new System.Windows.Forms.Label();
             this.windowX = new System.Windows.Forms.TextBox();
             this.lblWindowX = new System.Windows.Forms.Label();
@@ -299,6 +299,7 @@
             this.fullscreen.Size = new System.Drawing.Size(104, 17);
             this.fullscreen.TabIndex = 8;
             this.fullscreen.Text = "Fullscreen Mode";
+            this.ToolTip.SetToolTip(this.fullscreen, "Start in fullscreen.");
             this.fullscreen.UseVisualStyleBackColor = true;
             // 
             // noVideo
@@ -412,9 +413,9 @@
             this.lblAngle.AutoSize = true;
             this.lblAngle.Location = new System.Drawing.Point(6, 237);
             this.lblAngle.Name = "lblAngle";
-            this.lblAngle.Size = new System.Drawing.Size(39, 13);
+            this.lblAngle.Size = new System.Drawing.Size(34, 13);
             this.lblAngle.TabIndex = 21;
-            this.lblAngle.Text = "--angle";
+            this.lblAngle.Text = "Angle";
             // 
             // angle
             // 
@@ -613,6 +614,7 @@
             this.noWindow.Size = new System.Drawing.Size(140, 17);
             this.noWindow.TabIndex = 40;
             this.noWindow.Text = "Disable Window Display";
+            this.ToolTip.SetToolTip(this.noWindow, "Disable scrcpy window. Implies no video playback.");
             this.noWindow.UseVisualStyleBackColor = true;
             // 
             // k
@@ -708,6 +710,7 @@
             this.displayOrientation.Name = "displayOrientation";
             this.displayOrientation.Size = new System.Drawing.Size(91, 21);
             this.displayOrientation.TabIndex = 60;
+            this.ToolTip.SetToolTip(this.displayOrientation, resources.GetString("displayOrientation.ToolTip"));
             // 
             // lblDisplayOrientation
             // 
@@ -730,6 +733,7 @@
             this.displayImePolicy.Name = "displayImePolicy";
             this.displayImePolicy.Size = new System.Drawing.Size(91, 21);
             this.displayImePolicy.TabIndex = 57;
+            this.ToolTip.SetToolTip(this.displayImePolicy, resources.GetString("displayImePolicy.ToolTip"));
             // 
             // lblDisplayImePolicy
             // 
@@ -790,6 +794,7 @@
             this.alwaysOnTop.Size = new System.Drawing.Size(96, 17);
             this.alwaysOnTop.TabIndex = 51;
             this.alwaysOnTop.Text = "Always on Top";
+            this.ToolTip.SetToolTip(this.alwaysOnTop, "Make scrcpy window always on top (above other windows).");
             this.alwaysOnTop.UseVisualStyleBackColor = true;
             // 
             // orientation
@@ -1237,6 +1242,28 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             // 
+            // pauseOnExit
+            // 
+            this.pauseOnExit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.pauseOnExit.FormattingEnabled = true;
+            this.pauseOnExit.Items.AddRange(new object[] {
+            "true",
+            "false",
+            "if-error"});
+            this.pauseOnExit.Location = new System.Drawing.Point(88, 70);
+            this.pauseOnExit.Name = "pauseOnExit";
+            this.pauseOnExit.Size = new System.Drawing.Size(124, 21);
+            this.pauseOnExit.TabIndex = 83;
+            this.ToolTip.SetToolTip(this.pauseOnExit, resources.GetString("pauseOnExit.ToolTip"));
+            // 
+            // windowTitle
+            // 
+            this.windowTitle.Location = new System.Drawing.Point(10, 84);
+            this.windowTitle.Name = "windowTitle";
+            this.windowTitle.Size = new System.Drawing.Size(152, 20);
+            this.windowTitle.TabIndex = 107;
+            this.ToolTip.SetToolTip(this.windowTitle, "Set a custom window title.");
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.cameraHighSpeed);
@@ -1530,19 +1557,6 @@
             this.powerOffOnClose.TabIndex = 84;
             this.powerOffOnClose.Text = "--power-off-on-close";
             this.powerOffOnClose.UseVisualStyleBackColor = true;
-            // 
-            // pauseOnExit
-            // 
-            this.pauseOnExit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.pauseOnExit.FormattingEnabled = true;
-            this.pauseOnExit.Items.AddRange(new object[] {
-            "true",
-            "false",
-            "if-error"});
-            this.pauseOnExit.Location = new System.Drawing.Point(88, 70);
-            this.pauseOnExit.Name = "pauseOnExit";
-            this.pauseOnExit.Size = new System.Drawing.Size(124, 21);
-            this.pauseOnExit.TabIndex = 83;
             // 
             // lblPauseOnExit
             // 
@@ -1855,13 +1869,6 @@
             this.windowBorderless.TabIndex = 86;
             this.windowBorderless.Text = "Borderless Window";
             this.windowBorderless.UseVisualStyleBackColor = true;
-            // 
-            // windowTitle
-            // 
-            this.windowTitle.Location = new System.Drawing.Point(10, 84);
-            this.windowTitle.Name = "windowTitle";
-            this.windowTitle.Size = new System.Drawing.Size(152, 20);
-            this.windowTitle.TabIndex = 107;
             // 
             // lblWindowTitle
             // 
@@ -2176,14 +2183,14 @@
             this.clearoutputStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.clearoutputStrip.Name = "clearoutputStrip";
             this.clearoutputStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F3)));
-            this.clearoutputStrip.Size = new System.Drawing.Size(188, 22);
+            this.clearoutputStrip.Size = new System.Drawing.Size(202, 22);
             this.clearoutputStrip.Text = "&Clear Output";
             this.clearoutputStrip.Click += new System.EventHandler(this.clearoutputStrip_Click);
             // 
             // Separator1
             // 
             this.Separator1.Name = "Separator1";
-            this.Separator1.Size = new System.Drawing.Size(185, 6);
+            this.Separator1.Size = new System.Drawing.Size(199, 6);
             // 
             // saveoutputStrip
             // 
@@ -2191,8 +2198,8 @@
             this.saveoutputStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveoutputStrip.Name = "saveoutputStrip";
             this.saveoutputStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.saveoutputStrip.Size = new System.Drawing.Size(188, 22);
-            this.saveoutputStrip.Text = "&Print";
+            this.saveoutputStrip.Size = new System.Drawing.Size(202, 22);
+            this.saveoutputStrip.Text = "&Print Console";
             this.saveoutputStrip.Click += new System.EventHandler(this.saveoutputStrip_Click);
             // 
             // helpconsoleStrip
@@ -2200,8 +2207,8 @@
             this.helpconsoleStrip.Image = global::scrcpyGUI.Properties.Resources.notification;
             this.helpconsoleStrip.Name = "helpconsoleStrip";
             this.helpconsoleStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
-            this.helpconsoleStrip.Size = new System.Drawing.Size(188, 22);
-            this.helpconsoleStrip.Text = "Help";
+            this.helpconsoleStrip.Size = new System.Drawing.Size(202, 22);
+            this.helpconsoleStrip.Text = "Help Command";
             this.helpconsoleStrip.Click += new System.EventHandler(this.helpconsoleStrip_Click);
             // 
             // toolsStrip

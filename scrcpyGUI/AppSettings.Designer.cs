@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AppSettings));
             this.VariousGB = new System.Windows.Forms.GroupBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.topMost = new System.Windows.Forms.CheckBox();
+            this.keepScreenSharing = new System.Windows.Forms.CheckBox();
             this.LanguageAndThemeGB = new System.Windows.Forms.GroupBox();
             this.language = new System.Windows.Forms.ComboBox();
             this.theme = new System.Windows.Forms.ComboBox();
@@ -44,8 +44,8 @@
             // 
             // VariousGB
             // 
-            this.VariousGB.Controls.Add(this.checkBox2);
-            this.VariousGB.Controls.Add(this.checkBox1);
+            this.VariousGB.Controls.Add(this.topMost);
+            this.VariousGB.Controls.Add(this.keepScreenSharing);
             this.VariousGB.Location = new System.Drawing.Point(12, 3);
             this.VariousGB.Name = "VariousGB";
             this.VariousGB.Size = new System.Drawing.Size(244, 67);
@@ -53,25 +53,25 @@
             this.VariousGB.TabStop = false;
             this.VariousGB.Text = "Various";
             // 
-            // checkBox2
+            // topMost
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(6, 42);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(144, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Keep app window on top";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.topMost.AutoSize = true;
+            this.topMost.Location = new System.Drawing.Point(6, 42);
+            this.topMost.Name = "topMost";
+            this.topMost.Size = new System.Drawing.Size(144, 17);
+            this.topMost.TabIndex = 1;
+            this.topMost.Text = "Keep app window on top";
+            this.topMost.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // keepScreenSharing
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 19);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(201, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Keep screen sharing after app closes";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.keepScreenSharing.AutoSize = true;
+            this.keepScreenSharing.Location = new System.Drawing.Point(6, 19);
+            this.keepScreenSharing.Name = "keepScreenSharing";
+            this.keepScreenSharing.Size = new System.Drawing.Size(201, 17);
+            this.keepScreenSharing.TabIndex = 0;
+            this.keepScreenSharing.Text = "Keep screen sharing after app closes";
+            this.keepScreenSharing.UseVisualStyleBackColor = true;
             // 
             // LanguageAndThemeGB
             // 
@@ -136,6 +136,7 @@
             this.saveSettings.TabIndex = 4;
             this.saveSettings.Text = "Save Settings";
             this.saveSettings.UseVisualStyleBackColor = true;
+            this.saveSettings.Click += new System.EventHandler(this.saveSettings_Click);
             // 
             // AppSettings
             // 
@@ -153,7 +154,6 @@
             this.Name = "AppSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";
-            this.Load += new System.EventHandler(this.AppSettings_Load);
             this.VariousGB.ResumeLayout(false);
             this.VariousGB.PerformLayout();
             this.LanguageAndThemeGB.ResumeLayout(false);
@@ -164,9 +164,9 @@
         #endregion
 
         private System.Windows.Forms.GroupBox VariousGB;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox keepScreenSharing;
         private System.Windows.Forms.GroupBox LanguageAndThemeGB;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox topMost;
         private System.Windows.Forms.ComboBox language;
         private System.Windows.Forms.ComboBox theme;
         private System.Windows.Forms.Button updateApp;

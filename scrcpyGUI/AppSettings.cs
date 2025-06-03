@@ -10,10 +10,9 @@ namespace scrcpyGUI
             InitializeComponent();
         }
 
-        private void AppSettings_Load(object sender, EventArgs e)
+        private void saveSettings_Click(object sender, EventArgs e)
         {
-            theme.SelectedIndex = 0;
-            language.SelectedIndex = 0;
+
         }
     }
 }
