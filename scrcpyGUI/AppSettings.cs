@@ -8,6 +8,8 @@ namespace scrcpyGUI
         public AppSettings()
         {
             InitializeComponent();
+            theme.SelectedIndex = 0; // Default to Light theme
+            language.SelectedIndex = 0; // Default to English
         }
 
         private void saveSettings_Click(object sender, EventArgs e)

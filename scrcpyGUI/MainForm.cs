@@ -230,9 +230,9 @@ namespace scrcpyGUI
                 { listCameraSizes, "--list-camera-sizes" },
                 { listDisplays, "--list-displays" },
                 { version, "--version" },
-                { m, "--m" },
-                { k, "--k" },
-                { g, "--g" },
+                { mouseCHK, "--m" },
+                { keyboardCHK, "--k" },
+                { gamepadCHK, "--g" },
 
             };
 
@@ -246,26 +246,27 @@ namespace scrcpyGUI
             #region TextBox Options
             var textOptions = new List<(TextBox box, string argName)>
             {
-                (angle,             "--angle"),
-                (maxFps,            "--max-fps"),
-                (videoBitRate,      "--video-bit-rate"),
-                (audioBitRate,      "--audio-bit-rate"),
-                (audioBuffer,       "--audio-buffer"),
-                (videoBuffer,       "--video-buffer"),
-                (videoEncoder,      "--video-encoder"),
-                (maxSize,           "--max-size"),
-                (audioOutputBuffer, "--audio-output-buffer"),
-                (screenOffTimeout,  "--screen-off-timeout"),
-                (record,            "--record"),
-
-                (windowX,           "--window-x"),
-                (windowY,           "--window-y"),
-                (windowWidth,       "--window-width"),
-                (windowHeight,      "--window-height"),
-                (cameraFps,         "--camera-fps"),
-                (port,              "--port"),
-                (timeLimit,         "--time-limit"),
-                (tunnelPort,        "--tunnel-port"),
+                (angle,            "--angle"),
+                (maxFps,           "--max-fps"),
+                (videoBitRate,     "--video-bit-rate"),
+                (audioBitRate,     "--audio-bit-rate"),
+                (audioBuffer,      "--audio-buffer"),
+                (videoBuffer,      "--video-buffer"),
+                (videoEncoder,     "--video-encoder"),
+                (maxSize,          "--max-size"),
+                (audioOutputBuffer,"--audio-output-buffer"),
+                (screenOffTimeout, "--screen-off-timeout"),
+                (record,           "--record"),
+                (displayID,        "--display-id"),
+                (orientation,      "--orientation"),
+                (windowX,          "--window-x"),
+                (windowY,          "--window-y"),
+                (windowWidth,      "--window-width"),
+                (windowHeight,     "--window-height"),
+                (cameraFps,        "--camera-fps"),
+                (port,             "--port"),
+                (timeLimit,        "--time-limit"),
+                (tunnelPort,       "--tunnel-port"),
             };
 
             foreach (var (box, name) in textOptions)

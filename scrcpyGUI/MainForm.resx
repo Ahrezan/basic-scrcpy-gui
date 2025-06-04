@@ -120,6 +120,44 @@
   <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 10</value>
   </metadata>
+  <data name="renderDriver.ToolTip" xml:space="preserve">
+    <value>Request SDL to use the given render driver (this is just a hint).
+Supported names are currently "direct3d", "opengl", "opengles2", "opengles", "metal" and "software".
+&lt;https://wiki.libsdl.org/SDL_HINT_RENDER_DRIVER&gt;</value>
+  </data>
+  <data name="mouse.ToolTip" xml:space="preserve">
+    <value>Select how to send mouse inputs to the device.
+Possible values are "disabled", "sdk", "uhid" and "aoa".
+"disabled" does not send mouse inputs to the device.
+"sdk" uses the Android system API to deliver mouse eventsto applications.
+"uhid" simulates a physical HID mouse using the Linux UHID kernel module on the device.
+"aoa" simulates a physical mouse using the AOAv2 protocol. It may only work over USB.
+In "uhid" and "aoa" modes, the computer mouse is captured to control the device directly (relative mouse mode).
+LAlt, LSuper or RSuper toggle the capture mode, to give control of the mouse back to the computer.
+Also see --keyboard and --gamepad.</value>
+  </data>
+  <data name="keyboard.ToolTip" xml:space="preserve">
+    <value>Select how to send keyboard inputs to the device.
+Possible values are "disabled", "sdk", "uhid" and "aoa".
+"disabled" does not send keyboard inputs to the device.
+"sdk" uses the Android system API to deliver keyboard events to applications.
+"uhid" simulates a physical HID keyboard using the Linux UHID kernel module on the device.
+"aoa" simulates a physical keyboard using the AOAv2 protocol. It may only work over USB.
+For "uhid" and "aoa", the keyboard layout must be configured (once and for all) on the device, via Settings -&gt;
+System -&gt; Languages and input -&gt; Physical keyboard. This settings page can be started directly using the
+shortcut MOD+k (except in OTG mode) or by executing: `adb shell am start -a
+android.settings.HARD_KEYBOARD_SETTINGS`.
+This option is only available when a HID keyboard is enabled (or a physical keyboard is connected).
+Also see --mouse and --gamepad.</value>
+  </data>
+  <data name="gamepad.ToolTip" xml:space="preserve">
+    <value>Select how to send gamepad inputs to the device.
+Possible values are "disabled", "uhid" and "aoa".
+"disabled" does not send gamepad inputs to the device.
+"uhid" simulates physical HID gamepads using the Linux UHID kernel module on the device.
+"aoa" simulates physical gamepads using the AOAv2 protocol.It may only work over USB.
+Also see --keyboard and --mouse.</value>
+  </data>
   <data name="displayOrientation.ToolTip" xml:space="preserve">
     <value>Set the initial display orientation.
 Possible values are 0, 90, 180, 270, flip0, flip90, flip180 and flip270. The number represents the clockwise
@@ -225,6 +263,21 @@ Possible values are "local", "fallback" and "hide".
 This is useful to prevent the terminal window from automatically closing, so that error messages can be read.
 Default is "false".
 Passing the option without argument is equivalent to passing "true".</value>
+  </data>
+  <data name="noClipboardAutosync.ToolTip" xml:space="preserve">
+    <value>By default, scrcpy automatically synchronizes the computer clipboard to the device clipboard before injecting
+Ctrl+v, and the device clipboard to the computer clipboard whenever it changes.
+This option disables this automatic synchronization.</value>
+  </data>
+  <data name="preferText.ToolTip" xml:space="preserve">
+    <value>Inject alpha characters and space as text events instead of key events.
+This avoids issues when combining multiple keys to enter a special character, but breaks the expected behavior
+of alpha keys in games (typically WASD).</value>
+  </data>
+  <data name="legacyPaste.ToolTip" xml:space="preserve">
+    <value>Inject computer clipboard text as a sequence of key events on Ctrl+v (like MOD+Shift+v).
+This is a workaround for some devices not behaving as expected when setting the device
+clipboard programmatically.</value>
   </data>
   <metadata name="MenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>10, 9</value>

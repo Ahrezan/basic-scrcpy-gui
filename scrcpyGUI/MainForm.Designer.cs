@@ -45,7 +45,7 @@
             this.lblCaptureOrientation = new System.Windows.Forms.Label();
             this.lblAngle = new System.Windows.Forms.Label();
             this.angle = new System.Windows.Forms.TextBox();
-            this.displayId = new System.Windows.Forms.TextBox();
+            this.displayID = new System.Windows.Forms.TextBox();
             this.lblDisplayID = new System.Windows.Forms.Label();
             this.cropWidth = new System.Windows.Forms.TextBox();
             this.lblCrop = new System.Windows.Forms.Label();
@@ -58,17 +58,14 @@
             this.lblNewDisplay = new System.Windows.Forms.Label();
             this.noPlayback = new System.Windows.Forms.CheckBox();
             this.mouse = new System.Windows.Forms.ComboBox();
-            this.lblMouse = new System.Windows.Forms.Label();
-            this.m = new System.Windows.Forms.CheckBox();
+            this.mouseCHK = new System.Windows.Forms.CheckBox();
             this.lblMaxSize = new System.Windows.Forms.Label();
             this.maxSize = new System.Windows.Forms.TextBox();
             this.keyboard = new System.Windows.Forms.ComboBox();
-            this.lblKeyboard = new System.Windows.Forms.Label();
             this.noWindow = new System.Windows.Forms.CheckBox();
-            this.k = new System.Windows.Forms.CheckBox();
+            this.keyboardCHK = new System.Windows.Forms.CheckBox();
             this.gamepad = new System.Windows.Forms.ComboBox();
-            this.lblGamepad = new System.Windows.Forms.Label();
-            this.g = new System.Windows.Forms.CheckBox();
+            this.gamepadCHK = new System.Windows.Forms.CheckBox();
             this.forceAdbForward = new System.Windows.Forms.CheckBox();
             this.selectTcpip = new System.Windows.Forms.TextBox();
             this.lblSelectTcpip = new System.Windows.Forms.Label();
@@ -136,7 +133,29 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.pauseOnExit = new System.Windows.Forms.ComboBox();
+            this.noClipboardAutosync = new System.Windows.Forms.CheckBox();
+            this.noCleanup = new System.Windows.Forms.CheckBox();
+            this.stayAwake = new System.Windows.Forms.CheckBox();
+            this.turnScreenOff = new System.Windows.Forms.CheckBox();
+            this.preferText = new System.Windows.Forms.CheckBox();
+            this.powerOffOnClose = new System.Windows.Forms.CheckBox();
+            this.noPowerOn = new System.Windows.Forms.CheckBox();
+            this.noMipmaps = new System.Windows.Forms.CheckBox();
+            this.noDownsizeOnError = new System.Windows.Forms.CheckBox();
+            this.noVdSystemDecorations = new System.Windows.Forms.CheckBox();
+            this.noVdDestroyContent = new System.Windows.Forms.CheckBox();
+            this.windowBorderless = new System.Windows.Forms.CheckBox();
+            this.lblWindowTitle = new System.Windows.Forms.Label();
+            this.lblWindowX = new System.Windows.Forms.Label();
+            this.lblWindowY = new System.Windows.Forms.Label();
+            this.lblWindowHeight = new System.Windows.Forms.Label();
+            this.lblWindowWidth = new System.Windows.Forms.Label();
+            this.legacyPaste = new System.Windows.Forms.CheckBox();
             this.windowTitle = new System.Windows.Forms.TextBox();
+            this.windowX = new System.Windows.Forms.TextBox();
+            this.windowY = new System.Windows.Forms.TextBox();
+            this.windowHeight = new System.Windows.Forms.TextBox();
+            this.windowWidth = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cameraHighSpeed = new System.Windows.Forms.CheckBox();
             this.lblCameraSize = new System.Windows.Forms.Label();
@@ -154,23 +173,14 @@
             this.label31 = new System.Windows.Forms.Label();
             this.lblVideoSource = new System.Windows.Forms.Label();
             this.videoSource = new System.Windows.Forms.ComboBox();
-            this.noClipboardAutosync = new System.Windows.Forms.CheckBox();
-            this.noCleanup = new System.Windows.Forms.CheckBox();
             this.verbosity = new System.Windows.Forms.ComboBox();
-            this.stayAwake = new System.Windows.Forms.CheckBox();
             this.lblVerbosity = new System.Windows.Forms.Label();
             this.version = new System.Windows.Forms.CheckBox();
             this.timeLimit = new System.Windows.Forms.TextBox();
             this.lblTimeLimit = new System.Windows.Forms.Label();
-            this.turnScreenOff = new System.Windows.Forms.CheckBox();
             this.screenOffTimeout = new System.Windows.Forms.TextBox();
             this.lblScreenOffTimeout = new System.Windows.Forms.Label();
-            this.preferText = new System.Windows.Forms.CheckBox();
-            this.powerOffOnClose = new System.Windows.Forms.CheckBox();
             this.lblPauseOnExit = new System.Windows.Forms.Label();
-            this.noPowerOn = new System.Windows.Forms.CheckBox();
-            this.noMipmaps = new System.Windows.Forms.CheckBox();
-            this.noDownsizeOnError = new System.Windows.Forms.CheckBox();
             this.tunnelPort = new System.Windows.Forms.TextBox();
             this.lblTunnelPort = new System.Windows.Forms.Label();
             this.showTouches = new System.Windows.Forms.CheckBox();
@@ -187,8 +197,6 @@
             this.recordFormat = new System.Windows.Forms.ComboBox();
             this.record = new System.Windows.Forms.TextBox();
             this.lblRecord = new System.Windows.Forms.Label();
-            this.noVdSystemDecorations = new System.Windows.Forms.CheckBox();
-            this.noVdDestroyContent = new System.Windows.Forms.CheckBox();
             this.tctPip = new System.Windows.Forms.TextBox();
             this.lblTcpip = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
@@ -198,21 +206,12 @@
             this.noKeyRepeat = new System.Windows.Forms.CheckBox();
             this.lblVideoEncoder = new System.Windows.Forms.Label();
             this.videoEncoder = new System.Windows.Forms.TextBox();
-            this.windowBorderless = new System.Windows.Forms.CheckBox();
-            this.lblWindowTitle = new System.Windows.Forms.Label();
-            this.windowX = new System.Windows.Forms.TextBox();
-            this.lblWindowX = new System.Windows.Forms.Label();
-            this.windowY = new System.Windows.Forms.TextBox();
-            this.lblWindowY = new System.Windows.Forms.Label();
-            this.windowHeight = new System.Windows.Forms.TextBox();
-            this.lblWindowHeight = new System.Windows.Forms.Label();
-            this.windowWidth = new System.Windows.Forms.TextBox();
-            this.lblWindowWidth = new System.Windows.Forms.Label();
             this.VideoAndCodecGB = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblRecordFormat = new System.Windows.Forms.Label();
             this.AudioGB = new System.Windows.Forms.GroupBox();
             this.DisplayAndWindowGB = new System.Windows.Forms.GroupBox();
+            this.newDisplayDPI = new System.Windows.Forms.TextBox();
             this.InputAndControlsGB = new System.Windows.Forms.GroupBox();
             this.ConnectionAndDeviceOptionsGB = new System.Windows.Forms.GroupBox();
             this.killAdbOnClose = new System.Windows.Forms.CheckBox();
@@ -247,7 +246,6 @@
             this.Separator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.legacyPaste = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -274,7 +272,7 @@
             // noControl
             // 
             this.noControl.AutoSize = true;
-            this.noControl.Location = new System.Drawing.Point(117, 62);
+            this.noControl.Location = new System.Drawing.Point(115, 62);
             this.noControl.Name = "noControl";
             this.noControl.Size = new System.Drawing.Size(79, 17);
             this.noControl.TabIndex = 6;
@@ -294,7 +292,7 @@
             // fullscreen
             // 
             this.fullscreen.AutoSize = true;
-            this.fullscreen.Location = new System.Drawing.Point(150, 186);
+            this.fullscreen.Location = new System.Drawing.Point(160, 186);
             this.fullscreen.Name = "fullscreen";
             this.fullscreen.Size = new System.Drawing.Size(104, 17);
             this.fullscreen.TabIndex = 8;
@@ -331,7 +329,7 @@
             "av1"});
             this.videoCodec.Location = new System.Drawing.Point(9, 80);
             this.videoCodec.Name = "videoCodec";
-            this.videoCodec.Size = new System.Drawing.Size(68, 21);
+            this.videoCodec.Size = new System.Drawing.Size(71, 21);
             this.videoCodec.TabIndex = 14;
             // 
             // maxFps
@@ -396,7 +394,7 @@
             "@flip270"});
             this.captureOrientation.Location = new System.Drawing.Point(9, 138);
             this.captureOrientation.Name = "captureOrientation";
-            this.captureOrientation.Size = new System.Drawing.Size(95, 21);
+            this.captureOrientation.Size = new System.Drawing.Size(122, 21);
             this.captureOrientation.TabIndex = 19;
             // 
             // lblCaptureOrientation
@@ -411,7 +409,7 @@
             // lblAngle
             // 
             this.lblAngle.AutoSize = true;
-            this.lblAngle.Location = new System.Drawing.Point(6, 237);
+            this.lblAngle.Location = new System.Drawing.Point(86, 152);
             this.lblAngle.Name = "lblAngle";
             this.lblAngle.Size = new System.Drawing.Size(34, 13);
             this.lblAngle.TabIndex = 21;
@@ -419,26 +417,28 @@
             // 
             // angle
             // 
-            this.angle.Location = new System.Drawing.Point(9, 253);
+            this.angle.Location = new System.Drawing.Point(87, 168);
             this.angle.Name = "angle";
-            this.angle.Size = new System.Drawing.Size(50, 20);
+            this.angle.Size = new System.Drawing.Size(78, 20);
             this.angle.TabIndex = 22;
             // 
-            // displayId
+            // displayID
             // 
-            this.displayId.Location = new System.Drawing.Point(75, 232);
-            this.displayId.Name = "displayId";
-            this.displayId.Size = new System.Drawing.Size(54, 20);
-            this.displayId.TabIndex = 25;
+            this.displayID.Location = new System.Drawing.Point(70, 232);
+            this.displayID.Name = "displayID";
+            this.displayID.Size = new System.Drawing.Size(59, 20);
+            this.displayID.TabIndex = 25;
             // 
             // lblDisplayID
             // 
             this.lblDisplayID.AutoSize = true;
             this.lblDisplayID.Location = new System.Drawing.Point(6, 235);
             this.lblDisplayID.Name = "lblDisplayID";
-            this.lblDisplayID.Size = new System.Drawing.Size(56, 13);
+            this.lblDisplayID.Size = new System.Drawing.Size(55, 13);
             this.lblDisplayID.TabIndex = 24;
-            this.lblDisplayID.Text = "--display-id";
+            this.lblDisplayID.Text = "Display ID";
+            this.ToolTip.SetToolTip(this.lblDisplayID, "Specify the device display id to mirror.\r\nThe available display ids can be listed" +
+        " by:\r\nscrcpy --list-displays\r\nDefault is 0.");
             // 
             // cropWidth
             // 
@@ -490,6 +490,7 @@
             this.renderDriver.Name = "renderDriver";
             this.renderDriver.Size = new System.Drawing.Size(77, 21);
             this.renderDriver.TabIndex = 63;
+            this.ToolTip.SetToolTip(this.renderDriver, resources.GetString("renderDriver.ToolTip"));
             // 
             // noVideoPlayback
             // 
@@ -503,14 +504,14 @@
             // 
             // newDisplayHeight
             // 
-            this.newDisplayHeight.Location = new System.Drawing.Point(219, 130);
+            this.newDisplayHeight.Location = new System.Drawing.Point(200, 130);
             this.newDisplayHeight.Name = "newDisplayHeight";
             this.newDisplayHeight.Size = new System.Drawing.Size(51, 20);
             this.newDisplayHeight.TabIndex = 78;
             // 
             // newDisplayWidth
             // 
-            this.newDisplayWidth.Location = new System.Drawing.Point(157, 130);
+            this.newDisplayWidth.Location = new System.Drawing.Point(138, 130);
             this.newDisplayWidth.Name = "newDisplayWidth";
             this.newDisplayWidth.Size = new System.Drawing.Size(56, 20);
             this.newDisplayWidth.TabIndex = 77;
@@ -518,11 +519,11 @@
             // lblNewDisplay
             // 
             this.lblNewDisplay.AutoSize = true;
-            this.lblNewDisplay.Location = new System.Drawing.Point(154, 112);
+            this.lblNewDisplay.Location = new System.Drawing.Point(135, 114);
             this.lblNewDisplay.Name = "lblNewDisplay";
-            this.lblNewDisplay.Size = new System.Drawing.Size(68, 13);
+            this.lblNewDisplay.Size = new System.Drawing.Size(98, 13);
             this.lblNewDisplay.TabIndex = 76;
-            this.lblNewDisplay.Text = "--new-display";
+            this.lblNewDisplay.Text = "New Virtual Display";
             // 
             // noPlayback
             // 
@@ -547,25 +548,17 @@
             this.mouse.Name = "mouse";
             this.mouse.Size = new System.Drawing.Size(54, 21);
             this.mouse.TabIndex = 74;
+            this.ToolTip.SetToolTip(this.mouse, resources.GetString("mouse.ToolTip"));
             // 
-            // lblMouse
+            // mouseCHK
             // 
-            this.lblMouse.AutoSize = true;
-            this.lblMouse.Location = new System.Drawing.Point(6, 20);
-            this.lblMouse.Name = "lblMouse";
-            this.lblMouse.Size = new System.Drawing.Size(39, 13);
-            this.lblMouse.TabIndex = 73;
-            this.lblMouse.Text = "Mouse";
-            // 
-            // m
-            // 
-            this.m.AutoSize = true;
-            this.m.Location = new System.Drawing.Point(64, 20);
-            this.m.Name = "m";
-            this.m.Size = new System.Drawing.Size(38, 17);
-            this.m.TabIndex = 72;
-            this.m.Text = "-M";
-            this.m.UseVisualStyleBackColor = true;
+            this.mouseCHK.AutoSize = true;
+            this.mouseCHK.Location = new System.Drawing.Point(9, 20);
+            this.mouseCHK.Name = "mouseCHK";
+            this.mouseCHK.Size = new System.Drawing.Size(58, 17);
+            this.mouseCHK.TabIndex = 72;
+            this.mouseCHK.Text = "Mouse";
+            this.mouseCHK.UseVisualStyleBackColor = true;
             // 
             // lblMaxSize
             // 
@@ -580,7 +573,7 @@
             // 
             this.maxSize.Location = new System.Drawing.Point(9, 168);
             this.maxSize.Name = "maxSize";
-            this.maxSize.Size = new System.Drawing.Size(68, 20);
+            this.maxSize.Size = new System.Drawing.Size(71, 20);
             this.maxSize.TabIndex = 71;
             // 
             // keyboard
@@ -596,20 +589,12 @@
             this.keyboard.Name = "keyboard";
             this.keyboard.Size = new System.Drawing.Size(54, 21);
             this.keyboard.TabIndex = 69;
-            // 
-            // lblKeyboard
-            // 
-            this.lblKeyboard.AutoSize = true;
-            this.lblKeyboard.Location = new System.Drawing.Point(6, 66);
-            this.lblKeyboard.Name = "lblKeyboard";
-            this.lblKeyboard.Size = new System.Drawing.Size(52, 13);
-            this.lblKeyboard.TabIndex = 68;
-            this.lblKeyboard.Text = "Keyboard";
+            this.ToolTip.SetToolTip(this.keyboard, resources.GetString("keyboard.ToolTip"));
             // 
             // noWindow
             // 
             this.noWindow.AutoSize = true;
-            this.noWindow.Location = new System.Drawing.Point(150, 164);
+            this.noWindow.Location = new System.Drawing.Point(160, 164);
             this.noWindow.Name = "noWindow";
             this.noWindow.Size = new System.Drawing.Size(140, 17);
             this.noWindow.TabIndex = 40;
@@ -617,15 +602,15 @@
             this.ToolTip.SetToolTip(this.noWindow, "Disable scrcpy window. Implies no video playback.");
             this.noWindow.UseVisualStyleBackColor = true;
             // 
-            // k
+            // keyboardCHK
             // 
-            this.k.AutoSize = true;
-            this.k.Location = new System.Drawing.Point(64, 65);
-            this.k.Name = "k";
-            this.k.Size = new System.Drawing.Size(36, 17);
-            this.k.TabIndex = 67;
-            this.k.Text = "-K";
-            this.k.UseVisualStyleBackColor = true;
+            this.keyboardCHK.AutoSize = true;
+            this.keyboardCHK.Location = new System.Drawing.Point(9, 66);
+            this.keyboardCHK.Name = "keyboardCHK";
+            this.keyboardCHK.Size = new System.Drawing.Size(71, 17);
+            this.keyboardCHK.TabIndex = 67;
+            this.keyboardCHK.Text = "Keyboard";
+            this.keyboardCHK.UseVisualStyleBackColor = true;
             // 
             // gamepad
             // 
@@ -639,25 +624,17 @@
             this.gamepad.Name = "gamepad";
             this.gamepad.Size = new System.Drawing.Size(54, 21);
             this.gamepad.TabIndex = 66;
+            this.ToolTip.SetToolTip(this.gamepad, resources.GetString("gamepad.ToolTip"));
             // 
-            // lblGamepad
+            // gamepadCHK
             // 
-            this.lblGamepad.AutoSize = true;
-            this.lblGamepad.Location = new System.Drawing.Point(6, 112);
-            this.lblGamepad.Name = "lblGamepad";
-            this.lblGamepad.Size = new System.Drawing.Size(53, 13);
-            this.lblGamepad.TabIndex = 65;
-            this.lblGamepad.Text = "Gamepad";
-            // 
-            // g
-            // 
-            this.g.AutoSize = true;
-            this.g.Location = new System.Drawing.Point(64, 111);
-            this.g.Name = "g";
-            this.g.Size = new System.Drawing.Size(37, 17);
-            this.g.TabIndex = 64;
-            this.g.Text = "-G";
-            this.g.UseVisualStyleBackColor = true;
+            this.gamepadCHK.AutoSize = true;
+            this.gamepadCHK.Location = new System.Drawing.Point(9, 112);
+            this.gamepadCHK.Name = "gamepadCHK";
+            this.gamepadCHK.Size = new System.Drawing.Size(72, 17);
+            this.gamepadCHK.TabIndex = 64;
+            this.gamepadCHK.Text = "Gamepad";
+            this.gamepadCHK.UseVisualStyleBackColor = true;
             // 
             // forceAdbForward
             // 
@@ -747,11 +724,12 @@
             // disableScreensaver
             // 
             this.disableScreensaver.AutoSize = true;
-            this.disableScreensaver.Location = new System.Drawing.Point(150, 232);
+            this.disableScreensaver.Location = new System.Drawing.Point(160, 232);
             this.disableScreensaver.Name = "disableScreensaver";
-            this.disableScreensaver.Size = new System.Drawing.Size(126, 17);
+            this.disableScreensaver.Size = new System.Drawing.Size(124, 17);
             this.disableScreensaver.TabIndex = 56;
-            this.disableScreensaver.Text = "--disable-screensaver";
+            this.disableScreensaver.Text = "Disable Screensaver";
+            this.ToolTip.SetToolTip(this.disableScreensaver, "Disable screensaver while scrcpy is running.");
             this.disableScreensaver.UseVisualStyleBackColor = true;
             // 
             // selectUsb
@@ -799,9 +777,9 @@
             // 
             // orientation
             // 
-            this.orientation.Location = new System.Drawing.Point(75, 258);
+            this.orientation.Location = new System.Drawing.Point(70, 258);
             this.orientation.Name = "orientation";
-            this.orientation.Size = new System.Drawing.Size(54, 20);
+            this.orientation.Size = new System.Drawing.Size(59, 20);
             this.orientation.TabIndex = 50;
             // 
             // lblOrientation
@@ -809,9 +787,10 @@
             this.lblOrientation.AutoSize = true;
             this.lblOrientation.Location = new System.Drawing.Point(6, 262);
             this.lblOrientation.Name = "lblOrientation";
-            this.lblOrientation.Size = new System.Drawing.Size(62, 13);
+            this.lblOrientation.Size = new System.Drawing.Size(58, 13);
             this.lblOrientation.TabIndex = 49;
-            this.lblOrientation.Text = "--orientation";
+            this.lblOrientation.Text = "Orientation";
+            this.ToolTip.SetToolTip(this.lblOrientation, "Same as --display-orientation=value --record-orientation=value.\r\n");
             // 
             // lblVideoBuffer
             // 
@@ -1026,11 +1005,12 @@
             // listApps
             // 
             this.listApps.AutoSize = true;
-            this.listApps.Location = new System.Drawing.Point(380, 134);
+            this.listApps.Location = new System.Drawing.Point(366, 136);
             this.listApps.Name = "listApps";
-            this.listApps.Size = new System.Drawing.Size(70, 17);
+            this.listApps.Size = new System.Drawing.Size(69, 17);
             this.listApps.TabIndex = 53;
-            this.listApps.Text = "--list-apps";
+            this.listApps.Text = "List Apps";
+            this.ToolTip.SetToolTip(this.listApps, "List Android apps installed on the device.");
             this.listApps.UseVisualStyleBackColor = true;
             // 
             // listEncoders
@@ -1038,9 +1018,10 @@
             this.listEncoders.AutoSize = true;
             this.listEncoders.Location = new System.Drawing.Point(230, 134);
             this.listEncoders.Name = "listEncoders";
-            this.listEncoders.Size = new System.Drawing.Size(91, 17);
+            this.listEncoders.Size = new System.Drawing.Size(90, 17);
             this.listEncoders.TabIndex = 43;
-            this.listEncoders.Text = "--list-encoders";
+            this.listEncoders.Text = "List Encoders";
+            this.ToolTip.SetToolTip(this.listEncoders, "List video and audio encoders available on the device.");
             this.listEncoders.UseVisualStyleBackColor = true;
             // 
             // listCameraSizes
@@ -1256,13 +1237,240 @@
             this.pauseOnExit.TabIndex = 83;
             this.ToolTip.SetToolTip(this.pauseOnExit, resources.GetString("pauseOnExit.ToolTip"));
             // 
+            // noClipboardAutosync
+            // 
+            this.noClipboardAutosync.AutoSize = true;
+            this.noClipboardAutosync.Location = new System.Drawing.Point(366, 21);
+            this.noClipboardAutosync.Name = "noClipboardAutosync";
+            this.noClipboardAutosync.Size = new System.Drawing.Size(155, 17);
+            this.noClipboardAutosync.TabIndex = 42;
+            this.noClipboardAutosync.Text = "Disable Clipboard Autosync";
+            this.ToolTip.SetToolTip(this.noClipboardAutosync, resources.GetString("noClipboardAutosync.ToolTip"));
+            this.noClipboardAutosync.UseVisualStyleBackColor = true;
+            // 
+            // noCleanup
+            // 
+            this.noCleanup.AutoSize = true;
+            this.noCleanup.Location = new System.Drawing.Point(230, 88);
+            this.noCleanup.Name = "noCleanup";
+            this.noCleanup.Size = new System.Drawing.Size(126, 17);
+            this.noCleanup.TabIndex = 41;
+            this.noCleanup.Text = "Skip Device Cleanup";
+            this.ToolTip.SetToolTip(this.noCleanup, "By default, scrcpy removes the server binary from the device and restores the\r\nde" +
+        "vice state (show touches, stay awake and power mode) on exit.\r\nThis option disab" +
+        "les this cleanup.");
+            this.noCleanup.UseVisualStyleBackColor = true;
+            // 
+            // stayAwake
+            // 
+            this.stayAwake.AutoSize = true;
+            this.stayAwake.Location = new System.Drawing.Point(230, 19);
+            this.stayAwake.Name = "stayAwake";
+            this.stayAwake.Size = new System.Drawing.Size(83, 17);
+            this.stayAwake.TabIndex = 85;
+            this.stayAwake.Text = "Stay Awake";
+            this.ToolTip.SetToolTip(this.stayAwake, "Keep the device on while scrcpy is running, when the device is plugged in.");
+            this.stayAwake.UseVisualStyleBackColor = true;
+            // 
+            // turnScreenOff
+            // 
+            this.turnScreenOff.AutoSize = true;
+            this.turnScreenOff.Location = new System.Drawing.Point(230, 42);
+            this.turnScreenOff.Name = "turnScreenOff";
+            this.turnScreenOff.Size = new System.Drawing.Size(102, 17);
+            this.turnScreenOff.TabIndex = 94;
+            this.turnScreenOff.Text = "Turn Off Screen";
+            this.ToolTip.SetToolTip(this.turnScreenOff, "Turn the device screen off immediately.");
+            this.turnScreenOff.UseVisualStyleBackColor = true;
+            // 
+            // preferText
+            // 
+            this.preferText.AutoSize = true;
+            this.preferText.Location = new System.Drawing.Point(230, 111);
+            this.preferText.Name = "preferText";
+            this.preferText.Size = new System.Drawing.Size(78, 17);
+            this.preferText.TabIndex = 85;
+            this.preferText.Text = "Prefer Text";
+            this.ToolTip.SetToolTip(this.preferText, resources.GetString("preferText.ToolTip"));
+            this.preferText.UseVisualStyleBackColor = true;
+            // 
+            // powerOffOnClose
+            // 
+            this.powerOffOnClose.AutoSize = true;
+            this.powerOffOnClose.Location = new System.Drawing.Point(230, 65);
+            this.powerOffOnClose.Name = "powerOffOnClose";
+            this.powerOffOnClose.Size = new System.Drawing.Size(119, 17);
+            this.powerOffOnClose.TabIndex = 84;
+            this.powerOffOnClose.Text = "Power Off On Close";
+            this.ToolTip.SetToolTip(this.powerOffOnClose, "Turn the device screen off when closing scrcpy.");
+            this.powerOffOnClose.UseVisualStyleBackColor = true;
+            // 
+            // noPowerOn
+            // 
+            this.noPowerOn.AutoSize = true;
+            this.noPowerOn.Location = new System.Drawing.Point(366, 90);
+            this.noPowerOn.Name = "noPowerOn";
+            this.noPowerOn.Size = new System.Drawing.Size(115, 17);
+            this.noPowerOn.TabIndex = 47;
+            this.noPowerOn.Text = "No Power On Start";
+            this.ToolTip.SetToolTip(this.noPowerOn, "Do not power on the device on start.");
+            this.noPowerOn.UseVisualStyleBackColor = true;
+            // 
+            // noMipmaps
+            // 
+            this.noMipmaps.AutoSize = true;
+            this.noMipmaps.Location = new System.Drawing.Point(366, 67);
+            this.noMipmaps.Name = "noMipmaps";
+            this.noMipmaps.Size = new System.Drawing.Size(106, 17);
+            this.noMipmaps.TabIndex = 45;
+            this.noMipmaps.Text = "Disable Mipmaps";
+            this.ToolTip.SetToolTip(this.noMipmaps, "If the renderer is OpenGL 3.0+ or OpenGL ES 2.0+, then mipmaps are automatically " +
+        "generated to improve\r\ndownscaling quality. This option disables the generation o" +
+        "f mipmaps.");
+            this.noMipmaps.UseVisualStyleBackColor = true;
+            // 
+            // noDownsizeOnError
+            // 
+            this.noDownsizeOnError.AutoSize = true;
+            this.noDownsizeOnError.Location = new System.Drawing.Point(366, 44);
+            this.noDownsizeOnError.Name = "noDownsizeOnError";
+            this.noDownsizeOnError.Size = new System.Drawing.Size(177, 17);
+            this.noDownsizeOnError.TabIndex = 43;
+            this.noDownsizeOnError.Text = "Disable Auto Downsize On Error";
+            this.ToolTip.SetToolTip(this.noDownsizeOnError, "By default, on MediaCodec error, scrcpy automatically tries again with a lower de" +
+        "finition.\r\nThis option disables this behavior.");
+            this.noDownsizeOnError.UseVisualStyleBackColor = true;
+            // 
+            // noVdSystemDecorations
+            // 
+            this.noVdSystemDecorations.AutoSize = true;
+            this.noVdSystemDecorations.Location = new System.Drawing.Point(160, 209);
+            this.noVdSystemDecorations.Name = "noVdSystemDecorations";
+            this.noVdSystemDecorations.Size = new System.Drawing.Size(145, 17);
+            this.noVdSystemDecorations.TabIndex = 49;
+            this.noVdSystemDecorations.Text = "Hide System Decorations";
+            this.ToolTip.SetToolTip(this.noVdSystemDecorations, "Disable virtual display system decorations flag.");
+            this.noVdSystemDecorations.UseVisualStyleBackColor = true;
+            // 
+            // noVdDestroyContent
+            // 
+            this.noVdDestroyContent.AutoSize = true;
+            this.noVdDestroyContent.Location = new System.Drawing.Point(9, 209);
+            this.noVdDestroyContent.Name = "noVdDestroyContent";
+            this.noVdDestroyContent.Size = new System.Drawing.Size(145, 17);
+            this.noVdDestroyContent.TabIndex = 48;
+            this.noVdDestroyContent.Text = "Preserve Display Content";
+            this.ToolTip.SetToolTip(this.noVdDestroyContent, "Disable virtual display \"destroy content on removal\" flag.\r\nWith this option, whe" +
+        "n the virtual display is closed, the running apps are moved to the main display " +
+        "rather than\r\nbeing destroyed.");
+            this.noVdDestroyContent.UseVisualStyleBackColor = true;
+            // 
+            // windowBorderless
+            // 
+            this.windowBorderless.AutoSize = true;
+            this.windowBorderless.Location = new System.Drawing.Point(9, 186);
+            this.windowBorderless.Name = "windowBorderless";
+            this.windowBorderless.Size = new System.Drawing.Size(117, 17);
+            this.windowBorderless.TabIndex = 86;
+            this.windowBorderless.Text = "Borderless Window";
+            this.ToolTip.SetToolTip(this.windowBorderless, "Disable window decorations (display borderless window).");
+            this.windowBorderless.UseVisualStyleBackColor = true;
+            // 
+            // lblWindowTitle
+            // 
+            this.lblWindowTitle.AutoSize = true;
+            this.lblWindowTitle.Location = new System.Drawing.Point(7, 68);
+            this.lblWindowTitle.Name = "lblWindowTitle";
+            this.lblWindowTitle.Size = new System.Drawing.Size(69, 13);
+            this.lblWindowTitle.TabIndex = 106;
+            this.lblWindowTitle.Text = "Window Title";
+            this.ToolTip.SetToolTip(this.lblWindowTitle, "Set a custom window title.");
+            // 
+            // lblWindowX
+            // 
+            this.lblWindowX.AutoSize = true;
+            this.lblWindowX.Location = new System.Drawing.Point(7, 114);
+            this.lblWindowX.Name = "lblWindowX";
+            this.lblWindowX.Size = new System.Drawing.Size(56, 13);
+            this.lblWindowX.TabIndex = 87;
+            this.lblWindowX.Text = "Window X";
+            this.ToolTip.SetToolTip(this.lblWindowX, "Set the initial window horizontal position.\r\nDefault is \"auto\".");
+            // 
+            // lblWindowY
+            // 
+            this.lblWindowY.AutoSize = true;
+            this.lblWindowY.Location = new System.Drawing.Point(67, 114);
+            this.lblWindowY.Name = "lblWindowY";
+            this.lblWindowY.Size = new System.Drawing.Size(56, 13);
+            this.lblWindowY.TabIndex = 89;
+            this.lblWindowY.Text = "Window Y";
+            this.ToolTip.SetToolTip(this.lblWindowY, "Set the initial window vertical position.\r\nDefault is \"auto\".");
+            // 
+            // lblWindowHeight
+            // 
+            this.lblWindowHeight.AutoSize = true;
+            this.lblWindowHeight.Location = new System.Drawing.Point(89, 20);
+            this.lblWindowHeight.Name = "lblWindowHeight";
+            this.lblWindowHeight.Size = new System.Drawing.Size(80, 13);
+            this.lblWindowHeight.TabIndex = 93;
+            this.lblWindowHeight.Text = "Window Height";
+            this.ToolTip.SetToolTip(this.lblWindowHeight, "Set the initial window height.\r\nDefault is 0 (automatic).");
+            // 
+            // lblWindowWidth
+            // 
+            this.lblWindowWidth.AutoSize = true;
+            this.lblWindowWidth.Location = new System.Drawing.Point(6, 20);
+            this.lblWindowWidth.Name = "lblWindowWidth";
+            this.lblWindowWidth.Size = new System.Drawing.Size(77, 13);
+            this.lblWindowWidth.TabIndex = 91;
+            this.lblWindowWidth.Text = "Window Width";
+            this.ToolTip.SetToolTip(this.lblWindowWidth, "Set the initial window width.\r\nDefault is 0 (automatic).");
+            // 
+            // legacyPaste
+            // 
+            this.legacyPaste.AutoSize = true;
+            this.legacyPaste.Location = new System.Drawing.Point(366, 113);
+            this.legacyPaste.Name = "legacyPaste";
+            this.legacyPaste.Size = new System.Drawing.Size(121, 17);
+            this.legacyPaste.TabIndex = 102;
+            this.legacyPaste.Text = "Legacy Paste Mode";
+            this.ToolTip.SetToolTip(this.legacyPaste, resources.GetString("legacyPaste.ToolTip"));
+            this.legacyPaste.UseVisualStyleBackColor = true;
+            // 
             // windowTitle
             // 
             this.windowTitle.Location = new System.Drawing.Point(10, 84);
             this.windowTitle.Name = "windowTitle";
             this.windowTitle.Size = new System.Drawing.Size(152, 20);
             this.windowTitle.TabIndex = 107;
-            this.ToolTip.SetToolTip(this.windowTitle, "Set a custom window title.");
+            // 
+            // windowX
+            // 
+            this.windowX.Location = new System.Drawing.Point(10, 130);
+            this.windowX.Name = "windowX";
+            this.windowX.Size = new System.Drawing.Size(54, 20);
+            this.windowX.TabIndex = 88;
+            // 
+            // windowY
+            // 
+            this.windowY.Location = new System.Drawing.Point(70, 130);
+            this.windowY.Name = "windowY";
+            this.windowY.Size = new System.Drawing.Size(54, 20);
+            this.windowY.TabIndex = 90;
+            // 
+            // windowHeight
+            // 
+            this.windowHeight.Location = new System.Drawing.Point(92, 36);
+            this.windowHeight.Name = "windowHeight";
+            this.windowHeight.Size = new System.Drawing.Size(78, 20);
+            this.windowHeight.TabIndex = 94;
+            // 
+            // windowWidth
+            // 
+            this.windowWidth.Location = new System.Drawing.Point(9, 36);
+            this.windowWidth.Name = "windowWidth";
+            this.windowWidth.Size = new System.Drawing.Size(74, 20);
+            this.windowWidth.TabIndex = 92;
             // 
             // groupBox4
             // 
@@ -1405,7 +1613,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(114, 146);
+            this.label31.Location = new System.Drawing.Point(112, 146);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(132, 13);
             this.label31.TabIndex = 62;
@@ -1429,28 +1637,8 @@
             "camera"});
             this.videoSource.Location = new System.Drawing.Point(9, 124);
             this.videoSource.Name = "videoSource";
-            this.videoSource.Size = new System.Drawing.Size(68, 21);
+            this.videoSource.Size = new System.Drawing.Size(71, 21);
             this.videoSource.TabIndex = 49;
-            // 
-            // noClipboardAutosync
-            // 
-            this.noClipboardAutosync.AutoSize = true;
-            this.noClipboardAutosync.Location = new System.Drawing.Point(380, 19);
-            this.noClipboardAutosync.Name = "noClipboardAutosync";
-            this.noClipboardAutosync.Size = new System.Drawing.Size(136, 17);
-            this.noClipboardAutosync.TabIndex = 42;
-            this.noClipboardAutosync.Text = "--no-clipboard-autosync";
-            this.noClipboardAutosync.UseVisualStyleBackColor = true;
-            // 
-            // noCleanup
-            // 
-            this.noCleanup.AutoSize = true;
-            this.noCleanup.Location = new System.Drawing.Point(230, 88);
-            this.noCleanup.Name = "noCleanup";
-            this.noCleanup.Size = new System.Drawing.Size(85, 17);
-            this.noCleanup.TabIndex = 41;
-            this.noCleanup.Text = "--no-cleanup";
-            this.noCleanup.UseVisualStyleBackColor = true;
             // 
             // verbosity
             // 
@@ -1466,16 +1654,6 @@
             this.verbosity.Name = "verbosity";
             this.verbosity.Size = new System.Drawing.Size(50, 21);
             this.verbosity.TabIndex = 105;
-            // 
-            // stayAwake
-            // 
-            this.stayAwake.AutoSize = true;
-            this.stayAwake.Location = new System.Drawing.Point(230, 19);
-            this.stayAwake.Name = "stayAwake";
-            this.stayAwake.Size = new System.Drawing.Size(86, 17);
-            this.stayAwake.TabIndex = 85;
-            this.stayAwake.Text = "--stay-awake";
-            this.stayAwake.UseVisualStyleBackColor = true;
             // 
             // lblVerbosity
             // 
@@ -1512,16 +1690,6 @@
             this.lblTimeLimit.TabIndex = 100;
             this.lblTimeLimit.Text = "--time-limit";
             // 
-            // turnScreenOff
-            // 
-            this.turnScreenOff.AutoSize = true;
-            this.turnScreenOff.Location = new System.Drawing.Point(230, 42);
-            this.turnScreenOff.Name = "turnScreenOff";
-            this.turnScreenOff.Size = new System.Drawing.Size(100, 17);
-            this.turnScreenOff.TabIndex = 94;
-            this.turnScreenOff.Text = "--turn-screen-off";
-            this.turnScreenOff.UseVisualStyleBackColor = true;
-            // 
             // screenOffTimeout
             // 
             this.screenOffTimeout.Location = new System.Drawing.Point(109, 123);
@@ -1538,26 +1706,6 @@
             this.lblScreenOffTimeout.TabIndex = 92;
             this.lblScreenOffTimeout.Text = "--screen-off-timeout";
             // 
-            // preferText
-            // 
-            this.preferText.AutoSize = true;
-            this.preferText.Location = new System.Drawing.Point(230, 111);
-            this.preferText.Name = "preferText";
-            this.preferText.Size = new System.Drawing.Size(79, 17);
-            this.preferText.TabIndex = 85;
-            this.preferText.Text = "--prefer-text";
-            this.preferText.UseVisualStyleBackColor = true;
-            // 
-            // powerOffOnClose
-            // 
-            this.powerOffOnClose.AutoSize = true;
-            this.powerOffOnClose.Location = new System.Drawing.Point(230, 65);
-            this.powerOffOnClose.Name = "powerOffOnClose";
-            this.powerOffOnClose.Size = new System.Drawing.Size(119, 17);
-            this.powerOffOnClose.TabIndex = 84;
-            this.powerOffOnClose.Text = "--power-off-on-close";
-            this.powerOffOnClose.UseVisualStyleBackColor = true;
-            // 
             // lblPauseOnExit
             // 
             this.lblPauseOnExit.AutoSize = true;
@@ -1566,36 +1714,6 @@
             this.lblPauseOnExit.Size = new System.Drawing.Size(72, 13);
             this.lblPauseOnExit.TabIndex = 82;
             this.lblPauseOnExit.Text = "Pause on Exit";
-            // 
-            // noPowerOn
-            // 
-            this.noPowerOn.AutoSize = true;
-            this.noPowerOn.Location = new System.Drawing.Point(380, 88);
-            this.noPowerOn.Name = "noPowerOn";
-            this.noPowerOn.Size = new System.Drawing.Size(91, 17);
-            this.noPowerOn.TabIndex = 47;
-            this.noPowerOn.Text = "--no-power-on";
-            this.noPowerOn.UseVisualStyleBackColor = true;
-            // 
-            // noMipmaps
-            // 
-            this.noMipmaps.AutoSize = true;
-            this.noMipmaps.Location = new System.Drawing.Point(380, 65);
-            this.noMipmaps.Name = "noMipmaps";
-            this.noMipmaps.Size = new System.Drawing.Size(88, 17);
-            this.noMipmaps.TabIndex = 45;
-            this.noMipmaps.Text = "--no-mipmaps";
-            this.noMipmaps.UseVisualStyleBackColor = true;
-            // 
-            // noDownsizeOnError
-            // 
-            this.noDownsizeOnError.AutoSize = true;
-            this.noDownsizeOnError.Location = new System.Drawing.Point(380, 42);
-            this.noDownsizeOnError.Name = "noDownsizeOnError";
-            this.noDownsizeOnError.Size = new System.Drawing.Size(130, 17);
-            this.noDownsizeOnError.TabIndex = 43;
-            this.noDownsizeOnError.Text = "--no-downsize-on-error";
-            this.noDownsizeOnError.UseVisualStyleBackColor = true;
             // 
             // tunnelPort
             // 
@@ -1616,7 +1734,7 @@
             // showTouches
             // 
             this.showTouches.AutoSize = true;
-            this.showTouches.Location = new System.Drawing.Point(117, 85);
+            this.showTouches.Location = new System.Drawing.Point(115, 85);
             this.showTouches.Name = "showTouches";
             this.showTouches.Size = new System.Drawing.Size(98, 17);
             this.showTouches.TabIndex = 97;
@@ -1625,9 +1743,9 @@
             // 
             // startApp
             // 
-            this.startApp.Location = new System.Drawing.Point(35, 19);
+            this.startApp.Location = new System.Drawing.Point(64, 18);
             this.startApp.Name = "startApp";
-            this.startApp.Size = new System.Drawing.Size(146, 20);
+            this.startApp.Size = new System.Drawing.Size(148, 20);
             this.startApp.TabIndex = 96;
             // 
             // lblStart
@@ -1683,7 +1801,7 @@
             // noMouseHover
             // 
             this.noMouseHover.AutoSize = true;
-            this.noMouseHover.Location = new System.Drawing.Point(117, 108);
+            this.noMouseHover.Location = new System.Drawing.Point(115, 108);
             this.noMouseHover.Name = "noMouseHover";
             this.noMouseHover.Size = new System.Drawing.Size(108, 17);
             this.noMouseHover.TabIndex = 46;
@@ -1759,26 +1877,6 @@
             this.lblRecord.TabIndex = 87;
             this.lblRecord.Text = "Record File";
             // 
-            // noVdSystemDecorations
-            // 
-            this.noVdSystemDecorations.AutoSize = true;
-            this.noVdSystemDecorations.Location = new System.Drawing.Point(150, 209);
-            this.noVdSystemDecorations.Name = "noVdSystemDecorations";
-            this.noVdSystemDecorations.Size = new System.Drawing.Size(152, 17);
-            this.noVdSystemDecorations.TabIndex = 49;
-            this.noVdSystemDecorations.Text = "--no-vd-system-decorations";
-            this.noVdSystemDecorations.UseVisualStyleBackColor = true;
-            // 
-            // noVdDestroyContent
-            // 
-            this.noVdDestroyContent.AutoSize = true;
-            this.noVdDestroyContent.Location = new System.Drawing.Point(9, 209);
-            this.noVdDestroyContent.Name = "noVdDestroyContent";
-            this.noVdDestroyContent.Size = new System.Drawing.Size(135, 17);
-            this.noVdDestroyContent.TabIndex = 48;
-            this.noVdDestroyContent.Text = "--no-vd-destroy-content";
-            this.noVdDestroyContent.UseVisualStyleBackColor = true;
-            // 
             // tctPip
             // 
             this.tctPip.Location = new System.Drawing.Point(9, 84);
@@ -1798,7 +1896,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(114, 128);
+            this.label40.Location = new System.Drawing.Point(112, 128);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(139, 13);
             this.label40.TabIndex = 63;
@@ -1827,7 +1925,7 @@
             // rawKeyEvents
             // 
             this.rawKeyEvents.AutoSize = true;
-            this.rawKeyEvents.Location = new System.Drawing.Point(117, 16);
+            this.rawKeyEvents.Location = new System.Drawing.Point(115, 16);
             this.rawKeyEvents.Name = "rawKeyEvents";
             this.rawKeyEvents.Size = new System.Drawing.Size(104, 17);
             this.rawKeyEvents.TabIndex = 89;
@@ -1837,7 +1935,7 @@
             // noKeyRepeat
             // 
             this.noKeyRepeat.AutoSize = true;
-            this.noKeyRepeat.Location = new System.Drawing.Point(117, 39);
+            this.noKeyRepeat.Location = new System.Drawing.Point(115, 39);
             this.noKeyRepeat.Name = "noKeyRepeat";
             this.noKeyRepeat.Size = new System.Drawing.Size(97, 17);
             this.noKeyRepeat.TabIndex = 44;
@@ -1859,89 +1957,6 @@
             this.videoEncoder.Name = "videoEncoder";
             this.videoEncoder.Size = new System.Drawing.Size(77, 20);
             this.videoEncoder.TabIndex = 84;
-            // 
-            // windowBorderless
-            // 
-            this.windowBorderless.AutoSize = true;
-            this.windowBorderless.Location = new System.Drawing.Point(9, 186);
-            this.windowBorderless.Name = "windowBorderless";
-            this.windowBorderless.Size = new System.Drawing.Size(117, 17);
-            this.windowBorderless.TabIndex = 86;
-            this.windowBorderless.Text = "Borderless Window";
-            this.windowBorderless.UseVisualStyleBackColor = true;
-            // 
-            // lblWindowTitle
-            // 
-            this.lblWindowTitle.AutoSize = true;
-            this.lblWindowTitle.Location = new System.Drawing.Point(7, 68);
-            this.lblWindowTitle.Name = "lblWindowTitle";
-            this.lblWindowTitle.Size = new System.Drawing.Size(69, 13);
-            this.lblWindowTitle.TabIndex = 106;
-            this.lblWindowTitle.Text = "Window Title";
-            // 
-            // windowX
-            // 
-            this.windowX.Location = new System.Drawing.Point(10, 130);
-            this.windowX.Name = "windowX";
-            this.windowX.Size = new System.Drawing.Size(54, 20);
-            this.windowX.TabIndex = 88;
-            // 
-            // lblWindowX
-            // 
-            this.lblWindowX.AutoSize = true;
-            this.lblWindowX.Location = new System.Drawing.Point(7, 114);
-            this.lblWindowX.Name = "lblWindowX";
-            this.lblWindowX.Size = new System.Drawing.Size(57, 13);
-            this.lblWindowX.TabIndex = 87;
-            this.lblWindowX.Text = "--window-x";
-            // 
-            // windowY
-            // 
-            this.windowY.Location = new System.Drawing.Point(70, 130);
-            this.windowY.Name = "windowY";
-            this.windowY.Size = new System.Drawing.Size(54, 20);
-            this.windowY.TabIndex = 90;
-            // 
-            // lblWindowY
-            // 
-            this.lblWindowY.AutoSize = true;
-            this.lblWindowY.Location = new System.Drawing.Point(67, 114);
-            this.lblWindowY.Name = "lblWindowY";
-            this.lblWindowY.Size = new System.Drawing.Size(57, 13);
-            this.lblWindowY.TabIndex = 89;
-            this.lblWindowY.Text = "--window-y";
-            // 
-            // windowHeight
-            // 
-            this.windowHeight.Location = new System.Drawing.Point(92, 36);
-            this.windowHeight.Name = "windowHeight";
-            this.windowHeight.Size = new System.Drawing.Size(78, 20);
-            this.windowHeight.TabIndex = 94;
-            // 
-            // lblWindowHeight
-            // 
-            this.lblWindowHeight.AutoSize = true;
-            this.lblWindowHeight.Location = new System.Drawing.Point(89, 20);
-            this.lblWindowHeight.Name = "lblWindowHeight";
-            this.lblWindowHeight.Size = new System.Drawing.Size(81, 13);
-            this.lblWindowHeight.TabIndex = 93;
-            this.lblWindowHeight.Text = "--window-height";
-            // 
-            // windowWidth
-            // 
-            this.windowWidth.Location = new System.Drawing.Point(9, 36);
-            this.windowWidth.Name = "windowWidth";
-            this.windowWidth.Size = new System.Drawing.Size(74, 20);
-            this.windowWidth.TabIndex = 92;
-            // 
-            // lblWindowWidth
-            // 
-            this.lblWindowWidth.AutoSize = true;
-            this.lblWindowWidth.Location = new System.Drawing.Point(6, 20);
-            this.lblWindowWidth.Name = "lblWindowWidth";
-            this.lblWindowWidth.Size = new System.Drawing.Size(77, 13);
-            this.lblWindowWidth.TabIndex = 91;
-            this.lblWindowWidth.Text = "--window-width";
             // 
             // VideoAndCodecGB
             // 
@@ -2032,6 +2047,7 @@
             // 
             // DisplayAndWindowGB
             // 
+            this.DisplayAndWindowGB.Controls.Add(this.newDisplayDPI);
             this.DisplayAndWindowGB.Controls.Add(this.disableScreensaver);
             this.DisplayAndWindowGB.Controls.Add(this.orientation);
             this.DisplayAndWindowGB.Controls.Add(this.lblOrientation);
@@ -2046,7 +2062,7 @@
             this.DisplayAndWindowGB.Controls.Add(this.renderDriver);
             this.DisplayAndWindowGB.Controls.Add(this.lblWindowX);
             this.DisplayAndWindowGB.Controls.Add(this.lblWindowY);
-            this.DisplayAndWindowGB.Controls.Add(this.displayId);
+            this.DisplayAndWindowGB.Controls.Add(this.displayID);
             this.DisplayAndWindowGB.Controls.Add(this.windowHeight);
             this.DisplayAndWindowGB.Controls.Add(this.windowY);
             this.DisplayAndWindowGB.Controls.Add(this.lblWindowTitle);
@@ -2069,27 +2085,31 @@
             this.DisplayAndWindowGB.TabStop = false;
             this.DisplayAndWindowGB.Text = "🖼️ Window && Display";
             // 
+            // newDisplayDPI
+            // 
+            this.newDisplayDPI.Location = new System.Drawing.Point(257, 130);
+            this.newDisplayDPI.Name = "newDisplayDPI";
+            this.newDisplayDPI.Size = new System.Drawing.Size(51, 20);
+            this.newDisplayDPI.TabIndex = 108;
+            // 
             // InputAndControlsGB
             // 
             this.InputAndControlsGB.Controls.Add(this.gamepad);
-            this.InputAndControlsGB.Controls.Add(this.g);
-            this.InputAndControlsGB.Controls.Add(this.m);
-            this.InputAndControlsGB.Controls.Add(this.lblMouse);
+            this.InputAndControlsGB.Controls.Add(this.gamepadCHK);
+            this.InputAndControlsGB.Controls.Add(this.mouseCHK);
             this.InputAndControlsGB.Controls.Add(this.label31);
             this.InputAndControlsGB.Controls.Add(this.mouse);
-            this.InputAndControlsGB.Controls.Add(this.lblKeyboard);
             this.InputAndControlsGB.Controls.Add(this.keyboard);
             this.InputAndControlsGB.Controls.Add(this.showTouches);
-            this.InputAndControlsGB.Controls.Add(this.k);
+            this.InputAndControlsGB.Controls.Add(this.keyboardCHK);
             this.InputAndControlsGB.Controls.Add(this.noKeyRepeat);
-            this.InputAndControlsGB.Controls.Add(this.lblGamepad);
             this.InputAndControlsGB.Controls.Add(this.noControl);
             this.InputAndControlsGB.Controls.Add(this.rawKeyEvents);
             this.InputAndControlsGB.Controls.Add(this.label40);
             this.InputAndControlsGB.Controls.Add(this.noMouseHover);
             this.InputAndControlsGB.Location = new System.Drawing.Point(266, 326);
             this.InputAndControlsGB.Name = "InputAndControlsGB";
-            this.InputAndControlsGB.Size = new System.Drawing.Size(285, 170);
+            this.InputAndControlsGB.Size = new System.Drawing.Size(289, 170);
             this.InputAndControlsGB.TabIndex = 67;
             this.InputAndControlsGB.TabStop = false;
             this.InputAndControlsGB.Text = "🧩 Input && Control";
@@ -2415,22 +2435,12 @@
             this.groupBox2.Controls.Add(this.timeLimit);
             this.groupBox2.Controls.Add(this.lblTimeLimit);
             this.groupBox2.Controls.Add(this.powerOffOnClose);
-            this.groupBox2.Location = new System.Drawing.Point(557, 326);
+            this.groupBox2.Location = new System.Drawing.Point(561, 326);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(574, 170);
+            this.groupBox2.Size = new System.Drawing.Size(569, 170);
             this.groupBox2.TabIndex = 71;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "⚙️ Behavior && Execution";
-            // 
-            // legacyPaste
-            // 
-            this.legacyPaste.AutoSize = true;
-            this.legacyPaste.Location = new System.Drawing.Point(380, 111);
-            this.legacyPaste.Name = "legacyPaste";
-            this.legacyPaste.Size = new System.Drawing.Size(92, 17);
-            this.legacyPaste.TabIndex = 102;
-            this.legacyPaste.Text = "--legacy-paste";
-            this.legacyPaste.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -2498,7 +2508,7 @@
         private System.Windows.Forms.Label lblCaptureOrientation;
         private System.Windows.Forms.Label lblAngle;
         private System.Windows.Forms.TextBox angle;
-        private System.Windows.Forms.TextBox displayId;
+        private System.Windows.Forms.TextBox displayID;
         private System.Windows.Forms.Label lblDisplayID;
         private System.Windows.Forms.TextBox cropWidth;
         private System.Windows.Forms.Label lblCrop;
@@ -2583,18 +2593,15 @@
         private System.Windows.Forms.TextBox selectTcpip;
         private System.Windows.Forms.Label lblSelectTcpip;
         private System.Windows.Forms.ComboBox keyboard;
-        private System.Windows.Forms.Label lblKeyboard;
-        private System.Windows.Forms.CheckBox k;
+        private System.Windows.Forms.CheckBox keyboardCHK;
         private System.Windows.Forms.ComboBox gamepad;
-        private System.Windows.Forms.Label lblGamepad;
-        private System.Windows.Forms.CheckBox g;
+        private System.Windows.Forms.CheckBox gamepadCHK;
         private System.Windows.Forms.Label lblMaxSize;
         private System.Windows.Forms.TextBox maxSize;
         private System.Windows.Forms.CheckBox listDisplays;
         private System.Windows.Forms.CheckBox listApps;
         private System.Windows.Forms.ComboBox mouse;
-        private System.Windows.Forms.Label lblMouse;
-        private System.Windows.Forms.CheckBox m;
+        private System.Windows.Forms.CheckBox mouseCHK;
         private System.Windows.Forms.CheckBox noPlayback;
         private System.Windows.Forms.TextBox newDisplayWidth;
         private System.Windows.Forms.Label lblNewDisplay;
@@ -2701,6 +2708,7 @@
         private System.Windows.Forms.ToolStripSeparator Separator7;
         private System.Windows.Forms.ToolStripMenuItem resetStrip;
         private System.Windows.Forms.ToolStripSeparator Separator8;
+        private System.Windows.Forms.TextBox newDisplayDPI;
     }
 }
 
