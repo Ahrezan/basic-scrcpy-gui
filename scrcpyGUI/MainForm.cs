@@ -148,17 +148,20 @@ namespace scrcpyGUI
         {
             try
             {
-                string adbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "cli_tools", "adb.exe");
-                if (File.Exists(adbPath))
+                if (killAdbOnClose.Checked)
                 {
-                    ProcessStartInfo psi = new ProcessStartInfo
+                    string adbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "cli_tools", "adb.exe");
+                    if (File.Exists(adbPath))
                     {
-                        FileName = adbPath,
-                        Arguments = "kill-server",
-                        CreateNoWindow = true,
-                        UseShellExecute = false
-                    };
-                    Process.Start(psi);
+                        ProcessStartInfo psi = new ProcessStartInfo
+                        {
+                            FileName = adbPath,
+                            Arguments = "kill-server",
+                            CreateNoWindow = true,
+                            UseShellExecute = false
+                        };
+                        Process.Start(psi);
+                    }
                 }
 
                 if (scrcpyProcess != null && !scrcpyProcess.HasExited)
@@ -464,11 +467,11 @@ namespace scrcpyGUI
         private void aboutStrip_Click(object sender, EventArgs e)
         {
             string appName = "Scrcpy for Basic GUI";
-            string version = "Version: 2025.05.24";
+            string version = "Version: 2025.06.06";
             string developer = "Ahrezan";
             string githubLink = "GitHub: github.com/Ahrezan";
             string license = "Licence: Apache License 2.0";
-            string releaseDate = "Latest Update: 2025-05-24";
+            string releaseDate = "Latest Update: 2025-06-06";
             string scrcpyVersion = "Scrcpy Version: v3.2";
 
             string aboutMessage = $"{appName}\n{version}\n\n{developer}\n{githubLink}\n{license}\n{scrcpyVersion}\n{releaseDate}";
